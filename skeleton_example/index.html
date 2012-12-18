@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        
+        <title>The Long Now Foundation</title>
+        
+        <link rel="icon" type="image/png" href="./static/ui/favicon.png" />
+        <!--[if IE]><link rel="SHORTCUT ICON" href="./static/ui/favicon.ico"/><![endif]-->
+        
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|EB+Garamond">
+        <link rel="stylesheet" href="./static/css/bristle_classic.css">
+        <link rel="stylesheet" href="./static/ui/webfonts/ss-social.css" />
+        <link rel="stylesheet" href="./static/ui/webfonts/ss-standard.css" />
+
+        <!-- Google Analytics goes here -->
+
+    </head>
+    <body>
+
+        <a name="top"></a>
+
+        <!-- HEADER ====================================================== -->
+        <div class="container header_block">
+        
+            <div class="span-10 prepend-1">
+                <a href="http://longnow.org/" title="The Long Now Foundation">
+                    <div class="logo"></div>
+                </a>
+            </div>
+
+            <div class="span-10 append-1 last right">
+                <form method="get" action="/search/" class="global_search_form">
+                    <i class="ss-icon">&#x1F50E;</i>
+                    <input type="text" name="q" id="id_q" value="" />
+                </form>
+            </div>
+            
+        </div>
+        
+        <!-- MAIN MENU =================================================== -->
+        <div class="container menu_block">
+            
+            <ul id="global_menu">
+                <li><a href="http://longnow.org/">Home</a></li>
+                <li><a href="http://longnow.org/about/">About</a>
+                    <ul class="about_submenu">
+                        <li><a href="http://longnow.org/about/">About</a></li>
+                        <li><a href="http://longnow.org/membership/community/">Community</a></li>
+                        <li><a href="http://longnow.org/support/">Support</a></li>
+                        <li><a href="http://longnow.org/essays/">Essays</a></li>
+                        <li><a href="http://longnow.org/press/">Press</a></li>
+                        <li><a href="http://longnow.org/jobs/">Jobs</a></li>
+                        <li><a href="http://longnow.org/store/">Store</a></li>
+                        <li><a href="http://longnow.org/contact/">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://longnow.org/projects/">Projects</a>
+                    <ul class="projects_submenu">
+                        <li><a href="http://longnow.org/seminars/">Seminars</a></li>
+                        <li><a href="http://longnow.org/events/">Special Events</a></li>
+                        <li><a href="http://longnow.org/clock/">10,000 Year Clock</a></li>
+                        <li><a href="http://longnow.org/clock/nevada/">Nevada</a></li>
+                        <li><a href="http://rosettaproject.org/">The Rosetta Project</a></li>
+                        <li><a href="http://panlex.org/" target="_blank">PanLex</a></li>
+                        <li><a href="http://longbets.org/" target="_blank">Long Bets</a></li>
+                        <li><a href="http://rare.longnow.org/" target="_blank">Revive and Restore</a></li>
+                        <li><a href="http://longserver.org/" target="_blank">Long Server</a></li>
+                        <li class="break"><hr /></li>
+                        <li><a href="http://longnow.org/projects/">View all projects...</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://blog.longnow.org/">Blog</a></li>
+                <li><a href="http://longnow.org/seminars/">Seminars</a>
+                    <ul class="seminars_submenu">
+                        <li><a href="http://longnow.org/seminars/">Seminar Home page</a></li>
+                        <li><a href="http://longnow.org/seminars/next/">Next Seminar <span class="action">Tickets / RSVP</span></a></li>
+                        <li><a href="http://longnow.org/seminars/list/" class="mute">Seminar List View</a></li>
+                        <li><a href="http://longnow.org/seminars/podcast/">Audio Podcast</a></li>
+                        <li><a href="http://longnow.org/events/">Special Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://longnow.org/membership/">Membership</a>
+                    <ul class="membership_submenu">
+                        <li><a href="http://longnow.org/membership/">Become a Member</a></li>
+                        <li><a href="http://longnow.org/membership/signin/">Sign in</a></li>
+                        <li class="break"><hr /></li>
+                        <li><a href="http://longnow.org/membership/community/">Community</a></li>
+                        <li><a href="http://longnow.org/membership/dashboard/" class="mute">Dashboard</a></li>
+                        <li><a href="http://longnow.org/membership/newsletters/" class="mute">Newsletters</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://longnow.org/support/">Donate</a></li>
+                <li><a href="http://longnow.org/people/board/">People</a>
+                    <ul class="people_submenu">
+                       <li><a href="http://longnow.org/people/board/">Board Members</a></li>
+                       <li><a href="http://longnow.org/people/staff/">Staff</a></li>
+                       <li><a href="http://longnow.org/people/associate/">Associates</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://longnow.org/contact/">Contact</a></li>
+            </ul><!-- closes global_menu -->
+
+        </div> <!-- closes container menu_block -->
+        
+
+        <!-- LONGPHOTO =================================================== -->
+        <div class="container longphoto_block" id="longphoto">
+            <div class="span-22 center"><img src="./static/ui/longphoto-10kclock.jpg" alt="" /></div>
+        </div>
+        
+        <!-- USER MENU =================================================== -->
+        <div class="container user_menu_block">
+    
+            <div class="span-10 prepend-1">
+                <ul class="list_inline_spaced">
+                    
+                    <li>Membership:</li>
+                                    
+                    <li>
+                        <a id="menu_dashboard_link" href="http://longnow.org/membership/dashboard/">Dashboard</a>
+                
+                        <!-- tooltip element for anonymous users -->
+                        <div class="user_menu_tooltip" style="width: 360px; height: 100px;">
+                            <span class="tooltip_header">Membership Dashboard</span>
+                            <img src="./static/ui/menu_newsletters_image.jpg" alt="" />
+                            <!-- div class="signup_signin">
+                                <a href="http://longnow.org/membership/signin/">Sign in</a> &nbsp;or&nbsp; <a href="http://longnow.org/membership/">Become a Member</a>
+                            </div -->
+                            <p>Members get a snapshot view of new Long Now content with easy access to all their member benefits.</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a id="menu_newsletters_link" href="http://longnow.org/membership/newsletters/">Newsletters</a>
+
+                        <!-- tooltip element for anonymous users -->
+                        <div class="user_menu_tooltip" style="width: 360px; height: 100px;">
+                            <span class="tooltip_header">Membership Newsletters</span>
+                            <img src="./static/ui/menu_dashboard_image.jpg" alt="" />
+                            <!-- div class="signup_signin">
+                                <a href="http://longnow.org/membership/signin/">Sign in</a> &nbsp;or&nbsp; <a href="http://longnow.org/membership/">Become a Member</a>
+                            </div -->
+                            <p>Published quarterly, the member newsletter gives in-depth and behind the scenes updates on Long Now's projects.</p>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <a id="menu_clockblog_link" href="http://longnow.org/clock/clockone/">Clock Blog</a>
+
+                        <!-- tooltip element for anonymous users -->
+                        <div class="user_menu_tooltip" style="width: 360px; height: 100px;">
+                            <img src="./static/ui/menu_clockblog_image.jpg" alt="" />
+                            <span class="tooltip_header">Clock Blog for Members</span>
+                            <!-- div class="signup_signin">
+                                <a href="http://longnow.org/membership/signin/">Sign in</a> &nbsp;or&nbsp; <a href="http://longnow.org/membership/">Become a Member</a>
+                            </div -->
+                            <p>Special updates on the 10,000 Year Clock project are posted on the members only Clock Blog.</p>
+                        </div>
+                    </li>
+
+                </ul> <!-- list_inline_spaced -->
+            </div>
+            
+            <div class="span-10 append-1 right last rel">
+                
+                <ul class="list_inline_spaced">
+                    <li><a href="http://longnow.org/membership/signin/?next=/membership/signout/">Sign in</a> &nbsp;or&nbsp; <a href="http://longnow.org/membership/">Become a Member</a></li>
+                </ul>
+            
+            </div>
+
+            <div class="span-20 prepend-1 append-1 top-10">
+                <div class="break_mute"></div>
+            </div>
+
+        </div>
+
+        <!-- MAIN CONTENT ================================================ -->
+        <div class="container body_block rel">
+
+            <a name="content"></a>
+
+            <div class="span-20 prepend-1 append-1">
+
+                <!-- START EXAMPLE COPY -->
+                <div style="height: 500px; "></div>
+                <!-- END EXAMPLE COPY -->
+
+
+            </div>
+        </div>
+        
+        <!-- FOOTER ====================================================== -->
+        <div class="container footer_block">
+        
+            <div class="span-6 prepend-1 colborder ">
+                
+                <h3 class="top-10">Next Seminar</h3>
+                
+                <!-- START EXAMPLE COPY -->
+                <ul>   
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/dec/11/lost-landscapes-san-francisco-7/">
+                            Rick Prelinger - Lost Landscapes of San Francisco, 7
+                        </a>
+                    </li>
+                </ul>
+                <!-- END EXAMPLE COPY -->
+                
+                <h3>Previous Seminars</h3>
+                
+                <!-- START EXAMPLE COPY -->
+                <ul>
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/nov/13/preservation-without-permission-paris-urban-experiment/">
+                            Lazar Kunstmann, Jon Lackman - Preservation without Permission: the Paris Urban eXperiment
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/oct/08/decline-violence/">
+                            Steven Pinker - The Decline of Violence
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/sep/05/birth-global-mind/">
+                            Tim O&#39;Reilly - Birth of the Global Mind
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/aug/20/truth-about-book-revelations/">
+                            Elaine Pagels - The Truth About the Book of Revelations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/jul/31/coming-century-war-against-your-computer/">
+                            Cory Doctorow - The Coming Century of War Against Your Computer
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://longnow.org/seminars/02012/jun/05/if-mayors-ruled-world/">
+                            Benjamin Barber - If Mayors Ruled the World
+                        </a>
+                    </li>
+                </ul>
+                <!-- END EXAMPLE COPY -->
+
+            </div>
+
+            <div class="span-6 colborder">
+
+                <h3 class="top-10">Latest Blog Posts</h3>
+
+                <!-- START EXAMPLE COPY -->
+                <ul>
+        
+                    <li><a href="http://blog.longnow.org/02012/12/14/aspirin-a-3500-year-old-remedy/">Aspirin: A 3,500-Year Old Remedy</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/12/13/the-lunar-02013/">The Lunar 02013</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/12/10/how-to-win-at-forecasting-an-edge-conversation-with-philip-tetlock/">How to Win at Forecasting – an Edge conversation with Philip Tetlock</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/12/05/the-cambridge-project-for-existential-risk/">The Cambridge Project for Existential Risk</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/12/04/rick-prelinger-seminar-primer/">Rick Prelinger Seminar Primer</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/12/03/making-gin-from-juniper-berries/">Long Now Salon: Where the Berries Meet the Gin</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/12/03/peter-warshall-seminar-media/">Peter Warshall Seminar Media</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/11/29/long-now-salon-not-a-typical-bar/">Long Now Salon: Not A Typical Bar</a></li>
+                
+                    <li><a href="http://blog.longnow.org/02012/11/28/time-and-distillation/">Long Now Salon: Time in a Bottle</a></li>
+                
+                </ul>
+                <!-- END EXAMPLE COPY -->
+                
+            </div>
+            
+            <div class="span-6 last">
+                
+                <h3 class="top-10">About Long Now</h3>
+                
+                <p class="mute bottom-35">The Long Now Foundation was established in 01996* to creatively foster long-term thinking and responsibility in the framework of the next 10,000 years. &nbsp; <a href="http://longnow.org/about/">More »</a></p>
+
+                <!-- form method="get" action="/search/" class="global_search_form">
+                    <i class="ss-icon">&#x1F50E;</i>
+                    <input type="text" name="q" id="id_q" placeholder="Search longnow.org" value="" />
+                </form -->
+                
+                <ul class="footer_social_list">
+                    <li><a href="http://twitter.com/longnow"><i class="ss-icon ss-social">&#xF611;</i> Twitter</a></li>
+                    <li><a href="http://www.facebook.com/pages/The-Long-Now-Foundation/16998442867"><i class="ss-icon ss-social">&#xF610;</i>Facebook</a></li>
+                    <li><a href="http://www.flickr.com/photos/longnow/"><i class="ss-icon ss-social">&#xF640;</i> Flickr</a></li>
+                    <li><a href="http://feeds.feedburner.com/longnow" rel="alternate" type="application/rss+xml"><i class="ss-icon">&#xE310;</i> RSS</a></li>
+
+                </ul>
+
+            </div>
+        
+        </div>
+
+        <div class="container top-20 sub_footer">
+            <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="" title="This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License." src="./static/ui/creative_commons_footer_logo.png" border="0" class="va-middle" /></a> The Long Now Foundation &nbsp;&bull;&nbsp; Fostering Long-term Responsibility &nbsp;&bull;&nbsp; est. 01996 &nbsp;&nbsp;&nbsp; <a href="#top" style="color: #4a4637;"><i class="ss-icon">&#xF500;</i> Top of Page</a>
+</p>
+        </div>
+
+        <!-- jQuery -->
+        <script src="./static/js/jquery-1.7.2.min.js"></script>
+        
+        <!-- jQuery Tools -->
+        <script src="./static/js/jquery.tools.min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+                // The Membership/User Menu has a few tooltips. 
+                $("#menu_dashboard_link").tooltip({ offset: [10,0], position: "bottom center", delay: 20});
+                $("#menu_newsletters_link").tooltip({ offset: [10,0], position: "bottom center", delay:20});
+                $("#menu_clockblog_link").tooltip({ offset: [10,0], position: "bottom center", delay: 20});
+            });
+        </script>
+        
+    </body>
+</html>
