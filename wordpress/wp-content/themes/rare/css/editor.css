@@ -1,0 +1,133 @@
+/*
+Theme Name: Revive and Restore
+Description: Added styles to the wordpress editor
+
+*/
+
+/* Notes
+
+
+*/
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
+  color: #47453d;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: .5em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: .75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+h6 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p img.right {
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+}
+
+
+p img.right {
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+}
+img.alignright{
+    float: right;
+    margin: 5px 0 35px 35px;
+}
+img.alignleft{
+    float: left;
+    margin: 5px 35px 35px 0;
+}
+a,
+a:link,
+a:visited {
+  color: #1264A2;
+  text-decoration: none;
+}
+blockquote {
+  margin: 1.5em;
+  color: #666;
+  font-style: italic;
+}
+
+
+li ul,
+li ol {
+  margin: 0 1.5em;
+}
+ul,
+ol {
+  margin: 0 1.5em 1.5em;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dl,
+p {
+  margin: 0 0 1.5em;
+}
+dd {
+  margin-left: 1.5em;
+}
+
+
+.body_block {
+    font-size: 1.12em;
+}
+.body_block ul li {
+    margin-bottom: 4px;
+}
+.body_block h1 {
+    color: #94907e;
+}
+.body_block h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+}
+.body_block ul {
+    margin-left: 30px;
+}
+.header_block form {
+    display: none;
+}
+.menu_block {
+    display: none;
+}
+.user_menu_block div {
+    display: none;
+}
