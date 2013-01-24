@@ -30,7 +30,7 @@ $(document).ready(function () {
     // set offset
     var rareMenuTop = $(raremenu).offset().top;
     
-    var menuClone = $(raremenu).clone().addClass('fixed');
+    var menuClone = $(raremenu).clone('true, true').addClass('fixed');
     
     function setRareFixed(){
         if(window.pageYOffset > rareMenuTop) {
@@ -132,6 +132,28 @@ $(document).ready(function () {
             rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
         });
     }
+    
+      
+    
+    
+    // expanding search box in rare navigation
+    rareNavSearch = $('#rare-search input[type=text]');
+    
+    $(rareNavSearch).live({
+        "focus":
+           function() {
+            $(this).css({ width: '275px' });
+            $('#rare-nav-main li:nth-last-child(2)').animate({ opacity: 0 }, function() { $(this).css('visibility', 'hidden'); }); // fade out and hide link so not clickable
+            $('#rare-nav-main li:last-child').animate({ opacity: 0 }, function() { $(this).css('visibility', 'hidden'); });
+           },
+        "blur":
+           function() {
+             $(this).css({ width: '15px' });
+             $('#rare-nav-main li:nth-last-child(2)').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
+             $('#rare-nav-main li:last-child').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
+           }
+       }
+    );
     
       
       

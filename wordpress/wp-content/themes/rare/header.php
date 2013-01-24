@@ -123,8 +123,8 @@
                 <?php wp_nav_menu( array('menu' => 'Rare Main Nav', 'menu_id' => 'rare-nav-main', 'container' => '', 'fallback_cb' => '' )); ?>
                 
                 <!-- rare search box -->
-                <form id="rare-search">
-                    <input type="text" />test
+                <form role="search" method="get" id="rare-search" action="<?php echo home_url( '/' ); ?>">
+                    <i class="ss-icon">&#x1F50E;</i><input type="text" value="" name="s" id="s" />
                 </form>
             </div>
                 
