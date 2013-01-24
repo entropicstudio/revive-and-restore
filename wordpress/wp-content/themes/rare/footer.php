@@ -7,7 +7,7 @@
  */
 ?>
         <br class="clear" />
-        <p class="larger center quiet page-top-link"><a class="nostyle quiet" style="color: #acb3af;" href="#top"><i class="ss-icon" style="font-size: 1.3em; position: relative; top: 6px;">&#xF500;</i> Top of Page</a></p>
+        <p class="larger center quiet page-top-link"><a href="#top"><i class="ss-icon" style="font-size: 1.3em; position: relative; top: 6px;">&#xF500;</i> Top of Page</a></p>
     </div>
     
     <div class="container footer_block">
