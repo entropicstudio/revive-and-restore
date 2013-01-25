@@ -1,0 +1,215 @@
+/*
+Theme Name: Revive and Restore
+Author: Sans Ink Web & Graphic Design
+Author URI: http://sansink.com/
+Description: Wordpress theme developed for Revive and Restore, a part of the Longnow foundation.
+Version: 1.0
+
+*/
+
+/* Notes
+
+
+*/
+
+.page-top-link{
+    margin-top: 15px;
+    display: block!important;
+    text-align: center!important;
+}
+img.alignright{
+    float: right;
+    margin: 5px 0 35px 35px;
+}
+img.alignleft{
+    float: left;
+    margin: 5px 35px 35px 0;
+}
+
+
+
+/* link transitions */
+#longphoto-toggle a, #longmenu-toggle, #rare-nav-main li a{
+    -webkit-transition:all .25s ease-in;
+    -moz-transition:all .25s ease-in;
+    -o-transition:all .25s ease-in;
+    transition:all .25s ease-in;
+}
+
+
+/* longphoto */
+#longphoto{
+    overflow: hidden; /* hides box-shadow from rare navigation */
+    height: 311px;
+    display: relative;
+}
+#longphoto-toggle{
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+}
+#longphoto-toggle .ss-icon{
+    vertical-align: sub;
+}
+#longphoto-toggle a{
+    font-size: 14px;
+    color: #999;
+}
+#longphoto-toggle a:hover, #longmenu-toggle:hover{
+    color: #fff;
+}
+#longphoto-description{
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    width: 230px;
+    line-height: 20px;
+    color: #fff;
+    display: none;
+}
+
+
+
+/* longnow global menu */
+#longmenu-toggle{
+    color: #777;
+}
+#longmenu-toggle i{
+    font-size: 1.6em;
+    padding-left: 3px;
+    vertical-align: sub;
+}
+.menu_block #global_menu > li ul li.break {
+    background: #c1bfb4;
+    overflow: hidden;
+}
+.menu_block #global_menu > li ul li.mute a {
+    color: #68655c;
+    pointer-events: none;
+    cursor: default;
+    background: transparent;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.menu_block #global_menu > li ul li.mute a:hover { /* old browsers */
+    background: transparent;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* rare main navigation */
+
+#rare-nav-container{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    background: url(ui/rare-nav-bg.png) repeat-x;
+    box-shadow: 0 -1px 15px #000;
+    border-top: 1px solid #0d201e;
+}
+#rare-nav-container.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    font: normal 14px Arial;
+}
+#rare-nav-container.fixed #rare-nav-main{
+    width: 860px;
+    margin: 0 auto;
+}
+#rare-nav-main{
+    margin: 0;
+    overflow: hidden;
+    padding-left: 10px;
+}
+#rare-nav-main li{
+    margin: 0;
+    list-style: none;
+    float: left;
+}
+#rare-nav-main li a{
+    display: inline-block;
+    padding: 0 7px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+#rare-nav-main li a:hover{
+    color: #ecff07;
+    text-shadow: 0 0 2px #ecff07;
+}
+
+
+/* rare search box in navigation */
+#rare-search{
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    border: 1px solid #454541;
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding-left: 7px;
+    box-shadow: inset 0 3px 12px #000;
+}
+#rare-search input[type=text]{
+    width: 15px;
+    height: 20px;
+    padding: 2px 10px;
+    line-height: 20px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+
+
+
+.body_block {
+    font-size: 1.12em;
+}
+.body_block ul li {
+    margin-bottom: 4px;
+}
+.body_block h1 {
+    color: #94907e;
+}
+.body_block h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+}
+.body_block ul {
+    margin-left: 30px;
+}
+.header_block form {
+    display: none;
+}
+.menu_block {
+    display: none;
+}
+.user_menu_block div {
+    display: none;
+}
+
+
+
+.tedx_wrapper {
+    background: white;
+    margin: 0 -40px 20px -40px;
+    padding: 10px 40px 30px 40px;
+}
+.roster_wrapper {    
+    background: url(http://media.longnow.org/files/2/rare-roster-bg.jpeg) center center no-repeat; 
+    margin: 0 -40px 20px -40px;
+    padding: 20px 40px;
+    height: 263px;
+    overflow: hidden;
+}
