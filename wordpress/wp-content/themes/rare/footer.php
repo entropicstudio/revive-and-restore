@@ -26,7 +26,11 @@
     <!-- load global javascript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/global.js"></script>
 
-
+ <script>
+$(function() {
+$( "#tabs" ).tabs();
+});
+</script>
 
     <?php wp_footer(); ?>
 

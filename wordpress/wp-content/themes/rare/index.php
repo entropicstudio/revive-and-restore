@@ -48,12 +48,20 @@ get_header(); ?>
                         
                     <?php } else { ?>
                         
-                        <div class="span-20 prepend-1 append-1">
+                        <?
+
+                        if( is_page(11)) {
                             
-                            <?php get_template_part('content', 'full'); ?>
+                            get_template_part('content', 'ethics');
+                            
+                        } else {
+                            
+                            get_template_part('content', 'full');
+                        }
+
+
+                        ?>
                         
-                        </div>
-                
                     <?php } ?>
                 
                 <?php endwhile; ?>

@@ -13,9 +13,14 @@ Version: 1.0
 */
 
 .page-top-link{
-    margin-top: 15px;
+    position: absolute;
+    bottom: 0px;
     display: block!important;
     text-align: center!important;
+    width: 100%;
+}
+.page-top-link a{
+    color: #acb3af;
 }
 img.alignright{
     float: right;
@@ -174,6 +179,9 @@ img.alignleft{
 
 .body_block {
     font-size: 1.12em;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #e8e7e0;
 }
 .body_block ul li {
     margin-bottom: 4px;
@@ -200,6 +208,84 @@ img.alignleft{
 }
 
 
+
+
+
+/* custom page layouts */
+
+/* ethics page layout, wordpress page id = 11 */
+
+body.page-id-11 .body_block{
+    background: #fff url(ui/ethics_bg.jpg) bottom no-repeat;
+    padding-bottom: 500px;
+}
+body.page-id-11 .page-top-link a{
+    color:  #fff ;
+}
+
+.ethics-content-nav {
+    width: 100%;
+    text-align: center;
+    margin-left: 0!important;
+}
+.ethics-content-nav li{
+    display: inline-block;
+    margin: 0;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    font: 600 26px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+
+}
+.ethics-content-nav li:last-child{
+    padding-right: 0;
+}
+.ethics-content-nav li a{
+    color: #504f4a;
+}
+.ethics-content-nav li a:hover, .ethics-content-nav li.ui-tabs-active a{
+    color: #5dd2d5;
+}
+.ethics-content-nav li.ui-tabs-active{
+    background: url(ui/ethics-section-arrow.png) bottom left no-repeat;
+}
+.ethics-tabs{
+    margin: -45px -40px 0 -40px;
+    padding: 50px 40px 0;
+    background: #e8e7e0;
+}
+.ethics-tabs ul{
+    width: 42%;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+.ethics-tabs ul:first-child{
+    margin-right: 8%;
+}
+.ethics-tabs ul:last-child{
+    margin-right: 0;
+}
+.ethics-tabs ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* meetings page layout, page id 44 */
+body.page-id-44 .body_block{
+    background: #e8e7e0 url(ui/meetings_bg.jpg) bottom no-repeat;
+    padding-bottom: 600px;
+}
+
+
+
+
+
+/* homepage layout */
 
 .tedx_wrapper {
     background: white;
