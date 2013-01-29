@@ -8,10 +8,8 @@
 // add wordpress editor stylesheet
 add_editor_style('css/editor.css');
 
-// adding menu support
 
-add_action('init', 'register_my_menus');
-
+// adding theme menu support
 function register_my_menus() {
     register_nav_menus(
             array(
@@ -20,8 +18,10 @@ function register_my_menus() {
             )
     );
 }
+add_action('init', 'register_my_menus');
 
 
+// add theme sidebar support
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
         'before_widget' => '<div class="section_box">',
@@ -29,3 +29,11 @@ if ( function_exists('register_sidebar') )
         'before_title' => '<h3>',
         'after_title' => '</h3>',
     ));
+
+
+
+// add categories to pages
+function page_categories_meta_box() {
+    add_meta_box('categorydiv', __('Categories'), 'post_categories_meta_box', 'page', 'side', 'core');
+}
+add_action('admin_menu', 'page_categories_meta_box');
