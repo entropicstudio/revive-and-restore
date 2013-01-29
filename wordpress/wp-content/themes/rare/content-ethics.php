@@ -1,6 +1,6 @@
 <?php
 /**
- * content template for specific ethics page
+ * content template for ethics page
  */
 ?>
 

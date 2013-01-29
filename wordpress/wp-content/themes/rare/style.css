@@ -213,10 +213,9 @@ img.alignleft{
 
 /* custom page layouts */
 
-body.page-id-11 .page-top-link a, body.page-id-44 .page-top-link a{
+body.page-id-11 .page-top-link a, body.page-id-44 .page-top-link a, body.page-id-40 .page-top-link a{
     color:  #fff ;
 }
-
 /* ethics page layout, wordpress page id = 11 */
 
 body.page-id-11 .body_block{
@@ -315,6 +314,74 @@ body.page-id-44 .tedx-box em{
     margin-bottom: 15px;
 }
 
+
+
+/* candidate species page layout, page id 40 */
+body.page-id-40 .body_block{
+    background: #e8e7e0 url(ui/candidate-species_bg.jpg) bottom no-repeat;
+    padding-bottom: 60px;
+}
+body.page-id-40 .cs-column{
+    width: 190px;
+    padding-right: 10px;
+    float: left;
+    position: relative;
+    z-index: 1000;
+}
+body.page-id-40 .cs-column.first{
+    margin-left: 40px;
+}
+#candidate-edge-box{
+    padding: 30px 350px 30px 30px;
+    margin-right: 100px;
+    margin-top: 10px;
+    background: #fff;
+    border-top: 1px solid #cfcec8;
+    border-bottom: 1px solid #cfcec8;
+    position: relative;
+}
+#candidate-edge-box p{
+    margin: 0;
+    font-size: 14px;
+}
+#cuban-macaw{
+    background: url(ui/species-cuban-macaw.png) no-repeat;
+    width: 393px;
+    height: 477px;
+    position: absolute;
+    right: -70px;
+    top: -150px;
+    z-index: 100;
+}
+#candidate-criteria-box{
+    margin: 40px 40px;
+}
+#candidate-criteria-box .criteria-column.first{
+    width: 50%;
+    padding-right: 10%;
+    float: left;
+}
+#candidate-criteria-box .criteria-column.last{
+    width: 40%;
+    padding-top: 40px;
+    float: left;
+}
+#candidate-criteria-box .criteria-column ul{
+    margin-bottom: 80px;
+}
+#candidate-criteria-box .criteria-column ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin: 0 0 7px 0;
+}
+#candidate-criteria-box h2{
+    font:normal 3em 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
+    color: #94907e;
+}
+#candidate-criteria-box .criteria-column h3{
+    font: 700 15px "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 /* homepage layout */
 

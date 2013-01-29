@@ -37,19 +37,23 @@ get_header(); ?>
                         
                         <?
 
-                        if ( is_page(11) ) {
+                        if ( is_page(11) ) { // ethics page
                             
                             get_template_part('content', 'ethics');
                             
-                        } elseif ( is_page(44) ) {
+                        } elseif ( is_page(44) ) { // meetings page
                             
                             get_template_part('content', 'meetings');
                             
-                        } elseif ( is_page(52) ) {
+                        } elseif ( is_page(40) ) { // candidate species page
+                            
+                            get_template_part('content', 'candidate');
+                            
+                        } elseif ( is_page(52) ) { // people & advisors page
                             
                             get_template_part('content', 'people');
                             
-                        } else {
+                        } else { // standard layout
                             
                             get_template_part('content', 'full');
                         }
