@@ -213,14 +213,15 @@ img.alignleft{
 
 /* custom page layouts */
 
+body.page-id-11 .page-top-link a, body.page-id-44 .page-top-link a{
+    color:  #fff ;
+}
+
 /* ethics page layout, wordpress page id = 11 */
 
 body.page-id-11 .body_block{
     background: #fff url(ui/ethics_bg.jpg) bottom no-repeat;
     padding-bottom: 500px;
-}
-body.page-id-11 .page-top-link a{
-    color:  #fff ;
 }
 
 .ethics-content-nav {
@@ -278,11 +279,41 @@ body.page-id-11 .page-top-link a{
 /* meetings page layout, page id 44 */
 body.page-id-44 .body_block{
     background: #e8e7e0 url(ui/meetings_bg.jpg) bottom no-repeat;
-    padding-bottom: 600px;
+    padding-bottom: 400px;
 }
-
-
-
+body.page-id-44 .tedx-box{
+    background: #fff;
+    padding: 20px 40px 0;
+}
+body.page-id-44 .tedx-box em{
+    color: #2b7ebe;
+    font: 600 23px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+}
+#meetings-boxes{
+    float: left;
+    width: 440px;
+    margin: 40px 0 0 40px;
+}
+#meetings-boxes h2{
+    color: #2b7ebe;
+    font: 600 23px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+#meetings-content-box{
+    width: 320px;
+    float: right;
+    background: url(ui/transparent_bg.png) repeat;
+    border-radius: 10px;
+    margin: 40px 40px 0 0;
+    padding: 20px 5px 10px;
+}
+#meetings-content-box ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+}
 
 
 /* homepage layout */

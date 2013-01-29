@@ -54,6 +54,14 @@ get_header(); ?>
                             
                             get_template_part('content', 'ethics');
                             
+                        } elseif( is_page(44)) {
+                            
+                            get_template_part('content', 'meetings');
+                            
+                        } elseif( is_page(52) {
+                            
+                            get_template_part('content', 'people');
+                            
                         } else {
                             
                             get_template_part('content', 'full');
