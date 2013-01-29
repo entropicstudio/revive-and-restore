@@ -1,6 +1,6 @@
 <?php
 /**
- * content template for specific meetings page
+ * content template for meetings page
  */
 ?>
 

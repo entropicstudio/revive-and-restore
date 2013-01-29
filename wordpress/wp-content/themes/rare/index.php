@@ -30,35 +30,22 @@ get_header(); ?>
 
                         </div>
                         
-                    <?php } elseif( get_field('use_2_column') ) { ?>
-                        
-                        <div class="span-9 prepend-1 append-2">
-                
-                            <?php get_template_part('content', 'full'); ?>
-                            
-                        </div>
-                        
-                        <div class="span-9 last append-1">
-                
-                            <?php the_field('column_2'); ?>
-                            
-                        </div>
-                        
-                        
                         
                     <?php } else { ?>
                         
+                        
+                        
                         <?
 
-                        if( is_page(11)) {
+                        if ( is_page(11) ) {
                             
                             get_template_part('content', 'ethics');
                             
-                        } elseif( is_page(44)) {
+                        } elseif ( is_page(44) ) {
                             
                             get_template_part('content', 'meetings');
                             
-                        } elseif( is_page(52) {
+                        } elseif ( is_page(52) ) {
                             
                             get_template_part('content', 'people');
                             
@@ -70,8 +57,12 @@ get_header(); ?>
 
                         ?>
                         
+                        
+                        
                     <?php } ?>
                 
+                        
+                        
                 <?php endwhile; ?>
 
             
