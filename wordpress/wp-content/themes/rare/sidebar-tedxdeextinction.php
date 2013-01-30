@@ -10,9 +10,10 @@
         <img src="<?php echo get_template_directory_uri(); ?>/ui/tedx-meeting.jpg" />
     </div>
     
-    <h3>TEDxDeExtinction</h3>
-    <ul>
-        <?php wp_list_pages('child_of=167&title_li=&sort_column=post_title'); ?>
-    </ul>
+    <?php 
+    if ( dynamic_sidebar('tedx-sidebar') ) : 
+        else : 
+        ?>
+    <?php endif; ?>
 
 </div>
