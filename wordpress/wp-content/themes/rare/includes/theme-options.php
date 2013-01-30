@@ -23,10 +23,23 @@ add_action('init', 'register_my_menus');
 if ( function_exists('register_sidebar') ) {
     
     register_sidebar(array(
+        'name'          => __( 'Blog Sidebar' ),
+        'id'            => 'blog-sidebar',
+        'description' => __( 'Widgets in this area will be shown on blog pages.' ),
         'before_widget' => '<div class="section_box">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ));
+    
+    register_sidebar(array(
+        'name'          => __( 'TEDx Sidebar' ),
+        'id'            => 'tedx-sidebar',
+        'description' => __( 'Widgets in this area will be shown on TEDx pages.' ),
+        'before_widget' => '<div class="section_box">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
     ));
     
 }
