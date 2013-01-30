@@ -53,6 +53,14 @@ get_header(); ?>
                             
                             get_template_part('content', 'people');
                             
+                        } elseif (is_page(167) ) { // TEDxDeExtinction homepage
+                            
+                            get_template_part('content', 'tedxdeextinction');
+                            
+                        } elseif (is_ancestor(167) ) { // TEDxDeExtinction children/ancestors page
+                            
+                            get_template_part('content', 'tedxchild');
+                            
                         } else { // standard layout
                             
                             get_template_part('content', 'full');
