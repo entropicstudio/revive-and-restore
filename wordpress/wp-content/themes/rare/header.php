@@ -4,6 +4,8 @@
  *
  * Contains head, page header, main navigation and main photo
  */
+$rare_general_options = get_option ( 'rare_general_options' );
+
 ?><!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -106,15 +108,15 @@
 
         <!-- Main Photo -->
         <div class="container longphoto_block" id="longphoto">
-                
+            
+            <?php if(is_front_page()){ // only show longphoto expand/contract on homepage?>
             <div id="longphoto-description">
-                <p>"Gone" - Isabella Kirkland's 2004 painting of 63 species that have gone extinct since the 1700s. In 
-                the original painting all the species are depicted life size.</p>
+                <?php echo $rare_general_options['painting_text']; ?>
             </div>
             <div id="longphoto-toggle">
                 <a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>
             </div>
-            
+            <?php } ?>
             
             <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
             
