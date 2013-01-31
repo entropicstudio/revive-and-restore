@@ -57,7 +57,7 @@ get_header(); ?>
                             
                             get_template_part('content', 'tedxdeextinction');
                             
-                        } elseif (is_ancestor(167) ) { // TEDxDeExtinction children/ancestors page
+                        } elseif (is_ancestor(167) OR in_category(7) ) { // TEDxDeExtinction children/ancestors or category pages
                             
                             get_template_part('content', 'tedxchild');
                             

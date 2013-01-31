@@ -400,9 +400,28 @@ body.page-id-40 .cs-column.first{
 
 
 /* TEDxDeExtinction */
-.tedx-sidebar{
-    margin-top: -40px;
+body.parent-pageid-167 .body_block, body.page-id-167 .body_block, body.tedxdeextinction .body_block {
+    background: #fff;
+}
+body.tedxdeextinction .body_block h1{
+    font-size: 32px;
+}
+body.parent-pageid-167 .body_block a:hover, body.page-id-167 .body_block a:hover{
+    color: #ff2b06;
+    text-decoration: underline;
+}
+hr.post-list{
+    margin-bottom: 4px;;
+}
+.tedx-sidebar ul li{
+    margin-bottom: 2px;
 }
 .tedx-date, .tedx-location{
     font: normal 12px Helvetica, Arial, sans-serif;
+}
+.entry-header{
+    margin-bottom: 10px;
+}
+.entry-header h2{
+    margin: 0;
 }

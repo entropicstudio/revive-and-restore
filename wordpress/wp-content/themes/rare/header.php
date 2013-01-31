@@ -61,7 +61,7 @@ $rare_general_options = get_option ( 'rare_general_options' );
 
 
     </head>
-
+    
 
     <body <?php body_class(); ?>>
 
@@ -141,7 +141,9 @@ $rare_general_options = get_option ( 'rare_general_options' );
             
                 <h1 class="prepend-1 append-1"><?php the_field('home-page-title'); ?></h1>
                 
-            <?php } else { ?>
+            <?php } elseif ( is_page(167) OR is_ancestor(167) OR in_category(7) ){ 
+                
+            } else { ?>
             
                 <h1 class="prepend-1 append-1"><?php wp_title(''); ?></h1>
                 
