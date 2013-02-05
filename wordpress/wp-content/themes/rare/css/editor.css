@@ -131,3 +131,6 @@ dd {
 .user_menu_block div {
     display: none;
 }
+body#tinymce.wp-editor .clear{
+    clear: both!important;
+}

@@ -7,10 +7,14 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( 'Permalink to %s', the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-                <span class="entry-date">Published On: <?php the_date('F d, Y'); ?>
-                    |
-                    <a href="<?php comments_link(); ?>"><?php comments_number( 'No Comments', 'One Comment', '% Comments' ); ?></a>
-                </span>
+        <div class="social-media-box">
+            social media icons
+        </div>
+        <div class="entry-info-box">
+            <span class="entry-date">Published: <strong><?php the_date('F d, Y'); ?></strong></span>
+            <span class="entry-comments"><a href="<?php comments_link(); ?>"><?php comments_number( 'No Comments', 'One Comment', '% Comments' ); ?></a></span>
+        </div>
+        <br class="clear" />
 	</header><!-- .entry-header -->
 
         
