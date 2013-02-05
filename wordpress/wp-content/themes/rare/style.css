@@ -217,6 +217,13 @@ img.alignleft{
 body.page-id-11 .page-top-link a, body.page-id-44 .page-top-link a, body.page-id-40 .page-top-link a{
     color:  #fff ;
 }
+h2.section-heading{
+    font: bold 16px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #acaba3;
+}
+
+
 /* ethics page layout, wordpress page id = 11 */
 
 body.page-id-11 .body_block{
@@ -387,11 +394,7 @@ body.page-id-40 .cs-column.first{
 
 
 /* FAQ & Reading Layout */
-body.page-id-55 .body_block h2.section-heading{
-    font: bold 16px Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    color: #acaba3;
-}
+
 body.page-id-55 .body_block h3{
     font: normal 23px Helvetica, Arial, sans-serif;
     margin-bottom: 10px;
@@ -426,6 +429,24 @@ body.page-id-55 .body_block h3{
     height: 263px;
     overflow: hidden;
 }
+
+
+
+/* staff & advisors page layout, page id 52 */
+body.page-id-52 .body_block{
+    font-size: 14px;
+}
+body.page-id-52 #advisors_column ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin: 0 0 7px -5px;
+}
+body.page-id-52 #staff_column img{
+    border: 7px solid #d9d8d1;
+}
+
+
 
 
 /* TEDxDeExtinction */
