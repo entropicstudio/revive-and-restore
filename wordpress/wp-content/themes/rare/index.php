@@ -53,6 +53,10 @@ get_header(); ?>
                             
                             get_template_part('content', 'people');
                             
+                        } elseif (is_page(55) ) { // FAQ & Reading page
+                            
+                            get_template_part('content', 'faqreading');
+                            
                         } elseif (is_page(167) ) { // TEDxDeExtinction homepage
                             
                             get_template_part('content', 'tedxdeextinction');

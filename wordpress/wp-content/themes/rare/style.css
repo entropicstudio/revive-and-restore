@@ -47,6 +47,7 @@ img.alignleft{
     overflow: hidden; /* hides box-shadow from rare navigation */
     height: 311px;
     display: relative;
+    border-top: 1px solid #134141;
 }
 #longphoto-toggle{
     position: absolute;
@@ -381,6 +382,34 @@ body.page-id-40 .cs-column.first{
 }
 #candidate-criteria-box .criteria-column h3{
     font: 700 15px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+
+/* FAQ & Reading Layout */
+body.page-id-55 .body_block h2.section-heading{
+    font: bold 16px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #acaba3;
+}
+body.page-id-55 .body_block h3{
+    font: normal 23px Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+#faq-column p{
+    padding-left: 15px;
+}
+#reading-column h4{
+    background: #f1f1ec;
+    color: #605d52;
+    font: bold 18px Helvetica, Arial, sans-serif;
+    padding: 2px 5px;
+}
+#reading-column ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin: 0 0 7px -5px;
 }
 
 /* homepage layout */
