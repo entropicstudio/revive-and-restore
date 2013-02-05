@@ -118,7 +118,17 @@ $rare_general_options = get_option ( 'rare_general_options' );
             </div>
             <?php } ?>
             
-            <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
+            <?php // show tedx image for tedx pages
+            
+            if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
+            
+                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" /></div>
+            
+            <?php } else { ?>
+            
+                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
+                
+            <?php } ?>
             
             <!-- revive and restore menu -->
             <div id="rare-nav-container">
