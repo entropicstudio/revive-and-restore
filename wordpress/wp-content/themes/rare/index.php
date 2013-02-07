@@ -31,6 +31,10 @@ get_header(); ?>
                         </div>
                         
                         
+                    <?php } elseif( get_field('enable_2_column_layout') ){ ?>
+                        
+                        <?php get_template_part('content', '2column'); ?>
+                        
                     <?php } else { ?>
                         
                         

@@ -520,13 +520,19 @@ body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2{
     border-bottom-left-radius: 5px;
     color: #fff;
     margin-right: -40px;
-    padding: 25px;
+    padding: 25px 0 25px 60px
 }
 #tedx-infobox strong{
     color: #ff2b06;
 }
 .tedx-infolocation{
     margin-top: 15px;
+}
+#tedx-infobox .ss-icon{
+    margin-left: -40px;
+    display: block;
+    float: left;
+    font-size: 25px;
 }
 
 
@@ -542,6 +548,7 @@ body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2{
 .social-media-box{
     float: left;
     width: 300px;
+    margin-top: 10px;
 }
 .entry-info-box{
     float: right;
