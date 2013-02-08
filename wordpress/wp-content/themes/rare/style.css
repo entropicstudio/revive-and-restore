@@ -13,9 +13,14 @@ Version: 1.0
 */
 
 .page-top-link{
-    margin-top: 15px;
+    position: absolute;
+    bottom: 0px;
     display: block!important;
     text-align: center!important;
+    width: 100%;
+}
+.page-top-link a{
+    color: #acb3af;
 }
 img.alignright{
     float: right;
@@ -24,6 +29,18 @@ img.alignright{
 img.alignleft{
     float: left;
     margin: 5px 35px 35px 0;
+}
+
+/* sidebar */
+.section_box{
+    margin-top: 30px;
+    clear: both;
+}
+.section_box h3{
+    margin-bottom: 8px;
+}
+.section_box:first-child{
+    margin-top: 0;
 }
 
 
@@ -42,6 +59,11 @@ img.alignleft{
     overflow: hidden; /* hides box-shadow from rare navigation */
     height: 311px;
     display: relative;
+    border-top: 1px solid #134141;
+}
+/* change longphoto border color on all tedx pages */
+body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #longphoto{
+    border-top: 1px solid #631b17;
 }
 #longphoto-toggle{
     position: absolute;
@@ -174,6 +196,9 @@ img.alignleft{
 
 .body_block {
     font-size: 1.12em;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: #e8e7e0;
 }
 .body_block ul li {
     margin-bottom: 4px;
@@ -201,6 +226,213 @@ img.alignleft{
 
 
 
+
+
+/* custom page layouts */
+
+body.page-id-11 .page-top-link a, body.page-id-44 .page-top-link a, body.page-id-40 .page-top-link a{
+    color:  #fff ;
+}
+h2.section-heading{
+    font: bold 16px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #acaba3;
+}
+
+
+/* ethics page layout, wordpress page id = 11 */
+
+body.page-id-11 .body_block{
+    background: #fff url(ui/ethics_bg.jpg) bottom no-repeat;
+    padding-bottom: 500px;
+}
+
+.ethics-content-nav {
+    width: 100%;
+    text-align: center;
+    margin-left: 0!important;
+}
+.ethics-content-nav li{
+    display: inline-block;
+    margin: 0;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    font: 600 26px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+
+}
+.ethics-content-nav li:last-child{
+    padding-right: 0;
+}
+.ethics-content-nav li a{
+    color: #504f4a;
+}
+.ethics-content-nav li a:hover, .ethics-content-nav li.ui-tabs-active a{
+    color: #5dd2d5;
+}
+.ethics-content-nav li.ui-tabs-active{
+    background: url(ui/ethics-section-arrow.png) bottom left no-repeat;
+}
+.ethics-tabs{
+    margin: -45px -40px 0 -40px;
+    padding: 50px 40px 0;
+    background: #e8e7e0;
+}
+.ethics-tabs ul{
+    width: 42%;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+.ethics-tabs ul:first-child{
+    margin-right: 8%;
+}
+.ethics-tabs ul:last-child{
+    margin-right: 0;
+}
+.ethics-tabs ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* meetings page layout, page id 44 */
+body.page-id-44 .body_block{
+    background: #e8e7e0 url(ui/meetings_bg.jpg) bottom no-repeat;
+    padding-bottom: 400px;
+}
+body.page-id-44 .tedx-box{
+    background: #fff;
+    padding: 20px 40px 0;
+}
+body.page-id-44 .tedx-box em{
+    color: #2b7ebe;
+    font: 600 23px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+}
+#meetings-boxes{
+    float: left;
+    width: 440px;
+    margin: 40px 0 0 40px;
+}
+#meetings-boxes h2{
+    color: #2b7ebe;
+    font: 600 23px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+#meetings-content-box{
+    width: 320px;
+    float: right;
+    background: url(ui/transparent_bg.png) repeat;
+    border-radius: 10px;
+    margin: 40px 40px 0 0;
+    padding: 20px 5px 10px;
+}
+#meetings-content-box ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+}
+
+
+
+/* candidate species page layout, page id 40 */
+body.page-id-40 .body_block{
+    background: #e8e7e0 url(ui/candidate-species_bg.jpg) bottom no-repeat;
+    padding-bottom: 60px;
+}
+body.page-id-40 .cs-column{
+    width: 190px;
+    padding-right: 10px;
+    float: left;
+    position: relative;
+    z-index: 1000;
+}
+body.page-id-40 .cs-column.first{
+    margin-left: 40px;
+}
+#candidate-edge-box{
+    padding: 30px 350px 30px 30px;
+    margin-right: 100px;
+    margin-top: 10px;
+    background: #fff;
+    border-top: 1px solid #cfcec8;
+    border-bottom: 1px solid #cfcec8;
+    position: relative;
+}
+#candidate-edge-box p{
+    margin: 0;
+    font-size: 14px;
+}
+#cuban-macaw{
+    background: url(ui/species-cuban-macaw.png) no-repeat;
+    width: 393px;
+    height: 477px;
+    position: absolute;
+    right: -70px;
+    top: -150px;
+    z-index: 100;
+}
+#candidate-criteria-box{
+    margin: 40px 40px;
+}
+#candidate-criteria-box .criteria-column.first{
+    width: 50%;
+    padding-right: 10%;
+    float: left;
+}
+#candidate-criteria-box .criteria-column.last{
+    width: 40%;
+    padding-top: 40px;
+    float: left;
+}
+#candidate-criteria-box .criteria-column ul{
+    margin-bottom: 80px;
+}
+#candidate-criteria-box .criteria-column ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin: 0 0 7px 0;
+}
+#candidate-criteria-box h2{
+    font:normal 3em 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
+    color: #94907e;
+}
+#candidate-criteria-box .criteria-column h3{
+    font: 700 15px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+
+
+/* FAQ & Reading Layout, page id 55 */
+
+body.page-id-55 .body_block h3{
+    font: normal 23px Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+#faq-column p{
+    padding-left: 15px;
+}
+#reading-column h4{
+    background: #f1f1ec;
+    color: #605d52;
+    font: bold 18px Helvetica, Arial, sans-serif;
+    padding: 2px 5px;
+}
+#reading-column ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin: 0 0 7px -5px;
+}
+
+/* homepage layout */
+
 .tedx_wrapper {
     background: white;
     margin: 0 -40px 20px -40px;
@@ -212,4 +444,137 @@ img.alignleft{
     padding: 20px 40px;
     height: 263px;
     overflow: hidden;
+}
+
+
+
+/* staff & advisors page layout, page id 52 */
+body.page-id-52 .body_block{
+    font-size: 14px;
+}
+body.page-id-52 #advisors_column ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 14px;
+    margin: 0 0 7px -5px;
+}
+body.page-id-52 #staff_column img{
+    border: 7px solid #d9d8d1;
+}
+
+
+
+
+/* TEDxDeExtinction */
+body.parent-pageid-167 .body_block, body.page-id-167 .body_block, body.tedxdeextinction .body_block {
+    background: #fff;
+}
+body.tedxdeextinction .body_block h1{
+    font-size: 32px;
+}
+body.parent-pageid-167 .body_block a, body.page-id-167 .body_block a{
+    color: #ff2b06;
+}
+body.parent-pageid-167 .body_block a:hover, body.page-id-167 .body_block a:hover{
+    text-decoration: underline;
+}
+hr.post-list{
+    margin-bottom: 4px;;
+}
+.tedx-date, .tedx-location{
+    font: normal 12px Helvetica, Arial, sans-serif;
+}
+body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2{
+    margin: 0;
+    font: 700 25px "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #cecece;
+}
+
+/* tedx nav menu */
+#menu-tedxdeextinction-menu{
+    border-top: 1px solid #8d8d8d;
+    margin: 0;
+}
+#menu-tedxdeextinction-menu li{
+    list-style: none;
+    width: 107px;
+    padding: 1px 0 1px 4px;
+    margin: 0 1px;
+    float: left;
+    border-bottom: 1px solid #ccc;
+}
+#menu-tedxdeextinction-menu li a{
+    font-size: 12px;
+    color: #444;
+}
+#menu-tedxdeextinction-menu li a:hover{
+    color: #ff2b06;
+}
+
+
+/* tedx infobox */
+#tedx-infobox{
+    background: #1a1a1a;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    margin-right: -40px;
+    padding: 25px 0 25px 60px
+}
+#tedx-infobox strong{
+    color: #ff2b06;
+}
+.tedx-infolocation{
+    margin-top: 15px;
+}
+#tedx-infobox .ss-icon{
+    margin-left: -40px;
+    display: block;
+    float: left;
+    font-size: 25px;
+}
+
+
+
+
+
+
+/* wordpress post entry */
+
+.entry-header{
+    margin-bottom: 10px;
+}
+.social-media-box{
+    float: left;
+    width: 300px;
+    margin-top: 10px;
+}
+.entry-info-box{
+    float: right;
+    width: 190px;
+}
+.entry-date, .entry-comments{
+    display: block;
+    border-bottom: 1px solid #cecece;
+    text-align: right;
+    padding: 1px;
+}
+
+
+
+
+
+/* twitter widget in sidebar */
+a.twitter_title_link{
+    font: bold 15px Helvetica, Arial, sans-serif;
+    color: #222;
+}
+ul.really_simple_twitter_widget{
+    margin: 0;
+}
+ul.really_simple_twitter_widget li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 11px;
 }

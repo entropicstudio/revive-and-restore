@@ -4,6 +4,8 @@
  *
  * Contains head, page header, main navigation and main photo
  */
+$rare_general_options = get_option ( 'rare_general_options' );
+
 ?><!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -46,6 +48,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" />
 
+        
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions.  ?>
         <!--[if lt IE 9]>
         <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
@@ -58,7 +61,7 @@
 
 
     </head>
-
+    
 
     <body <?php body_class(); ?>>
 
@@ -105,17 +108,27 @@
 
         <!-- Main Photo -->
         <div class="container longphoto_block" id="longphoto">
-                
+            
+            <?php if(is_front_page()){ // only show longphoto expand/contract on homepage?>
             <div id="longphoto-description">
-                <p>"Gone" - Isabella Kirkland's 2004 painting of 63 species that have gone extinct since the 1700s. In 
-                the original painting all the species are depicted life size.</p>
+                <?php echo $rare_general_options['painting_text']; ?>
             </div>
             <div id="longphoto-toggle">
                 <a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>
             </div>
+            <?php } ?>
             
+            <?php // show tedx image for tedx pages
             
-            <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
+            if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
+            
+                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" /></div>
+            
+            <?php } else { ?>
+            
+                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
+                
+            <?php } ?>
             
             <!-- revive and restore menu -->
             <div id="rare-nav-container">
@@ -138,7 +151,9 @@
             
                 <h1 class="prepend-1 append-1"><?php the_field('home-page-title'); ?></h1>
                 
-            <?php } else { ?>
+            <?php } elseif ( is_page(167) OR is_ancestor(167) OR in_category(7) ){ 
+                
+            } else { ?>
             
                 <h1 class="prepend-1 append-1"><?php wp_title(''); ?></h1>
                 

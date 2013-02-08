@@ -30,32 +30,59 @@ get_header(); ?>
 
                         </div>
                         
-                    <?php } elseif( get_field('use_2_column') ) { ?>
                         
-                        <div class="span-9 prepend-1 append-2">
-                
-                            <?php get_template_part('content', 'full'); ?>
-                            
-                        </div>
+                    <?php } elseif( get_field('enable_2_column_layout') ){ ?>
                         
-                        <div class="span-9 last append-1">
-                
-                            <?php the_field('column_2'); ?>
-                            
-                        </div>
-                        
-                        
+                        <?php get_template_part('content', '2column'); ?>
                         
                     <?php } else { ?>
                         
-                        <div class="span-20 prepend-1 append-1">
-                            
-                            <?php get_template_part('content', 'full'); ?>
                         
-                        </div>
-                
+                        
+                        <?
+
+                        if ( is_page(11) ) { // ethics page
+                            
+                            get_template_part('content', 'ethics');
+                            
+                        } elseif ( is_page(44) ) { // meetings page
+                            
+                            get_template_part('content', 'meetings');
+                            
+                        } elseif ( is_page(40) ) { // candidate species page
+                            
+                            get_template_part('content', 'candidate');
+                            
+                        } elseif ( is_page(52) ) { // people & advisors page
+                            
+                            get_template_part('content', 'people');
+                            
+                        } elseif (is_page(55) ) { // FAQ & Reading page
+                            
+                            get_template_part('content', 'faqreading');
+                            
+                        } elseif (is_page(167) ) { // TEDxDeExtinction homepage
+                            
+                            get_template_part('content', 'tedxdeextinction');
+                            
+                        } elseif (is_ancestor(167) OR in_category(7) ) { // TEDxDeExtinction children/ancestors or category pages
+                            
+                            get_template_part('content', 'tedxchild');
+                            
+                        } else { // standard layout
+                            
+                            get_template_part('content', 'full');
+                        }
+
+
+                        ?>
+                        
+                        
+                        
                     <?php } ?>
                 
+                        
+                        
                 <?php endwhile; ?>
 
             
