@@ -4,7 +4,7 @@
  *
  * Contains head, page header, main navigation and main photo
  */
-$rare_general_options = get_option ( 'rare_general_options' );
+$rare_theme_options = get_option ( 'rare_theme_options' );
 
 ?><!DOCTYPE html>
 <html lang="en-US">
@@ -111,7 +111,7 @@ $rare_general_options = get_option ( 'rare_general_options' );
             
             <?php if(is_front_page()){ // only show longphoto expand/contract on homepage?>
             <div id="longphoto-description">
-                <?php echo $rare_general_options['painting_text']; ?>
+                <?php echo $rare_theme_options['painting_text']; ?>
             </div>
             <div id="longphoto-toggle">
                 <a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>

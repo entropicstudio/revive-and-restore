@@ -63,7 +63,7 @@ add_action('admin_menu', 'rare_theme_menu');
 
 // options page
 function rare_theme_display() { ?>
-
+    test
     <!-- default WordPress 'wrap' container -->  
     <div class="wrap">  
   
@@ -76,8 +76,8 @@ function rare_theme_display() { ?>
   
         <!-- Create the form that will be used to render our options -->  
         <form method="post" action="options.php">  
-            <?php settings_fields( 'rare_general_options' ); ?>  
-            <?php do_settings_sections( 'rare_general_options' ); ?>             
+            <?php settings_fields( 'rare_theme_options' ); ?>  
+            <?php do_settings_sections( 'rare_theme_options' ); ?>             
             <?php submit_button(); ?>  
         </form>  
   
@@ -90,16 +90,16 @@ function rare_theme_display() { ?>
  
 function rare_initialize_theme_options() {
     
-    if( false == get_option( 'rare_general_options' ) ) {    
-        add_option( 'rare_general_options' );  
+    if( false == get_option( 'rare_theme_options' ) ) {    
+        add_option( 'rare_theme_options' );  
     } 
     
 	// create a options section 
 	add_settings_section(
-		'rare_general_settings_section',	// Section ID
-		'General Options',					// Section Title
-		'rare_general_options_callback',	// Section Description callback
-		'rare_general_options'              // Page to add section
+		'rare_theme_settings_section',	// Section ID
+		'Theme Options',					// Section Title
+		'rare_theme_options_callback',	// Section Description callback
+		'rare_theme_options'              // Page to add section
 	);
 	
 	// Fields in this section.
@@ -107,15 +107,15 @@ function rare_initialize_theme_options() {
 		'painting_text',						// Field ID
 		'Gone Painting Text',					// Field Label
 		'rare_painting_text_callback',          // Field options callback
-		'rare_general_options',                 // Page to add field
-		'general_settings_section'
+		'rare_theme_options',                 // Page to add field
+		'rare_theme_settings_section'
 	);
 
 	
 	// Register all fields with WordPress
 	register_setting(
-		'rare_general_options',
-		'rare_general_options'
+		'rare_theme_options',
+		'rare_theme_options'
 	);
 
 	
@@ -125,7 +125,7 @@ add_action('admin_init', 'rare_initialize_theme_options');
 
 // theme section callbacks
 
-function rare_general_options_callback() {
+function rare_theme_options_callback() {
 	echo '<p>General Options for the Revive and Restore theme.</p>';
 } 
 
@@ -134,9 +134,9 @@ function rare_general_options_callback() {
 function rare_painting_text_callback($args) {
 	
     // load options
-    $options = get_option('rare_general_options');  
+    $options = get_option('rare_theme_options');  
     
-	$html = '<textarea rows="4" cols="80" id="painting_text" name="rare_general_options[painting_text]">' . $options['painting_text'] . '</textarea>'; 
+	$html = '<textarea rows="4" cols="80" id="painting_text" name="rare_theme_options[painting_text]">' . $options['painting_text'] . '</textarea>'; 
 	$html .= '<label for="painting_text"> '  . $args[0] . '</label>'; // first argument as label
 	
 	echo $html;

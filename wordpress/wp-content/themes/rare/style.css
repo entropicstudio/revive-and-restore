@@ -89,7 +89,10 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     color: #fff;
     display: none;
 }
-
+#longphoto-description a{
+    color: #ecff07;
+    text-decoration: underline;
+}
 
 
 /* longnow global menu */
