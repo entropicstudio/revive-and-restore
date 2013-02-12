@@ -487,12 +487,29 @@ hr.post-list{
 .tedx-date, .tedx-location{
     font: normal 12px Helvetica, Arial, sans-serif;
 }
-body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2{
+body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2, body.parent-pageid-167 h1, body.tedxdeextinction h1{
     margin: 0;
     font: 700 25px "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     border-bottom: 1px solid #cecece;
+    color: #ff2b06;
 }
+
+/* speakers page, id = 349*/
+.page-id-349 .entry-content h2{
+    margin-bottom: 0;
+    letter-spacing: -1px;
+    font: 400 24px "Open Sans", Helvetica, Arial, sans-serif;
+}
+.page-id-349 .entry-content h2 strong{
+    font-weight: 700;
+}
+.page-id-349 .entry-content img{
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+
 
 /* tedx nav menu */
 #menu-tedxdeextinction-menu{
@@ -552,6 +569,22 @@ body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2{
     float: left;
     width: 300px;
     margin-top: 10px;
+}
+.social-media-box a.ss-icon{
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 20px;
+    color: #999!important;
+}
+.social-media-box a.ss-icon:hover{
+    text-decoration: none!important;
+    color: #555!important;
+}
+.social-media-box .share-text{
+    display: inline-block;
+    line-height: 25px;
+    vertical-align: top;
+    font-size: 11px;
 }
 .entry-info-box{
     float: right;
