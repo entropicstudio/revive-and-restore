@@ -7,9 +7,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( 'Permalink to %s', the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+        
         <div class="social-media-box">
-            <span class='st_facebook_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' displayText='facebook'></span><span class='st_twitter_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' displayText='twitter'></span><span class='st_email_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' displayText='email'></span>
+            <span class="share-text">Share this page:</span>
+            <script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a rel="nofollow" href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?> ?>" onclick="return fbs_click()" target="_blank" class="ss-icon ss-facebook ss-social-icon"></a>
+            <a class="ss-icon ss-social-icon ss-twitter" href="https://twitter.com/share?url=<?php the_permalink(); ?>" target="_blank"></a>           
         </div>
+        
         <div class="entry-info-box">
             <span class="entry-date">Published: <strong><?php the_date('F d, Y'); ?></strong></span>
             <span class="entry-comments"><a href="<?php comments_link(); ?>"><?php comments_number( 'No Comments', 'One Comment', '% Comments' ); ?></a></span>
