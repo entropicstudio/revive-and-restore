@@ -22,7 +22,7 @@ add_action('admin_menu', 'page_categories_meta_box');
 function is_ancestor($post_id) {
     global $wp_query;
     $ancestors = $wp_query->post->ancestors;
-    if ( in_array($post_id, $ancestors) ) {
+    if ( @in_array($post_id, $ancestors) ) {
         return true;
     } else {
         return false;
