@@ -6,8 +6,16 @@
 
 <div class="span-13 prepend-1 append-1">
     &nbsp;
-    <?php query_posts('category_id=7'); ?>
- 
+    <?php // query_posts('category_id=7'); ?>
+    
+    <?php
+        $args = array(
+          'post_type' => 'page',
+          'post__in' => array(355, 167)
+          );
+        query_posts($args);
+    ?>
+    
     <?php while (have_posts()) : the_post(); ?>
         
         <?php get_template_part('content', 'list'); ?>
