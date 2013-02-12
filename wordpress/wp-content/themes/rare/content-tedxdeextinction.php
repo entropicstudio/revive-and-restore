@@ -11,7 +11,7 @@
     <?php
         $args = array(
           'post_type' => 'page',
-          'post__in' => array(355, 167)
+          'post__in' => array(355, 340)
           );
         query_posts($args);
     ?>
