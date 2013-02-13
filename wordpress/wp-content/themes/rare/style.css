@@ -644,6 +644,10 @@ a.tedx-ticket-button:active {
 .entry-header{
     margin-bottom: 10px;
 }
+.entry-title{
+    margin: 0;
+    border-bottom: 1px solid #cecece;
+}
 .social-media-box{
     float: left;
     width: 300px;
