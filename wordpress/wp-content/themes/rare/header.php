@@ -132,13 +132,26 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <!-- Main Photo -->
         <div class="container longphoto_block" id="longphoto">
             
-            <?php if(is_front_page()){ // only show longphoto expand/contract on homepage?>
-            <div id="longphoto-description">
-                <?php echo $rare_theme_options['painting_text']; ?>
-            </div>
-            <div id="longphoto-toggle">
-                <a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>
-            </div>
+            <?php if(is_front_page()){ // only show longphoto expand/contract on homepage ?>
+            
+                <div id="longphoto-mission-premise">
+
+                    <?php echo $rare_theme_options['mission_statement']; ?>
+
+                    <div id="premise">
+                        <?php echo $rare_theme_options['premise']; ?>
+                    </div>
+
+                </div>
+
+                <div id="longphoto-description">
+                    <?php echo $rare_theme_options['painting_text']; ?>
+                </div>
+
+                <div id="longphoto-toggle">
+                    <a href=""><i class="ss-icon">&#xF500;</i> Click to Close Full Painting <i class="ss-icon">&#xF500;</i></a>
+                </div>
+            
             <?php } ?>
             
             <?php // show tedx image for tedx pages

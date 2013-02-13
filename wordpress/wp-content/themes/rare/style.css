@@ -80,14 +80,48 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 #longphoto-toggle a:hover, #longmenu-toggle:hover{
     color: #fff;
 }
+#longphoto-mission-premise{
+    position: absolute;
+    left: 40px;
+    top: 140px;
+    width: 240px;
+    line-height: normal;
+    color: #fff;
+    font: 600 13px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#longphoto-mission-premise ul{
+    margin: 10px 0 0 10px;
+}
+#longphoto-mission-premise ul li{
+    font-size: 12px;
+    color: #8bc2ba;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    line-height: 16px;
+}
+#longphoto #premise{
+    font-size: 12px;
+    margin-top: 40px;
+    width: 215px;
+    line-height: 18px;
+}
+#longphoto #premise h4 {
+    font: bold italic 18px serif;
+    color: #fff;
+    margin: 0;
+}
+#longphoto-mission-premise hr{
+    background-color: #11384d;
+    margin: 5px 0;
+}
 #longphoto-description{
     position: absolute;
     bottom: 120px;
-    left: 20px;
-    width: 230px;
+    left: 40px;
+    width: 210px;
     line-height: 20px;
     color: #fff;
-    display: none;
+    font: 600 12px "Open Sans", Helvetica, Arial, sans-serif;
 }
 #longphoto-description a{
     color: #ecff07;

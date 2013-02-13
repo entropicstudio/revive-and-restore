@@ -96,21 +96,39 @@ function rare_initialize_theme_options() {
     
 	// create a options section 
 	add_settings_section(
-		'rare_theme_settings_section',	// Section ID
+		'rare_theme_settings_section',      // Section ID
 		'Theme Options',					// Section Title
-		'rare_theme_options_callback',	// Section Description callback
-		'rare_theme_options'              // Page to add section
+		'rare_theme_options_callback',      // Section Description callback
+		'rare_theme_options'                // Page to add section
 	);
-	
+
+    
 	// Fields in this section.
+    // Gone painting text
 	add_settings_field(	
 		'painting_text',						// Field ID
 		'Gone Painting Text',					// Field Label
 		'rare_painting_text_callback',          // Field options callback
-		'rare_theme_options',                 // Page to add field
+		'rare_theme_options',                   // Page to add field
 		'rare_theme_settings_section'
 	);
-
+    // mission statement
+    add_settings_field(	
+		'mission_statement',						
+		'RARE Mission Statement',					
+		'rare_mission_statement_callback',          
+		'rare_theme_options',                       
+		'rare_theme_settings_section'
+	);
+    // premise
+    add_settings_field(	
+		'premise',						
+		'RARE Premise',					
+		'rare_premise_callback',          
+		'rare_theme_options',                       
+		'rare_theme_settings_section'
+	);
+    
 	
 	// Register all fields with WordPress
 	register_setting(
@@ -129,15 +147,43 @@ function rare_theme_options_callback() {
 	echo '<p>General Options for the Revive and Restore theme.</p>';
 } 
 
+
+
 // field callbacks
 
+// painting text
 function rare_painting_text_callback($args) {
 	
     // load options
     $options = get_option('rare_theme_options');  
+    $html = wp_editor( $options['painting_text'], 'painting_text', $settings = array('textarea_name' => 'rare_theme_options[painting_text]', 'textarea_rows' => 7) );
+	$html .= '<label for="painting_text"> '  . $args[0] . '</label>';
+	
+	echo $html;
+	
+}
+
+// mission statement
+function rare_mission_statement_callback($args) {
+	
+    // load options
+    $options = get_option('rare_theme_options');  
+    $html = wp_editor( $options['mission_statement'], 'mission_statement', $settings = array('textarea_name' => 'rare_theme_options[mission_statement]', 'textarea_rows' => 7) );
+	$html .= '<label for="mission_statement"> '  . $args[0] . '</label>'; 
+	
+	echo $html;
+	
+}
+
+// premise
+function rare_premise_callback($args) {
+	
+    // load options
+    $options = get_option('rare_theme_options');  
     
-	$html = '<textarea rows="4" cols="80" id="painting_text" name="rare_theme_options[painting_text]">' . $options['painting_text'] . '</textarea>'; 
-	$html .= '<label for="painting_text"> '  . $args[0] . '</label>'; // first argument as label
+    $html = wp_editor( $options['premise'], 'premise', $settings = array('textarea_name' => 'rare_theme_options[premise]', 'textarea_rows' => 7) );
+    
+	$html .= '<label for="premise"> '  . $args[0] . '</label>'; 
 	
 	echo $html;
 	
