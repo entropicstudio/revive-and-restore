@@ -142,11 +142,11 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
             <?php } ?>
             
             <?php // show tedx image for tedx pages
-                  // show tedx ticket button
+                  // show tedx ticket button(TEMPORARILY HIDDEN)
             
             if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
                 
-                <a class="tedx-ticket-button tedx-photo-button" href="https://events.nationalgeographic.com/events/special-events/2013/03/15/tedxdeextinction/" target="_blank">Purchase Tickets</a>
+               <?php // <a class="tedx-ticket-button tedx-photo-button" href="https://events.nationalgeographic.com/events/special-events/2013/03/15/tedxdeextinction/" target="_blank">Purchase Tickets</a> ?>
            
                 <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" /></div>
             
