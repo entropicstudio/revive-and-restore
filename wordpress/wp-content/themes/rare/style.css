@@ -558,6 +558,69 @@ body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2, body.
 
 
 
+/* TEDx Tickets Button */
+a.tedx-ticket-button {
+    text-decoration: none;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    font-size: 16px;
+    width: 180px;
+}
+
+a.tedx-ticket-button:link, a.tedx-ticket-button:visited {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    color: white;
+    text-shadow: 0 1px rgba(0,0,0,0.3);
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3));
+    background: -moz-linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3));
+    background: -o-linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3));
+    background: -ms-linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3));
+    background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3));
+    background-color: #ff2b06;
+    border: 1px solid #6A1515;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.3), inset 0 1px 0 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.3), inset 0 1px 0 0 rgba(255,255,255,0.3);
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    transition: .2s;
+}
+
+a.tedx-ticket-button:hover {
+    background: -webkit-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.32));
+    background: -moz-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.32));
+    background: -o-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.32));
+    background: -ms-linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.32));
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.32));
+    background-color: #f21300;
+    border: 1px solid #500E0D;
+    color:#fff;
+}
+
+a.tedx-ticket-button:active {
+    color: #eee;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.32),rgba(0,0,0,0.0));
+    background: -moz-linear-gradient(rgba(0,0,0,0.32),rgba(0,0,0,0.0));
+    background: -o-linear-gradient(rgba(0,0,0,0.32),rgba(0,0,0,0.0));
+    background: -ms-linear-gradient(rgba(0,0,0,0.32),rgba(0,0,0,0.0));
+    background: linear-gradient(rgba(0,0,0,0.32),rgba(0,0,0,0.0));
+    background-color: #c70000;
+    border: 1px solid #500E0D;
+    -webkit-box-shadow: inset 0 1px 4px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgba(255,255,255,0.3);
+    box-shadow: inset 0 1px 4px 0 rgba(0,0,0,0.3), 0 1px 0 0 rgba(255,255,255,0.3);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+}
+
 
 
 /* wordpress post entry */
