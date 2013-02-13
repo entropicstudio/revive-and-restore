@@ -634,6 +634,9 @@ a.tedx-ticket-button:active {
     margin-top: 20px;
     margin-left: -23px;
 }
+#tedx-infobox a.tedx-ticket-button:hover{
+    text-decoration: none;
+}
 
 /* wordpress post entry */
 
