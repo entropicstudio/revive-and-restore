@@ -63,7 +63,7 @@ add_action('admin_menu', 'rare_theme_menu');
 
 // options page
 function rare_theme_display() { ?>
-    test
+    
     <!-- default WordPress 'wrap' container -->  
     <div class="wrap">  
   
