@@ -200,7 +200,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 .body_block {
     font-size: 1.12em;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-color: #e8e7e0;
 }
 .body_block ul li {
@@ -305,7 +305,7 @@ body.page-id-11 .body_block{
 /* meetings page layout, page id 44 */
 body.page-id-44 .body_block{
     background: #e8e7e0 url(ui/meetings_bg.jpg) bottom no-repeat;
-    padding-bottom: 400px;
+    padding-bottom: 530px;
 }
 body.page-id-44 .tedx-box{
     background: #fff;
@@ -329,12 +329,12 @@ body.page-id-44 .tedx-box em{
     padding: 0;
 }
 #meetings-content-box{
-    width: 320px;
+    width: 300px;
     float: right;
     background: url(ui/transparent_bg.png) repeat;
     border-radius: 10px;
-    margin: 40px 40px 0 0;
-    padding: 20px 5px 10px;
+    margin: 40px 30px 0 0;
+    padding: 25px;
 }
 #meetings-content-box ul li{
     list-style: url(ui/list-orange-circle.png) circle;
