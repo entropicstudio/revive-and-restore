@@ -533,12 +533,16 @@ hr.post-list{
 .tedx-date, .tedx-location{
     font: normal 12px Helvetica, Arial, sans-serif;
 }
-body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2, body.parent-pageid-167 h1, body.tedxdeextinction h1{
+body.page-id-167 h2, body.tedxdeextinction .entry-header h2, body.parent-pageid-167 h1, body.tedxdeextinction h1{
     margin: 0;
     font: 700 25px "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     border-bottom: 1px solid #cecece;
     color: #ff2b06;
+}
+body.page-id-167 h2{
+    margin: 0 0 10px 0;
+    border-bottom: none;
 }
 .tedx-footer{
     color: #fff;
@@ -692,7 +696,7 @@ a.tedx-ticket-button:active {
 #tedx-infobox a.tedx-ticket-button{
     color: #fff!important;
     margin-top: 20px;
-    margin-left: -23px;
+    margin-left: -25px;
 }
 #tedx-infobox a.tedx-ticket-button:hover{
     text-decoration: none;
