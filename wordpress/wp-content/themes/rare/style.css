@@ -518,6 +518,9 @@ body.parent-pageid-167 .body_block, body.page-id-167 .body_block, body.tedxdeext
 body.tedxdeextinction .body_block h1{
     font-size: 32px;
 }
+body.parent-pageid-167 .page-top-link a, body.page-id-167 .page-top-link a{
+    text-decoration: none!important;
+}
 body.parent-pageid-167 .body_block a, body.page-id-167 .body_block a{
     color: #ff2b06;
 }
