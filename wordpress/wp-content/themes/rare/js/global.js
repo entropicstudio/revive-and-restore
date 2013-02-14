@@ -112,6 +112,7 @@ $(document).ready(function () {
                 
                 $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF500;</i> Click to Close Full Painting <i class="ss-icon">&#xF500;</i></a>');
                 $('#longphoto-description').show('slow');
+                $('#longphoto-mission-premise').show('slow');
                 rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
                 
             });
@@ -119,6 +120,8 @@ $(document).ready(function () {
         }else{ // contract
             
             $('#longphoto-description').hide('slow');
+            $('#longphoto-mission-premise').hide('slow');
+            
             $("#longphoto").animate({height:311}, 1000, "easeInOutExpo", function() {
                 
                 $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>');
