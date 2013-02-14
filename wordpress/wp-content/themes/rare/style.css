@@ -22,15 +22,20 @@ Version: 1.0
 .page-top-link a{
     color: #acb3af;
 }
-img.alignright{
+img.alignright, p.alignright{
     float: right;
     margin: 5px 0 35px 35px;
+    clear: both;
 }
-img.alignleft{
+img.alignleft, p.alignleft{
     float: left;
     margin: 5px 35px 35px 0;
+    clear: both;
 }
-
+img.aligncenter{    
+    display: block;
+    margin: 20px auto;
+}
 /* sidebar */
 .section_box{
     margin-top: 30px;
