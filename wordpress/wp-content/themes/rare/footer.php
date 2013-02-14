@@ -10,8 +10,10 @@
         <p class="larger center quiet page-top-link"><a href="#top"><i class="ss-icon" style="font-size: 1.3em; position: relative; top: 6px;">&#xF500;</i> Top of Page</a></p>
     </div>
     
-    <div class="container footer_block">
-
+    <div class="container footer_block center">
+        <?php if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
+            <span class="tedx-footer">This independent TEDx event is operated under license from TED.</span>
+        <?php } ?>
     </div>
 
     <div class="container top-20 sub_footer">
