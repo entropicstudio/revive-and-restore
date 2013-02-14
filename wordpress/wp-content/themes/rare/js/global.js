@@ -138,12 +138,8 @@ $(document).ready(function () {
     if ($('body').hasClass('home')) { // check for wordpress homepage class
         
         $("#longphoto").height(815);
-            
-        $('#longphoto-description').show('slow');
-        $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF500;</i> Click to Close Full Painting <i class="ss-icon">&#xF500;</i></a>');
         rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
             
-        
     }
     
       

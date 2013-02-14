@@ -71,3 +71,26 @@ if (!current_user_can('manage_options')) {
     add_action('admin_head', 'rare_hide_dashboard', 0);
     add_filter('admin_footer_text', 'remove_footer_admin'); 
 }
+
+// improved excerpt function
+function improved_trim_excerpt($text) {
+    global $post;
+    if ('' == $text) {
+        $text = get_the_content('');
+        $text = apply_filters('the_content', $text);
+        $text = str_replace('\]\]\>', ']]&gt;', $text);
+        $text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
+        $text = strip_tags($text, '<p><em><strong>');
+        $excerpt_length = 90;
+        $words = explode(' ', $text, $excerpt_length + 1);
+        if (count($words) > $excerpt_length) {
+            array_pop($words);
+            array_push($words, '... <a href="'. get_permalink() .'">[Read More]</a>');
+            $text = implode(' ', $words);
+            $text = force_balance_tags( $text );
+        }
+    }
+    return $text;
+}
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'improved_trim_excerpt');
