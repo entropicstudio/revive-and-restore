@@ -530,7 +530,7 @@ body.page-id-167 .entry-header h2, body.tedxdeextinction .entry-header h2, body.
 }
 
 /* speakers page, id = 349; contact page, id = 357*/
-.page-id-349 .entry-content h2, .page-id-357 .entry-content h2{
+.parent-pageid-167 .entry-content h2{
     margin-bottom: 0;
     letter-spacing: -1px;
     font: 400 24px "Open Sans", Helvetica, Arial, sans-serif;
