@@ -32,5 +32,8 @@
         </div>
     </div>
     
+    <div id="ethics-footer">
+        <?php the_field('footer'); ?>
+    </div>
     
 </div>
