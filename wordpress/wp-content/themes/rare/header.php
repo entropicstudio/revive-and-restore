@@ -105,7 +105,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
             </div>
 
             <div class="span-10 append-1 last right top-40">
-                <a id="longmenu-toggle" href="">Show Longnow.org Menu <i class="ss-icon">&#xEE00;</i></a>
+                <a id="longmenu-toggle" href="">show longnow.org menu <i class="ss-icon">&#xED50;</i></a>
             </div>
 
         </div>

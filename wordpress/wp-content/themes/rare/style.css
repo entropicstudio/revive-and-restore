@@ -139,9 +139,10 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     color: #777;
 }
 #longmenu-toggle i{
-    font-size: 1.6em;
+    font-size: 1.3em;
     padding-left: 3px;
     vertical-align: sub;
+    color: #4f4f4f;
 }
 .menu_block #global_menu > li ul li.break {
     background: #c1bfb4;
