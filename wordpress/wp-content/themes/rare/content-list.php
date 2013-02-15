@@ -16,7 +16,9 @@
         
         <div class="entry-info-box">
             <span class="entry-date">Published: <strong><?php the_date('F d, Y'); ?></strong></span>
-            <span class="entry-comments"><a href="<?php comments_link(); ?>"><?php comments_number( 'No Comments', 'One Comment', '% Comments' ); ?></a></span>
+            <? if (comments_open()){ ?>
+                <span class="entry-comments"><a href="<?php comments_link(); ?>"><?php comments_number( 'No Comments', 'One Comment', '% Comments' ); ?></a></span>
+            <?php } ?>
         </div>
         <br class="clear" />
 	</header><!-- .entry-header -->
