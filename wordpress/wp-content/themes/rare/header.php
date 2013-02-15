@@ -65,9 +65,8 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         
         
         
-        <script type="text/javascript">
+        <script>
             // Google Analytics Tracking Code
-            
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-1550370-2']);
             _gaq.push(['_trackPageview']);
@@ -77,7 +76,6 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
               ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-
       </script>
       
       
@@ -99,7 +97,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <div class="container header_block">
 
             <div class="span-10 prepend-1">
-                <a href="<?php echo site_url(); ?>" title="The Long Now Foundation">
+                <a href="http://longnow.org/" title="The Long Now Foundation">
                     <div class="logo"></div>
                 </a>
             </div>
@@ -130,29 +128,55 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
 
         <!-- Main Photo -->
-        <div class="container longphoto_block" id="longphoto">
-            
-            <?php if(is_front_page()){ // only show longphoto expand/contract on homepage ?>
-            
-                <div id="longphoto-mission-premise">
+        <div class="container longphoto_block" id="longphoto" <?php if(is_front_page()){ ?>style="height:686px;"<?php } ?> >
 
-                    <?php echo $rare_theme_options['mission_statement']; ?>
 
-                    <div id="premise">
-                        <?php echo $rare_theme_options['premise']; ?>
-                    </div>
+            <?php if(is_front_page()){ ?>
+                <style type="text/css">
+                    .lp-facebook, .lp-twitter, .lp-googleplus, .lp-isabella_link, .lp-isabella_painting {
+                        position: absolute;
+                        display: block;
+                        /* background: red;
+                        opacity: 0.4; */
+                        z-index: 9999;
+                        cursor: pointer;
+                    }
+                    .lp-facebook, .lp-twitter, .lp-googleplus {
+                        top: 318px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .lp-facebook {
+                        left: 160px;
+                    }
+                    .lp-twitter {
+                        left: 205px;
+                    }
+                    .lp-googleplus {
+                        left: 260px;
+                    }
+                    .lp-isabella_link {
+                        top: 595px;
+                        width: 100px;
+                        height: 15px;
+                        left: 175px;
+                    }
+                    .lp-isabella_painting {
+                        top: 0;
+                        right: 0;
+                        width: 460px;
+                        height:645px;
+                    }
+                </style>
 
-                </div>
+                <span class="lp-facebook"></span>
+                <span class="lp-twitter"></span>
+                <span class="lp-googleplus"></span>
 
-                <div id="longphoto-description">
-                    <?php echo $rare_theme_options['painting_text']; ?>
-                </div>
-
-                <div id="longphoto-toggle">
-                    <a href=""><i class="ss-icon">&#xF500;</i> Click to Close Full Painting <i class="ss-icon">&#xF500;</i></a>
-                </div>
-            
+                <span class="lp-isabella_link"></span>
+                <span class="lp-isabella_painting"></span>
             <?php } ?>
+            
             
             <?php // show tedx image for tedx pages
                   // show tedx ticket button(TEMPORARILY HIDDEN)
