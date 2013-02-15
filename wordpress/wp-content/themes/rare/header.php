@@ -187,10 +187,14 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
            
                 <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" /></div>
             
-            <?php } else { ?>
+            <?php } elseif (is_front_page()) { ?>
             
                 <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
                 
+            <?php } else { ?>
+
+                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg_short.jpg" alt="" /></div>
+
             <?php } ?>
             
             <!-- revive and restore menu -->
