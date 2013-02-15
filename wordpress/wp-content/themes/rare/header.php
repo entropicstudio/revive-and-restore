@@ -169,9 +169,9 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                     }
                 </style>
 
-                <span class="lp-facebook"></span>
+                <!-- span class="lp-facebook"></span>
                 <span class="lp-twitter"></span>
-                <span class="lp-googleplus"></span>
+                <span class="lp-googleplus"></span -->
 
                 <span class="lp-isabella_link"></span>
                 <span class="lp-isabella_painting"></span>
