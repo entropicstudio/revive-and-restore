@@ -204,6 +204,9 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     font-weight: bold;
     font-size: 15px;
 }
+#rare-nav-main li:last-child a {
+    color: #ff2b06;
+}
 #rare-nav-main li a:hover{
     color: #ecff07;
     text-shadow: 0 0 2px #ecff07;
