@@ -1,1 +1,0 @@
-Welcome to the bristle-classic_wordpress wiki!
