@@ -139,7 +139,6 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         /* background: red;
                         opacity: 0.4; */
                         z-index: 9999;
-                        cursor: pointer;
                     }
                     .lp-facebook, .lp-twitter, .lp-googleplus {
                         top: 318px;
@@ -160,6 +159,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         width: 100px;
                         height: 15px;
                         left: 175px;
+                        cursor: pointer;
                     }
                     .lp-isabella_painting {
                         top: 0;
@@ -173,7 +173,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 <span class="lp-twitter"></span>
                 <span class="lp-googleplus"></span -->
 
-                <span class="lp-isabella_link"></span>
+                <a href="/revive/tedxdeextinction/speakers/#isabella-kirkland-bio"><span class="lp-isabella_link"></span></a>
                 <span class="lp-isabella_painting"></span>
             <?php } ?>
             
