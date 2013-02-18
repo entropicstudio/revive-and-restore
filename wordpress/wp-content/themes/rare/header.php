@@ -216,7 +216,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
             
             <?php if(is_front_page()){ ?> 
             
-                <h1 class="prepend-1 append-1"><?php the_field('home-page-title'); ?></h1>
+                <!-- h1 class="prepend-1 append-1"><?php the_field('home-page-title'); ?></h1-->
                 
             <?php } elseif ( is_page(167) OR is_ancestor(167) OR in_category(7) ){ 
                 
