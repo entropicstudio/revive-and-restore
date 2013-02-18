@@ -17,7 +17,7 @@
     </div>
 
     <div class="container top-20 sub_footer">
-        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="" title="This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License." src="./static/ui/creative_commons_footer_logo.png" border="0" class="va-middle" /></a> The Long Now Foundation &nbsp;&bull;&nbsp; Fostering Long-term Responsibility &nbsp;&bull;&nbsp; est. 01996 &nbsp;&nbsp;&nbsp; <a href="#top" style="color: #4a4637;"><i class="ss-icon">&#xF500;</i> Top of Page</a>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank"><img alt="" title="This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License." src="http://longnow.org/static/ui/creative_commons_footer_logo.png" border="0" class="va-middle" /></a> The Long Now Foundation &nbsp;&bull;&nbsp; Fostering Long-term Responsibility &nbsp;&bull;&nbsp; est. 01996 &nbsp;&nbsp;&nbsp; <a href="#top" style="color: #4a4637;"><i class="ss-icon">&#xF500;</i> Top of Page</a>
         </p>
     </div>
 

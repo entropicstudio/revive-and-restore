@@ -30,7 +30,7 @@ get_header();
 
                     <article id="post-0" class="post no-results not-found">
                         <header class="entry-header">
-                            <h2 class="entry-title">Page Not Found</h21>
+                            <h2 class="entry-title">Page Not Found</h2>
                         </header><!-- .entry-header -->
                         <hr />
                         <div class="entry-content">

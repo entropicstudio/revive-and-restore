@@ -3,6 +3,10 @@ Bristle Classic WordPress Theme
 
 The WordPress version of the Bristle Classic Theme as seen on longnow.org.
 
+* Development: http://rare.sansink.com/
+* Production: http://longnow.org/rare/
+
+
 ## Install
 
 1. Copy the ``bristle_classic`` folder to your WordPress themes folder. 
