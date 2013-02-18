@@ -12,7 +12,7 @@
     
     <div class="container footer_block center">
         <?php if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
-            <span class="tedx-footer">This independent <a href="http://www.ted.com/tedx" target="_blank">TEDx</a> event is operated under license from <a href="www.ted.com" target="_blank">TED</a>.</span>
+            <span class="tedx-footer">This independent <a href="http://www.ted.com/tedx" target="_blank">TEDx</a> event is operated under license from <a href="http://www.ted.com" target="_blank">TED</a>.</span>
         <?php } ?>
     </div>
 
