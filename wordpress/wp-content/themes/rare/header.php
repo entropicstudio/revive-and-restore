@@ -48,6 +48,22 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" />
 
+        <?php 
+        
+        // facebook og meta for sharing/liking links
+        
+        if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
+        
+            <link rel="image_src" href="http://static.longnow.org/TEDxDeExtinction-Logo.jpg" />
+            <meta property="og:image" content="http://static.longnow.org/TEDxDeExtinction-Logo.jpg" />
+            <meta property="og:title" content="<?php wp_title(''); ?>" />
+            <meta property="og:site_name" content="TEDxDeExtinction" />
+            <meta property="og:description" content="Rapid advances in molecular biology are converging with new perspectives in conservation biology to create a new field called “de-extinction.”  Now is the time to begin public discussion of how de-extinction projects can best proceed responsibly."/>
+           
+            <meta property="og:url" content="<?php the_permalink(); ?>" />
+            
+        <?php } ?>
+        
         
         <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions.  ?>
         <!--[if lt IE 9]>
