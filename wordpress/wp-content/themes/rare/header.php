@@ -66,7 +66,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
            
         <?php } else { // non TEDx pages and must be a single page, not a list ?>
             
-            <meta property="og:image" content="http://longnow.org/revive/wp-content/themes/rare/ui/login-logo.png" />
+            <meta property="og:image" content="http://static.longnow.org/revive_and_restore.jpg" />
             <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
             
             <?php if ( is_singular() AND !is_front_page() ) { ?>
