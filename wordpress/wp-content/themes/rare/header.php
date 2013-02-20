@@ -47,24 +47,46 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" />
-
-        <?php 
         
-        // facebook og meta for sharing/liking links
         
-        if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
         
-            <link rel="image_src" href="http://static.longnow.org/TEDxDeExtinction-Logo.jpg" />
+        
+        
+        
+        <?php // facebook open graph meta for sharing/liking links ?>
+        
+        <meta property="og:title" content="<?php wp_title('-', TRUE, 'right');  bloginfo('name'); ?>" />
+        <meta property="og:url" content="<?php the_permalink(); ?>" />
+        
+        <?php if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { // change up for TEDx pages ?>
+        
             <meta property="og:image" content="http://static.longnow.org/TEDxDeExtinction-Logo.jpg" />
-            <meta property="og:title" content="<?php wp_title(''); ?>" />
             <meta property="og:site_name" content="TEDxDeExtinction" />
             <meta property="og:description" content="Rapid advances in molecular biology are converging with new perspectives in conservation biology to create a new field called “de-extinction.”  Now is the time to begin public discussion of how de-extinction projects can best proceed responsibly."/>
            
-            <meta property="og:url" content="<?php the_permalink(); ?>" />
+        <?php } else { // non TEDx pages and must be a single page, not a list ?>
             
+            <meta property="og:image" content="http://static.longnow.org/revive_and_restore.jpg" />
+            <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+            
+            <?php if ( is_singular() AND !is_front_page() ) { ?>
+            
+                <meta property="og:description" content="<?php setup_postdata($post); echo esc_attr(strip_tags(get_the_excerpt()));  ?>" />
+            
+            <?php } else { ?>
+            
+                <meta property="og:description" content="<?php bloginfo('description'); ?>"/>
+                
+            <?php } ?>
+             
         <?php } ?>
         
-        
+            
+            
+                
+                
+                
+            
         <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions.  ?>
         <!--[if lt IE 9]>
         <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
