@@ -17,7 +17,7 @@ add_filter('login_headerurl', 'change_wp_login_url');
 // Custom Login Logo
 function custom_login_logo() {
     echo '<style type="text/css">
-        h1 a { background-image:url('.get_bloginfo('template_directory').'/ui/login-logo.png) !important; background-size: 303px 56px !important; height:56px !important; margin-bottom:15px!important; }
+        h1 a { background-image:url('.get_bloginfo('template_directory').'/ui/rare-logo.png) !important; background-size: 285px 63px !important; height:63px !important; margin-bottom:15px!important; }
     </style>';
 }
 
