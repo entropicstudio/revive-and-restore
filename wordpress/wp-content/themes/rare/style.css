@@ -66,6 +66,9 @@ img.aligncenter{
     display: relative;
     border-top: 1px solid #134141;
 }
+body.home #longphoto{
+    height: 686px!important;
+}
 /* change longphoto border color on all tedx pages */
 body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #longphoto{
     border-top: 1px solid #631b17;
@@ -132,6 +135,45 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     color: #ecff07;
     text-decoration: underline;
 }
+
+/* homepage longphoto links */
+
+.lp-facebook, .lp-twitter, .lp-googleplus, .lp-isabella_link, .lp-isabella_painting {
+    position: absolute;
+    display: block;
+    /* background: red;
+    opacity: 0.4; */
+    z-index: 9999;
+}
+.lp-facebook, .lp-twitter, .lp-googleplus {
+    top: 318px;
+    width: 30px;
+    height: 30px;
+}
+.lp-facebook {
+    left: 160px;
+}
+.lp-twitter {
+    left: 205px;
+}
+.lp-googleplus {
+    left: 260px;
+}
+.lp-isabella_link {
+    top: 595px;
+    width: 100px;
+    height: 15px;
+    left: 175px;
+    cursor: pointer;
+}
+.lp-isabella_painting {
+    top: 0;
+    right: 0;
+    width: 460px;
+    height:645px;
+}
+
+
 
 
 /* longnow global menu */
@@ -764,3 +806,8 @@ ul.really_simple_twitter_widget li{
     margin-bottom: 20px;
     font-size: 11px;
 }
+
+
+
+
+

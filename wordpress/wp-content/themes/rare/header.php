@@ -4,6 +4,8 @@
  *
  * Contains head, page header, main navigation and main photo
  */
+
+// load custom theme options
 $rare_theme_options = get_option ( 'rare_theme_options' );
 
 ?><!DOCTYPE html>
@@ -58,7 +60,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <meta property="og:title" content="<?php wp_title('-', TRUE, 'right');  bloginfo('name'); ?>" />
         <meta property="og:url" content="<?php the_permalink(); ?>" />
         
-        <?php if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { // change up for TEDx pages ?>
+        <?php if ( is_page(167) || is_ancestor(167) || in_category(7) ) { // change up for TEDx pages ?>
         
             <meta property="og:image" content="http://static.longnow.org/TEDxDeExtinction-Logo.jpg" />
             <meta property="og:site_name" content="TEDxDeExtinction" />
@@ -69,7 +71,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
             <meta property="og:image" content="http://static.longnow.org/revive_and_restore.jpg" />
             <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
             
-            <?php if ( is_singular() AND !is_front_page() ) { ?>
+            <?php if ( is_singular() && !is_front_page() ) { ?>
             
                 <meta property="og:description" content="<?php setup_postdata($post); echo esc_attr(strip_tags(get_the_excerpt()));  ?>" />
             
@@ -166,75 +168,32 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
 
         <!-- Main Photo -->
-        <div class="container longphoto_block" id="longphoto" <?php if(is_front_page()){ ?>style="height:686px;"<?php } ?> >
+        <div class="container longphoto_block" id="longphoto">
 
-
-            <?php if(is_front_page()){ ?>
-                <style type="text/css">
-                    .lp-facebook, .lp-twitter, .lp-googleplus, .lp-isabella_link, .lp-isabella_painting {
-                        position: absolute;
-                        display: block;
-                        /* background: red;
-                        opacity: 0.4; */
-                        z-index: 9999;
-                    }
-                    .lp-facebook, .lp-twitter, .lp-googleplus {
-                        top: 318px;
-                        width: 30px;
-                        height: 30px;
-                    }
-                    .lp-facebook {
-                        left: 160px;
-                    }
-                    .lp-twitter {
-                        left: 205px;
-                    }
-                    .lp-googleplus {
-                        left: 260px;
-                    }
-                    .lp-isabella_link {
-                        top: 595px;
-                        width: 100px;
-                        height: 15px;
-                        left: 175px;
-                        cursor: pointer;
-                    }
-                    .lp-isabella_painting {
-                        top: 0;
-                        right: 0;
-                        width: 460px;
-                        height:645px;
-                    }
-                </style>
-
-                <!-- span class="lp-facebook"></span>
-                <span class="lp-twitter"></span>
-                <span class="lp-googleplus"></span -->
-
-                <a href="/revive/tedxdeextinction/speakers/#isabella-kirkland-bio"><span class="lp-isabella_link"></span></a>
-                <span class="lp-isabella_painting"></span>
-            <?php } ?>
-            
-            
-            <?php // show tedx image for tedx pages
-                  // show tedx ticket button(TEMPORARILY HIDDEN)
-            
-            if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
-                
-               <?php // <a class="tedx-ticket-button tedx-photo-button" href="https://events.nationalgeographic.com/events/special-events/2013/03/15/tedxdeextinction/" target="_blank">Purchase Tickets</a> ?>
+            <?php  if ( is_page(167) || is_ancestor(167) || in_category(7) ) { // Show TEDx Header Image for all TEDx Pages ?>
            
                 <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" /></div>
             
-            <?php } elseif (is_front_page()) { ?>
-            
+            <?php } elseif (is_front_page()) { // show full isabella painting on home page ?>
+                
+                <?php
+                   // <span class="lp-facebook"></span>
+                   // <span class="lp-twitter"></span>
+                   // <span class="lp-googleplus"></span>
+                ?>
+                
+                <a class="lp-isabella_link" href="<?php echo site_url('/tedxdeextinction/speakers/#isabella-kirkland-bio'); ?>"></a>
+                <span class="lp-isabella_painting"></span>
                 <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" /></div>
                 
-            <?php } else { ?>
+            <?php } else { // show short isbella painting on inside pages ?>
 
                 <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg_short.jpg" alt="" /></div>
 
             <?php } ?>
             
+                
+                
             <!-- revive and restore menu -->
             <div id="rare-nav-container">
                 
@@ -244,6 +203,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 <form role="search" method="get" id="rare-search" action="<?php echo home_url( '/' ); ?>">
                     <i class="ss-icon">&#x1F50E;</i><input type="text" value="" name="s" id="s" />
                 </form>
+                
             </div>
                 
         </div>
@@ -252,13 +212,10 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <div class="container body_block rel">
             <a name="content"></a>
             
-            <?php if(is_front_page()){ ?> 
+            <?php if( is_front_page() || is_page(167) || is_ancestor(167) || in_category(7)){ ?> 
             
-                <!-- h1 class="prepend-1 append-1"><?php the_field('home-page-title'); ?></h1-->
-                
-            <?php } elseif ( is_page(167) OR is_ancestor(167) OR in_category(7) ){ 
-                
-            } else { ?>
+          
+            <?php } else { ?>
             
                 <h1 class="prepend-1 append-1"><?php wp_title(''); ?></h1>
                 
