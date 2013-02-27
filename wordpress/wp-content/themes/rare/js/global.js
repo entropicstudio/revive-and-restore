@@ -145,6 +145,16 @@ $(document).ready(function () {
        
     );
     
+    
+    // show gone painting key on hover
+    $("#painting-key-holder").hover(
+        function () {
+            $('#painting-key-box').show();
+        },
+        function () {
+            $('#painting-key-box').hide();
+        }
+    );
       
       
 });
