@@ -1286,7 +1286,15 @@ a.tedx-ticket-button:active {
     text-align: right;
     padding: 1px;
 }
-
+.social-media-box .social-media-share{
+    float: left;
+}
+.social-media-box .facebook-like-box{
+    float: left;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 3px;
+}
 
 
 
