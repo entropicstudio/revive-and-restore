@@ -25,14 +25,30 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.qtip2.min.js"></script>
+    
     <!-- load global javascript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/global.js"></script>
 
- <script>
-$(function() {
-$( "#tabs" ).tabs();
-});
-</script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+        
+        $(document).ready(function(){
+            // Match all <A/> links with a title tag and use it as the content (default).
+            $('.tooltip').qtip({
+                content: {
+                    attr: 'data-hint'
+                },
+                position: {
+                    my: 'bottom middle',
+                    at: 'top middle'
+                }
+            })
+        });
+        
+   </script>
 
     <?php wp_footer(); ?>
 

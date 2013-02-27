@@ -80,49 +80,40 @@ $(document).ready(function () {
     
    
     
-    // expand/contract rare painting   
-    //$('#longphoto-toggle').click(function(e){
-    //            
-    //    e.preventDefault(); // prevents link from firing
-    //    var longphoto = $('#longphoto'); // rare painting
-    //                
-    //    if($(longphoto).height() < 350 ){ // expand
-//
-    //        $("#longphoto").animate({height:815}, 1000, "easeInOutExpo", function() {
-    //            
-    //            $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF500;</i> Click to Close Full Painting <i class="ss-icon">&#xF500;</i></a>');
-    //            $('#longphoto-description').show('slow');
-    //            $('#longphoto-mission-premise').show('slow');
-    //            rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
-    //            
-    //        });
-    //        
-    //    }else{ // contract
-    //        
-    //        $('#longphoto-description').hide('slow');
-   //         $('#longphoto-mission-premise').hide('slow');
-   //         
-   //         $("#longphoto").animate({height:311}, 1000, "easeInOutExpo", function() {
-    //            
-    //            $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>');
-    //            rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
-    //            setRareFixed(); // updates the rare menu incase offset is less than yoffset
-    //            
-    //        });
-    //    }
-    //        
-    //});
-    
-    
-    
+//     expand/contract rare painting   
 
+//     $('#longphoto-toggle').click(function(e){
+//                
+//        e.preventDefault(); // prevents link from firing
+//        var longphoto = $('#longphoto'); // rare painting
+//                    
+//        if($(longphoto).height() < 350 ){ // expand
+//    
+//            $("#longphoto").animate({height:815}, 1000, "easeInOutExpo", function() {
+//                
+//                $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF500;</i> Click to Close Full Painting <i class="ss-icon">&#xF500;</i></a>');
+//                $('#longphoto-description').show('slow');
+//                $('#longphoto-mission-premise').show('slow');
+//                rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
+//                
+//            });
+//            
+//        }else{ // contract
+//            
+//            $('#longphoto-description').hide('slow');
+//            $('#longphoto-mission-premise').hide('slow');
+//            
+//            $("#longphoto").animate({height:311}, 1000, "easeInOutExpo", function() {
+//                
+//                $('#longphoto-toggle').html('<a href=""><i class="ss-icon">&#xF501;</i> Click to Expand Full Painting <i class="ss-icon">&#xF501;</i></a>');
+//                rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
+//                setRareFixed(); // updates the rare menu incase offset is less than yoffset
+//                
+//            });
+//        }
+//            
+//     });
     
-    // set longphoto size on homepage to expanded
-    if ($('body').hasClass('home')) { // check for wordpress homepage class
-        rareMenuTop = $(raremenu).offset().top; // reset rare menu offset for fixed menu position
-    }
-    
-      
     
     
     // expanding search box in rare navigation
@@ -154,6 +145,16 @@ $(document).ready(function () {
        
     );
     
+    
+    // show gone painting key on hover
+    $("#painting-key-holder").hover(
+        function () {
+            $('#painting-key-box').show();
+        },
+        function () {
+            $('#painting-key-box').hide();
+        }
+    );
       
       
 });
