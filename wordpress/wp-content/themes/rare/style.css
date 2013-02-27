@@ -36,6 +36,9 @@ img.aligncenter{
     display: block;
     margin: 20px auto;
 }
+
+
+
 /* sidebar */
 .section_box{
     margin-top: 30px;
@@ -56,6 +59,34 @@ img.aligncenter{
     -moz-transition:all .25s ease-in;
     -o-transition:all .25s ease-in;
     transition:all .25s ease-in;
+}
+
+
+
+/* animal species captions */
+.species-caption{
+    position: absolute;
+    font-size: 11px;
+    text-shadow: 0 0 3px #fff;
+}
+.species-caption.top{
+    top: 5%;
+}
+.species-caption.middle{
+    top: 50%;
+}
+.species-caption.bottom{
+    bottom: 5%;
+}
+
+.species-caption.left{
+    left: 5%;
+}
+.species-caption.center{
+    left: 50%;
+}
+.species-caption.right{
+    right: 5%;
 }
 
 
