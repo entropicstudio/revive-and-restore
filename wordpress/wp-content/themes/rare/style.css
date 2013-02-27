@@ -1025,8 +1025,30 @@ body.page-id-55 .body_block h3{
 
 .tedx_wrapper {
     background: white;
-    margin: 0 -40px 20px -40px;
-    padding: 10px 40px 30px 40px;
+    margin: -30px -40px 20px -40px;
+    padding: 30px 40px 20px 400px;
+    height: 301px;
+    box-shadow: 0 5px 7px -6px #999;
+    border-bottom: 1px solid #adaca5;
+    position: relative;
+}
+.tedx_wrapper .top-shadow{
+    height: 14px;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: url(ui/shadow-top.png) repeat-x;
+}
+.tedx_wrapper h3{
+    font: bold 20px "Open Sans", Helvetica, Arial, sans-serif;
+    color: #000;
+}
+.tedx_wrapper #cuban-macaw-homepage{
+    position: absolute;
+    left: -149px;
+    top: 0;
 }
 .roster_wrapper {    
     background: url(http://media.longnow.org/files/2/rare-roster-bg.jpeg) center center no-repeat; 
@@ -1174,14 +1196,14 @@ a.tedx-ticket-button {
     -moz-background-clip: padding-box;
     background-clip: padding-box;
     font-size: 16px;
-    width: 180px;
+    display: inline-block;
 }
 
 a.tedx-ticket-button:link, a.tedx-ticket-button:visited {
-    display: block;
+    display: inline-block;
     text-align: center;
     line-height: normal;
-    padding: 10px;
+    padding: 10px 20px;
     color: white;
     text-shadow: 0 1px rgba(0,0,0,0.3);
     font-weight: bold;
