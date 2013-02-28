@@ -25,12 +25,10 @@ Version: 1.0
 img.alignright, p.alignright{
     float: right;
     margin: 5px 0 35px 35px;
-    clear: both;
 }
 img.alignleft, p.alignleft{
     float: left;
     margin: 5px 35px 35px 0;
-    clear: both;
 }
 img.aligncenter{    
     display: block;
@@ -824,9 +822,11 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     color: #94907e;
 }
 .body_block h2 {
-    font-size: 2em;
+    font:normal 2.6em 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
     line-height: 1.2em;
-    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+    letter-spacing: -1px;
+    color: #41413f;
+    margin-bottom: .3em;
 }
 .body_block ul {
     margin-left: 30px;
@@ -1080,15 +1080,66 @@ body.page-id-55 .body_block h3{
     position: absolute;
     left: -149px;
     top: 0;
+    z-index: 900;
 }
-.roster_wrapper {    
-    background: url(http://media.longnow.org/files/2/rare-roster-bg.jpeg) center center no-repeat; 
-    margin: 0 -40px 20px -40px;
-    padding: 20px 40px;
-    height: 263px;
+#home-section-2{
+    position: relative;
+    z-index: 1000;
+}
+#home-section-2 img.alignright{
+    margin: 5px 0 25px;
+}
+#home-section-4 {    
+    background-color: #232221;
+    margin: 0 -40px 0 -40px;
+    padding: 25px 40px 5px;
     overflow: hidden;
+    box-shadow: 0 15px 12px -12px #000;
+    z-index: 500;
+    position: relative;
 }
-
+#home-section-4 img, #home-section-4 p{
+    margin: 0;
+    padding: 0;
+}
+#home-section-5{
+    margin: 0 -40px 20px;
+}
+#home-section-5 ul{
+    width: 230px;
+    padding: 30px;
+    float: left;
+    margin: 0;
+    height: 320px;
+    background-color: #fff;
+}
+#home-section-5 ul:first-of-type{
+    width: 220px;
+    padding-left: 40px;
+}
+#home-section-5 ul:last-of-type{
+    width: 220px;
+    padding-right: 40px;
+}
+#home-section-5 ul:nth-of-type(odd){
+    background: #d9d7c8;
+    background: -moz-linear-gradient(top,  #d9d7c8 0%, #ffffff 70%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9d7c8), color-stop(70%,#ffffff));
+    background: -webkit-linear-gradient(top,  #d9d7c8 0%,#ffffff 70%);
+    background: -o-linear-gradient(top,  #d9d7c8 0%,#ffffff 70%);
+    background: -ms-linear-gradient(top,  #d9d7c8 0%,#ffffff 70%);
+    background: linear-gradient(to bottom,  #d9d7c8 0%,#ffffff 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d7c8', endColorstr='#ffffff',GradientType=0 );
+}
+#home-section-5 ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+#home-section-5 h3{
+    font: 800 19px "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
 
 
 /* staff & advisors page layout, page id 52 */

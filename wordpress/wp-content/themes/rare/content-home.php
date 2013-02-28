@@ -12,18 +12,22 @@
         </div>
         <?php the_field('section-1'); ?>
     </div>
+    
 
-    <?php the_field('section-2'); ?>
+    <div id="home-section-2">
+        <?php the_field('section-2'); ?>
+    </div>
 
-    <div class="dotted_break bottom-30 spacer-10"> </div>
 
     <?php the_field('section-3'); ?>
 
     <br class="clear" />
 
-    <div class="roster_wrapper">
+    <div id="home-section-4">
         <?php the_field('section-4'); ?>
+    </div>
+    
+    <div id="home-section-5">
+        <?php the_field('section-5'); ?>
         <br class="clear" />
     </div>
-
-    <?php the_field('section-5'); ?>
