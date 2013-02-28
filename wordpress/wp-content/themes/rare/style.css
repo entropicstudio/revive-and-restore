@@ -1148,6 +1148,27 @@ body.page-id-55 .body_block h3{
     font: 800 19px "Open Sans", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
+/* home section 6 */
+#home-section-6 ul{
+    margin-top: 25px;
+}
+#home-section-6 ul li{
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#home-section-6 ul li a:hover{
+    text-decoration: underline;
+}
+#home-section-6 ul li .content{
+    margin-top: 10px;
+    display: none;
+    font-size: 13px;
+    font-weight: normal;
+}
 
 
 /* staff & advisors page layout, page id 52 */
