@@ -171,7 +171,12 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
             <?php  if ( is_page(167) || is_ancestor(167) || in_category(7) ) { // Show TEDx Header Image for all TEDx Pages ?>
            
-                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" /></div>
+                <div id="tedxdeextinctionlongphoto_hype_container" class="span-22 center" style="width:870px;height:321px;">
+                    <script type="text/javascript" charset="utf-8" src="http://static.longnow.org/widgets/TEDxDeExtinction-longphoto/tedxdeextinctionlongphoto_hype_generated_script.js"></script>
+                    <noscript>
+                        <img src="<?php echo get_template_directory_uri(); ?>/ui/tedx_photo_bg.jpg" alt="" />
+                    </noscript>
+                </div>
             
             <?php } elseif (is_front_page()) { // show full isabella painting on home page ?>
                 

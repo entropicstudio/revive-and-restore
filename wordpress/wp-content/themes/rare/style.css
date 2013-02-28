@@ -98,6 +98,13 @@ img.aligncenter{
 body.home #longphoto{
     height: 686px!important;
 }
+
+#tedxdeextinctionlongphoto_hype_container{
+    width: 870px;
+    height: 321px;
+    z-index: 400;
+}
+
 /* change longphoto border color on all tedx pages */
 body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #longphoto{
     border-top: 1px solid #631b17;
@@ -735,6 +742,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 /* rare main navigation */
 #rare-nav-container{
     position: absolute;
+    z-index: 500;
     width: 100%;
     height: 40px;
     bottom: 0;
