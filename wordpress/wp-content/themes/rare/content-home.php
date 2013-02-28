@@ -31,3 +31,12 @@
         <?php the_field('section-5'); ?>
         <br class="clear" />
     </div>
+    
+    <div id="home-section-6">
+        <?php the_field('section-6'); ?>
+    </div>
+    
+    <div id="home-section-7">
+        <?php the_field('section-7'); ?>
+        <br class="clear" />
+    </div>
