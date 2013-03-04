@@ -1239,6 +1239,12 @@ body.parent-pageid-167 .body_block a, body.page-id-167 .body_block a{
 body.parent-pageid-167 .body_block a:hover, body.page-id-167 .body_block a:hover{
     text-decoration: underline;
 }
+.tedx-sidebar{
+    padding-right: 20px;
+    width: 250px;
+    float: left;
+}
+
 hr.post-list{
     margin-bottom: 4px;;
 }
@@ -1290,10 +1296,11 @@ body.page-id-167 h2{
 #menu-tedxdeextinction-menu{
     border-top: 1px solid #8d8d8d;
     margin: 0;
+    width: 250px;
 }
 #menu-tedxdeextinction-menu li{
     list-style: none;
-    width: 107px;
+    width: 119px;
     padding: 1px 0 1px 4px;
     margin: 0 1px;
     float: left;
@@ -1314,7 +1321,7 @@ body.page-id-167 h2{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     color: #fff;
-    margin-right: -40px;
+    margin-right: -20px;
     margin-top: 10px;
     padding: 25px 0 25px 60px
 }
@@ -1408,7 +1415,7 @@ a.tedx-ticket-button:active {
 #tedx-infobox a.tedx-ticket-button{
     color: #fff!important;
     margin-top: 20px;
-    margin-left: -25px;
+    margin-left: -10px;
 }
 #tedx-infobox a.tedx-ticket-button:hover{
     text-decoration: none;

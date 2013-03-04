@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="span-6 last append-1 tedx-sidebar">
+<div class="tedx-sidebar">
     
     <?php 
     if ( dynamic_sidebar('tedx-sidebar') ) : 
