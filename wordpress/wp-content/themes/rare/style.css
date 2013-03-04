@@ -1275,8 +1275,7 @@ body.page-id-167 h2{
 }
 
 
-
-/* speakers page, id = 349; contact page, id = 357*/
+/* speakers page, id = 349; contact page, id = 357, about page, id = 340 */
 .parent-pageid-167 .entry-content h2{
     margin-bottom: 0;
     letter-spacing: -1px;
@@ -1289,13 +1288,12 @@ body.page-id-167 h2{
     border: 1px solid #000;
     padding: 3px;
 }
-.page-id-349 .entry-content hr{
-    margin: 10px 0 35px;
+.page-id-349 .entry-content hr, .page-id-340 .entry-content hr{
+    margin: 5px 0 25px;
 }
-.page-id-349 .bio-link{
+.page-id-349 .bio-link, .page-id-340 .internal-link{
     display: block;
     height: 1px;
-    padding-top: 5px;
 }
 
 
