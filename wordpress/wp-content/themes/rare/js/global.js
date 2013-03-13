@@ -159,8 +159,11 @@ $(document).ready(function () {
         
    // home page FAQ accordion
    $('#home-section-6 ul .heading').click(function(e){
+       
         e.preventDefault();
-        $(this).closest('li').find('.content').not(':animated').slideToggle();
+        $(this).toggleClass('expanded');
+        $(this).closest('li').find('.content').not(':animated').slideToggle('slow');
+        
     });
       
       

@@ -1167,6 +1167,12 @@ body.page-id-55 .body_block h3{
     overflow: hidden;
     margin-bottom: 10px;
 }
+#home-section-6 ul li a.heading:before{
+    content: "+ ";
+}
+#home-section-6 ul li a.heading.expanded:before{
+    content: "- ";
+}
 #home-section-6 ul li a:hover{
     text-decoration: underline;
 }
@@ -1175,6 +1181,7 @@ body.page-id-55 .body_block h3{
     display: none;
     font-size: 13px;
     font-weight: normal;
+    padding: 0 25px;
 }
 
 /* home section 7 */
