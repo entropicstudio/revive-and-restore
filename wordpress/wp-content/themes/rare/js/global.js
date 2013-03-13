@@ -165,6 +165,42 @@ $(document).ready(function () {
         $(this).closest('li').find('.content').not(':animated').slideToggle('slow');
         
     });
+    
+    // display image caption on top of image
+    $("img.caption").each(function() {
+        
+        var imageToCaption = this;
+        
+        // get the caption
+        var imageCaption = $(imageToCaption).attr("data-hint");
+ 
+        if (imageCaption != '') {
+            
+            var imgWidth = $(imageToCaption).width();
+            
+            // wrap the image with a container
+            if ( $(imageToCaption).hasClass("alignleft") ) {
+                $(imageToCaption).wrap('<div class="img-caption-wrapper alignleft">');
+                $(imageToCaption).removeClass("alignleft");
+            } else if ( $(imageToCaption).hasClass("alignright") ) {
+                $(imageToCaption).wrap('<div class="img-caption-wrapper alignright">');
+                $(imageToCaption).removeClass("alignright");
+            } else if ( $(imageToCaption).hasClass("aligncenter") ) {
+                $(imageToCaption).wrap('<div class="img-caption-wrapper aligncenter">');
+                $(imageToCaption).removeClass("aligncenter");
+            } else {
+                $(imageToCaption).wrap('<div class="img-caption-wrapper">');
+            }
+            
+            
+            $("<span class='img-caption'>"+imageCaption+"</span></div>")
+            .css({
+                "width": (imgWidth - 50) +"px"
+                })
+            .insertAfter(imageToCaption);
+        }
+ 
+    });
       
       
 });
