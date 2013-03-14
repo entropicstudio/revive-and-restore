@@ -66,6 +66,8 @@ img.aligncenter{
     position: absolute;
     font-size: 11px;
     text-shadow: 0 0 3px #fff;
+    z-index: 1000;
+    line-height: 16px;
 }
 .species-caption.white{
     text-shadow: 0 0 3px #000;
@@ -1132,7 +1134,7 @@ body.page-id-55 .body_block h3{
     position: relative;
     z-index: 1000;
 }
-#home-section-2 .alignright{
+#home-section-3 .alignright{
     margin: 5px 0 25px;
 }
 #home-section-4 {    

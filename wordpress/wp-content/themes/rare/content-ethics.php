@@ -37,3 +37,4 @@
     </div>
     
 </div>
+<div class="species-caption right bottom white"><strong>Wolly Mammoth</strong></div>
