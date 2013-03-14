@@ -17,6 +17,8 @@
     <div id="home-section-2">
         <?php the_field('section-2'); ?>
     </div>
+    
+    <br class="clear" />
 
     <div id="home-section-3">
         <?php the_field('section-3'); ?>
