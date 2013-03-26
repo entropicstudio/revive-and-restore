@@ -980,21 +980,22 @@ body.page-id-11 .body_block{
 /* meetings page layout, page id 44 */
 body.page-id-44 .body_block{
     background: #e8e7e0 url(ui/meetings_bg.jpg) bottom no-repeat;
-    padding-bottom: 530px;
+    padding-bottom: 480px;
 }
-body.page-id-44 .tedx-box{
-    background: #fff;
-    padding: 20px 40px 0;
-}
-body.page-id-44 .tedx-box em{
-    color: #2b7ebe;
-    font: 600 23px "Open Sans", Helvetica, Arial, sans-serif;
-    letter-spacing: -1px;
-}
+
 #meetings-boxes{
-    float: left;
-    width: 440px;
-    margin: 40px 0 0 40px;
+   border-top: 1px solid #ccc;
+}
+#meetings-boxes .box{
+    overflow: hidden;
+    background: #fff;
+    margin: 0;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+#meetings-boxes .box .alignleft{
+    margin: 30px 50px 30px 10px;
 }
 #meetings-boxes h2{
     color: #2b7ebe;
@@ -1003,17 +1004,9 @@ body.page-id-44 .tedx-box em{
     margin: 0 0 15px 0;
     padding: 0;
 }
-#meetings-content-box{
-    width: 300px;
-    float: right;
-    background: url(ui/transparent_bg.png) repeat;
-    border-radius: 10px;
-    margin: 40px 30px 0 0;
-    padding: 25px;
-}
-#meetings-content-box ul li{
-    list-style: url(ui/list-orange-circle.png) circle;
-    margin-bottom: 15px;
+.meetings-content-box{
+    background: #fff;
+    padding: 20px 40px;
 }
 
 
