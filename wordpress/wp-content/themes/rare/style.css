@@ -897,7 +897,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 
 /* custom page layouts */
 
-body.page-id-11 .page-top-link a, body.page-id-44 .page-top-link a, body.page-id-40 .page-top-link a{
+body.page-id-11 .page-top-link a, body.page-id-40 .page-top-link a{
     color:  #fff ;
 }
 h2.section-heading{
@@ -974,13 +974,11 @@ body.page-id-11 .body_block{
     bottom: 535px;
     width: 790px;
 }
-
+ 
 
 
 /* meetings page layout, page id 44 */
 body.page-id-44 .body_block{
-    background: #e8e7e0 url(ui/meetings_bg.jpg) bottom no-repeat;
-    padding-bottom: 480px;
 }
 
 #meetings-boxes{
