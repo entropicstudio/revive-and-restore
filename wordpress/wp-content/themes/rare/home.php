@@ -20,9 +20,7 @@ get_header();
                     <?php while (have_posts()) : the_post(); ?>
 
                             <?php get_template_part('content', 'list'); ?>
-                        <div id="comments_box">
-                        <?php comments_template('', true); ?>
-                        </div>
+                  
                 <?php endwhile; ?>
 
 
@@ -45,13 +43,13 @@ get_header();
 
 
             <!-- sidebar -->
-            <div class="span-6 last">
-
-                <?php if (!function_exists('dynamic_sidebar')
-                        || !dynamic_sidebar()) :
+            <div class="span-5 last blog-sidebar">
+                
+                <?php
+                if (dynamic_sidebar('blog-sidebar')) :
+                else :
                     ?>
-
-            <?php endif; ?>
+                <?php endif; ?>
 
             </div>
 
