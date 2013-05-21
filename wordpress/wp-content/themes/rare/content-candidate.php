@@ -9,16 +9,7 @@
 </div>
 
 
-<div id="candidate-criteria-box">
-    
-    <h2><?php the_field('criteria_heading'); ?></h2>
-    
-        <?php the_field('criteria_column_1'); ?>
-    <div class="criteria-last">
-        <?php the_field('criteria_column_2'); ?>
-    </div>
-    
-</div>
+
 
 <div id="candidate-species-box">
     <h2>Candidates</h2>
@@ -33,6 +24,19 @@
     
     <div id="candidate-edge-box">
         <?php the_field('edge_box'); ?>
+    </div>
+    
+</div>
+
+
+<div id="candidate-criteria-box">
+    
+    <h2><?php the_field('criteria_heading'); ?></h2>
+    
+        <?php the_field('criteria_column_1'); ?>
+    
+    <div class="criteria-last">
+        <?php the_field('criteria_column_2'); ?>
     </div>
     
 </div>
