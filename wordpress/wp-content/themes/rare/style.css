@@ -824,7 +824,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     font-size: 15px;
 }
 #rare-nav-main li:last-child a {
-    color: #ff2b06;
+    
 }
 #rare-nav-main li a:hover{
     color: #ecff07;
@@ -890,6 +890,50 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 .user_menu_block div {
     display: none;
 }
+
+
+/* rare footer links */
+ul.latest-blog-posts li a, ul.footer-featured-links li a{
+    font-size: 13px;
+    cursor: pointer;
+}
+ul.latest-blog-posts li, ul.footer-featured-links li{
+    margin: 0;
+    padding: 2px 0;
+}
+ul.footer-featured-links li{
+    float: left;
+    width: 50%;
+    
+}
+
+
+
+/* rare blog */
+.blog-sidebar h3{
+    font-size: 2em;
+    text-shadow: -1px 1px 1px #fff;
+}
+
+.blog-sidebar ul li{
+    margin: 0;
+    padding: 0;
+}
+.single-post h1{
+    font-size: 32px;
+    text-shadow: -1px 1px 0 #fff;
+}
+.single-post h1.entry-title{
+    padding-bottom: 8px;
+}
+.single-post .entry-content{
+    padding-top: 10px;
+}
+.blog-sidebar .tagcloud{
+    margin-left: 10px;
+}
+
+
 
 
 
@@ -1007,23 +1051,35 @@ body.page-id-44 .body_block{
     padding: 20px 40px;
 }
 
-
+/* resources layout, page id 1418 */
+#recommended-reading-box h4{
+    background: #f1f1ec;
+    color: #605d52;
+    font: bold 18px Helvetica, Arial, sans-serif;
+    padding: 2px 5px;
+}
+#recommended-reading-box ul li{
+    list-style: url(ui/list-orange-circle.png) circle;
+    margin-bottom: 15px;
+    font-size: 12px;
+    margin: 0 0 7px -5px;
+}
 
 /* candidate species page layout, page id 40 */
 body.page-id-40 .body_block{
     background: #e8e7e0 url(ui/candidate-species_bg.jpg) bottom no-repeat;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 body.page-id-40 h2{
     margin-bottom: 15px;
 }
 #candidate-species-box{
-    width: 370px;
-    float: right;
-    margin-right: 40px;
+    width: 470px;
+    float: left;
+    margin-left: 40px;
 }
 body.page-id-40 .cs-column{
-    width: 175px;
+    width: 225px;
     padding-right: 10px;
     float: left;
     position: relative;
@@ -1050,10 +1106,10 @@ body.page-id-40 .cs-column{
     z-index: 100;
 }
 #candidate-criteria-box{
-    width: 400px;
-    margin-left: 40px;
-    padding-right: 20px;
-    float: left;
+    width: 300px;
+    margin-right: 40px;
+    padding-left: 20px;
+    float: right;
 }
 .criteria-last{
     margin-top: 100px;
@@ -1064,7 +1120,7 @@ body.page-id-40 .cs-column{
 #candidate-criteria-box ul li{
     list-style: url(ui/list-orange-circle.png) circle;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 0 10px 0;
 }
 #candidate-criteria-box h3, #candidate-species-box h3{
@@ -1102,7 +1158,7 @@ body.page-id-55 .body_block h3{
 
 .tedx_wrapper {
     background: white;
-    margin: -30px -40px 20px -40px;
+    margin: -30px -40px 40px -40px;
     padding: 30px 40px 20px 400px;
     height: 301px;
     box-shadow: 0 5px 7px -6px #999;
@@ -1135,19 +1191,7 @@ body.page-id-55 .body_block h3{
 #home-section-3 .alignright{
     margin: 5px 0 25px;
 }
-#home-section-4 {    
-    background-color: #232221;
-    margin: 0 -40px 0 -40px;
-    padding: 25px 40px 5px;
-    overflow: hidden;
-    box-shadow: 0 15px 12px -12px #000;
-    z-index: 500;
-    position: relative;
-}
-#home-section-4 img, #home-section-4 p{
-    margin: 0;
-    padding: 0;
-}
+
 #home-section-5{
     margin: 0 -40px 20px;
 }
@@ -1251,6 +1295,22 @@ body.page-id-55 .body_block h3{
 }
 
 
+/* homepage boxes */
+#box-section-1 p, #box-section-5 p, #box-section-6 p{
+    font-size: 11px;
+}
+#box-section-8 ul{
+    margin: 0;
+}
+#box-section-8 li{
+    list-style: none;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+
+
+
 /* staff & advisors page layout, page id 52 */
 body.page-id-52 .body_block{
     font-size: 14px;
@@ -1275,10 +1335,7 @@ body.parent-pageid-167 .body_block, body.page-id-167 .body_block, body.tedxdeext
 body.tedxdeextinction .body_block h1{
     font-size: 32px;
 }
-body.page-id-40 .page-top-link{
-    text-align: left!important;
-    padding-left: 40px;
-}
+
 body.page-id-40 .page-top-link a{
     color: #1d1c19;
 }
@@ -1409,7 +1466,12 @@ a.tedx-ticket-button {
     font-size: 16px;
     display: inline-block;
 }
-
+#box-section-4 a.tedx-ticket-button{
+    font-size: 14px;
+    padding: 10px 0;
+    width: 230px;
+    margin-top: -8px;
+}
 a.tedx-ticket-button:link, a.tedx-ticket-button:visited {
     display: inline-block;
     text-align: center;

@@ -57,9 +57,13 @@ get_header(); ?>
                             
                             get_template_part('content', 'people');
                             
-                        } elseif (is_page(55) ) { // FAQ & Reading page
+                        } elseif (is_page(55) ) { // FAQ 
                             
                             get_template_part('content', 'faqreading');
+                            
+                        } elseif (is_page(1418) ) { // Resources 
+                            
+                            get_template_part('content', 'resources');
                             
                         } elseif (is_page(167) ) { // TEDxDeExtinction homepage
                             
