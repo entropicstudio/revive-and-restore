@@ -60,7 +60,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <meta property="og:title" content="<?php wp_title('-', TRUE, 'right');  bloginfo('name'); ?>" />
         <meta property="og:url" content="<?php the_permalink(); ?>" />
         
-        <?php if ( is_page(167) || is_ancestor(167) || in_category(7) ) { // change up for TEDx pages ?>
+        <?php if ( is_page(167) || is_ancestor(167) ) { // change up for TEDx pages ?>
         
             <meta property="og:image" content="http://static.longnow.org/TEDxDeExtinction-Logo.jpg" />
             <meta property="og:site_name" content="TEDxDeExtinction" />
@@ -169,7 +169,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <!-- Main Photo -->
         <div class="container longphoto_block" id="longphoto">
 
-            <?php  if ( is_page(167) || is_ancestor(167) || in_category(7) ) { // Show TEDx Header Image for all TEDx Pages ?>
+            <?php  if ( is_page(167) || is_ancestor(167) ) { // Show TEDx Header Image for all TEDx Pages ?>
            
                 <div id="tedxdeextinctionlongphoto_hype_container" class="span-22 center" style="width:870px;height:321px;">
                     <div class="species-caption right middle white" style="top: 68%;"><strong>Cuban Red Macaw</strong><br /><em>Extinct: late 19th century</em></div>
@@ -319,9 +319,29 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
         <div class="container body_block rel">
             <a name="content"></a>
             
-            <?php if( is_front_page() || is_page(167) || is_ancestor(167) || in_category(7)){ ?> 
+            <?php if( is_front_page() || is_page(167) || is_ancestor(167) || is_single() || is_home() ){ ?> 
             
           
+            <?php } elseif( is_category() ){ ?>
+                
+                <h3 class="prepend-1 append-1"><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h3>
+
+            <?php } elseif( is_archive() ){ ?>
+                
+                <h3 class="prepend-1 append-1">
+                    <?php if ( is_day() ) : ?>
+                        <?php printf( __( 'Daily Archives: <span>%s</span>' ), get_the_date() ); ?>
+                    <?php elseif ( is_month() ) : ?>
+                        <?php printf( __( 'Monthly Archives: <span>%s</span>' ), get_the_date( _x( 'F Y', 'monthly archives date format' ) ) ); ?>
+                    <?php elseif ( is_year() ) : ?>
+                        <?php printf( __( 'Yearly Archives: <span>%s</span>' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) ); ?>
+                    <?php elseif ( is_tag() ) : ?>
+                       <?php printf( __( 'Tag Archives: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?>
+                    <?php else : ?>
+                        <?php _e( 'Blog Archives' ); ?>
+                    <?php endif; ?>
+                </h3>
+  
             <?php } else { ?>
             
                 <h1 class="prepend-1 append-1"><?php wp_title(''); ?></h1>

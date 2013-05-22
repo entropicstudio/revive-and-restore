@@ -5,6 +5,11 @@
 ?>
 
 
+        <div class="span-20 prepend-1 append-1 padbottom-15">
+            <?php the_content(); ?>
+        </div>
+
+
         <div class="span-12 prepend-1 append-1" id="staff_column">
             <h2 class="section-heading">STAFF</h2>
             <hr />

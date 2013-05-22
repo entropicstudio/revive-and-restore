@@ -10,10 +10,48 @@
         <p class="larger center quiet page-top-link"><a href="#top"><i class="ss-icon" style="font-size: 1.3em; position: relative; top: 6px;">&#xF500;</i> Top of Page</a></p>
     </div>
     
-    <div class="container footer_block center">
-        <?php if ( is_page(167) OR is_ancestor(167) OR in_category(7) ) { ?>
-            <span class="tedx-footer">This independent <a href="http://www.ted.com/tedx" target="_blank">TEDx</a> event is operated under license from <a href="http://www.ted.com" target="_blank">TED</a>.</span>
+    <div class="container footer_block">
+        
+        <?php if ( is_page(167) OR is_ancestor(167) ) { ?>
+        
+            <div class="tedx-footer center">This independent <a href="http://www.ted.com/tedx" target="_blank">TEDx</a> event is operated under license from <a href="http://www.ted.com" target="_blank">TED</a>.</div>
+            
+        <?php } else { ?>
+            
+            <div class="span-9 prepend-1 colborder ">
+                <h3>Contact Revive & Restore</h3>
+                <p class="float_left">
+                <strong>Revive & Restore</strong><br />
+                The Long Now Foundation<br />
+                Fort Mason Center, Building A<br />
+                San Francisco, CA 94123<br />
+                </p>
+                
+                <p class="float_right">
+                email : <a href="mailto:revive@longnow.org">revive@longnow.org</a>
+                </p>
+            </div>
+                        
+            <div class="span-9 last rel">
+                <h3>Latest Blog Posts</h3>
+                
+                <ul class="latest-blog-posts">
+                 <?php 
+                    $args = array(
+                        'numberposts' => 4
+                        );
+
+ 
+                    $recent_posts = wp_get_recent_posts( $args );
+                    foreach( $recent_posts as $recent ){
+                        echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="Look '.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+                    }
+                ?>
+                </ul>
+            </div>
+            
         <?php } ?>
+            
     </div>
 
     <div class="container top-20 sub_footer">

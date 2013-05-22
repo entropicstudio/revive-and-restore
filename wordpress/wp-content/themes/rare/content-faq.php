@@ -1,6 +1,6 @@
 <?php
 /**
- * content template for FAQ & Reading page
+ * content template for FAQ
  */
 ?>
 
@@ -14,9 +14,9 @@
         </div>
 
         <div class="span-8 last append-1 padtop-20" id="reading-column">
-            <h2 class="section-heading">RECOMMENDED READING</h2>
+            <h2 class="section-heading">ETHICAL QUESTIONS</h2>
             <hr />
             
-            <?php the_field('recommended_reading'); ?>
+            <?php the_field('ethical_questions'); ?>
 
         </div>
