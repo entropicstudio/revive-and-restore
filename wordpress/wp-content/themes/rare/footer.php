@@ -28,7 +28,8 @@
                 </p>
                 
                 <p class="float_right">
-                email : <a href="mailto:revive@longnow.org">revive@longnow.org</a>
+                email : <a href="mailto:revive@longnow.org">revive@longnow.org</a><br />
+                read: <a href="<?php echo get_page_link(52); ?>">About Us</a>
                 </p>
             </div>
                         
