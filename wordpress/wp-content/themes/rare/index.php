@@ -59,9 +59,9 @@ get_header(); ?>
                             
                         } elseif (is_page(55) ) { // FAQ 
                             
-                            get_template_part('content', 'faqreading');
+                            get_template_part('content', 'faq');
                             
-                        } elseif (is_page(1418) ) { // Resources 
+                        } elseif (is_page(1340) ) { // Resources 
                             
                             get_template_part('content', 'resources');
                             

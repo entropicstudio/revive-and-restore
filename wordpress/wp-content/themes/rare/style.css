@@ -1056,20 +1056,24 @@ body.page-id-44 .body_block{
     padding: 20px 40px;
 }
 
-/* resources layout, page id 1418 */
+/* resources layout, page id 1340 */
 #recommended-reading-box h4{
     background: #f1f1ec;
     color: #605d52;
     font: bold 18px Helvetica, Arial, sans-serif;
     padding: 2px 5px;
+    clear: right;
 }
 #recommended-reading-box ul li{
     list-style: url(ui/list-orange-circle.png) circle;
     margin-bottom: 15px;
     font-size: 12px;
     margin: 0 0 7px -5px;
+    clear: right;
 }
-
+#relevant-links-box{
+    font-size: 11px;
+}
 /* candidate species page layout, page id 40 */
 body.page-id-40 .body_block{
     background: #e8e7e0 url(ui/candidate-species_bg.jpg) bottom no-repeat;
