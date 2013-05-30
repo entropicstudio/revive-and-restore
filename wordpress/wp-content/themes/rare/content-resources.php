@@ -11,7 +11,7 @@
 
 
 
-<div id="recommended-reading-box" class="span-11 prepend-1 append-1">
+<div id="recommended-reading-box" class="span-13 prepend-1 append-1">
     
     <h2 class="section-heading">Recommended Reading</h2>
     <hr />
@@ -21,7 +21,7 @@
 </div> 
 
 
-<div id="relevant-links-box" class="span-8">
+<div id="relevant-links-box" class="span-6">
     
     <h2 class="section-heading">Relevant Links</h2>
     <hr />
