@@ -15,17 +15,25 @@
     
     <?php
     
+        // get event boxes and display in reverse order
+    
         $x = 1;
+        $events = 0; // total events
+        
+        while ( get_field("box_$x") ){
+            $events++;
+            $x++;
+        }
+        
+        while ( $events > 0 ) {
 
-        while ( get_field("box_$x") ) {
+            echo '<div class="box " id="event-box-'.$events.'">';
 
-            echo '<div class="box " id="event-box-'.$x.'">';
-
-                the_field("box_$x");
+                the_field("box_$events");
 
             echo '</div>';
 
-            $x++;
+            $events--;
 
         }
     
