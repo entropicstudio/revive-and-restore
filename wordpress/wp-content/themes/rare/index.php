@@ -45,15 +45,15 @@ get_header(); ?>
                             
                             get_template_part('content', 'ethics');
                             
-                        } elseif ( is_page(44) ) { // meetings page
+                        } elseif ( is_page(44) ) { // events page
                             
-                            get_template_part('content', 'meetings');
+                            get_template_part('content', 'events');
                             
                         } elseif ( is_page(40) ) { // candidate species page
                             
                             get_template_part('content', 'candidate');
                             
-                        } elseif ( is_page(52) ) { // people & advisors page
+                        } elseif ( is_page(52) ) { // people & advisors page 
                             
                             get_template_part('content', 'people');
                             
