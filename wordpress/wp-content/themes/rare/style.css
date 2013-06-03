@@ -1026,14 +1026,14 @@ body.page-id-11 .body_block{
  
 
 
-/* meetings page layout, page id 44 */
+/* events page layout, page id 44 */
 body.page-id-44 .body_block{
 }
 
-#meetings-boxes{
+#event-boxes{
    border-top: 1px solid #ccc;
 }
-#meetings-boxes .box{
+#event-boxes .box{
     overflow: hidden;
     background: #fff;
     margin: 0;
@@ -1041,17 +1041,17 @@ body.page-id-44 .body_block{
     border-bottom: 1px solid #ccc;
     position: relative;
 }
-#meetings-boxes .box .alignleft{
+#event-boxes .box .alignleft{
     margin: 30px 50px 30px 10px;
 }
-#meetings-boxes h2{
+#event-boxes h2{
     color: #2b7ebe;
     font: 600 23px "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     margin: 0 0 15px 0;
     padding: 0;
 }
-.meetings-content-box{
+.event-content-box{
     background: #fff;
     padding: 20px 40px;
 }
