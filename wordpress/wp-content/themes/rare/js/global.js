@@ -135,7 +135,7 @@ $(document).ready(function () {
             
            function() {
            
-             $(this).css({ width: '15px' }); // contract search box
+             $(this).css({ width: '45px' }); // contract search box
              $('#rare-nav-main li:nth-last-child(2)').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
              $('#rare-nav-main li:last-child').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
              
