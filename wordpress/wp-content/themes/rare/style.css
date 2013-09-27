@@ -879,7 +879,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
   box-shadow: none;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   color: #F3EFDD;
-}
+} 
 #rare-nav-main .sub-menu li:last-child {
   height: 30px;
 }
@@ -892,10 +892,11 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 #rare-nav-main .sub-menu li a {
   display: block;
   overflow: hidden;
-  padding: 1px 25px 1px 12px;
+  padding: 1px 30px 1px 12px;
   line-height: 2em;
   height: 28px;
   font-weight: normal;
+  font-size: 14px;
 }
 
 
