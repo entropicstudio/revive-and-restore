@@ -290,7 +290,6 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         </div>
                     </div>
                     
-                    <img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" />
                 </div>
                 
             <?php } else { // show short isbella painting on inside pages ?>
