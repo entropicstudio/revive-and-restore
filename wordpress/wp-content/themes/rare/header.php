@@ -191,6 +191,19 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 
                 <div class="span-22 center">
                     
+                    <div id="longphoto-mission-premise">
+                        <div id="longphoto-mission">
+                            <?php echo $rare_theme_options['mission_statement']; ?>
+                        </div>
+                        <div id="longphoto-premise">
+                            <?php echo $rare_theme_options['premise']; ?>
+                        </div>
+                    </div>
+                    
+                    <div id="longphoto-description">
+                        <?php echo $rare_theme_options['painting_text']; ?>
+                    </div>
+                    
                     <img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" />
                     
                     <div id="painting-key-holder">
