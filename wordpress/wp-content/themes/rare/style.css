@@ -53,10 +53,10 @@ img.aligncenter{
 
 /* link transitions */
 #longphoto-toggle a, #longmenu-toggle, #rare-nav-main li a{
-    -webkit-transition:all .25s ease-in;
-    -moz-transition:all .25s ease-in;
-    -o-transition:all .25s ease-in;
-    transition:all .25s ease-in;
+    -webkit-transition:all .15s ease-in;
+    -moz-transition:all .15s ease-in;
+    -o-transition:all .15s ease-in;
+    transition:all .15s ease-in;
 }
 
 
@@ -135,7 +135,6 @@ img.aligncenter{
     height: 311px;
     display: relative;
     border-top: 1px solid #134141;
-    overflow: hidden;
 }
 body.home #longphoto{
     height: 686px!important;
@@ -791,7 +790,6 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     left: 0;
     background: url(ui/rare-nav-bg.png) repeat-x;
     border-top: 1px solid #0d201e;
-    box-shadow: 0 -1px 15px #000;
 }
 #rare-nav-container.fixed{
     position: fixed;
@@ -807,7 +805,6 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 }
 #rare-nav-main{
     margin: 0;
-    overflow: hidden;
     padding-left: 10px;
 }
 #rare-nav-main li{
@@ -817,7 +814,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 }
 #rare-nav-main li a{
     display: inline-block;
-    padding: 0 7px;
+    padding: 0 12px;
     line-height: 40px;
     color: #fff;
     font-weight: bold;
@@ -830,6 +827,85 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     color: #ecff07;
     text-shadow: 0 0 2px #ecff07;
 }
+#rare-nav-main .sub-menu{
+    display: block;
+    top: 0;
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    border-top: 1px solid #605c4e;
+    list-style-type: none;
+    position: absolute;
+    z-index: 9999;
+    margin: -1px 0 0 0;
+    padding: 0;
+    background: #e8e6dc;
+    background: rgba(232, 230, 220, 0.93);
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 8px 8px;
+    -webkit-border-radius: 0px 0px 8px 8px;
+    -webkit-box-shadow: 0px 2px 8px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow: 0px 2px 8px rgba(50, 50, 50, 0.4);
+    box-shadow: 0px 2px 8px rgba(50, 50, 50, 0.4);
+}
+#rare-nav-main > li:hover > ul {
+  height: auto;
+  opacity: 1;
+  width: auto;
+  /* -webkit-transition: opacity 50ms;
+              -moz-transition: opacity 50ms; */
+
+  top: 100%;
+}
+#rare-nav-main .sub-menu li {
+  display: block;
+  margin: 0;
+  height: 27px;
+  padding: 0;
+  text-align: left;
+  float: none;
+}
+#rare-nav-main .sub-menu li a{
+    color: #1F1E1B;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+#rare-nav-main .sub-menu li:hover > a {
+  background: #3078AD;
+  box-shadow: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: #F3EFDD;
+}
+#rare-nav-main .sub-menu li:last-child {
+  height: 30px;
+}
+#rare-nav-main .sub-menu li:last-child:hover > a,
+#rare-nav-main .sub-menu li:last-child > a.active {
+  -moz-border-radius: 0px 0px 8px 8px;
+  -webkit-border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
+}
+#rare-nav-main .sub-menu li a {
+  display: block;
+  overflow: hidden;
+  padding: 1px 25px 1px 12px;
+  line-height: 2em;
+  height: 28px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* rare search box in navigation */
