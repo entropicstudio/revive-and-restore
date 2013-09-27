@@ -192,12 +192,15 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 <div class="span-22 center">
                     
                     <div id="longphoto-mission-premise">
-                        <div id="longphoto-mission">
-                            <?php echo $rare_theme_options['mission_statement']; ?>
-                        </div>
+                        
                         <div id="longphoto-premise">
                             <?php echo $rare_theme_options['premise']; ?>
                         </div>
+                        
+                        <div id="longphoto-mission">
+                            <?php echo $rare_theme_options['mission_statement']; ?>
+                        </div>
+                        
                     </div>
                     
                     <div id="longphoto-description">
