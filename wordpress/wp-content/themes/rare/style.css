@@ -165,14 +165,16 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 #longphoto-toggle a:hover, #longmenu-toggle:hover{
     color: #fff;
 }
+
+/* front-page longphoto mission and premise */
 #longphoto-mission-premise{
     position: absolute;
     left: 40px;
-    top: 140px;
-    width: 240px;
-    line-height: normal;
+    top: 170px;
+    width: 320px;
     color: #fff;
-    font: 600 13px "Open Sans", Helvetica, Arial, sans-serif;
+    text-align: left;
+    font: 600 14px "Open Sans", Helvetica, Arial, sans-serif;
 }
 #longphoto-mission-premise ul{
     margin: 10px 0 0 10px;
@@ -184,28 +186,23 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     margin-left: 10px;
     line-height: 16px;
 }
-#longphoto #premise{
-    font-size: 12px;
+#longphoto #longphoto-mission{
+    line-height: 23px;
+}
+#longphoto #longphoto-premise{
+    font-size: 13px;
     margin-top: 40px;
-    width: 215px;
-    line-height: 18px;
-}
-#longphoto #premise h4 {
-    font: bold italic 18px serif;
-    color: #fff;
-    margin: 0;
-}
-#longphoto-mission-premise hr{
-    background-color: #11384d;
-    margin: 5px 0;
+    width: 100%;
+    line-height: 23px;
 }
 #longphoto-description{
     position: absolute;
-    bottom: 120px;
+    bottom: 60px;
     left: 40px;
-    width: 210px;
+    width: 320px;
     line-height: 20px;
-    color: #fff;
+    text-align: right;
+    color: #cccccc;
     font: 600 12px "Open Sans", Helvetica, Arial, sans-serif;
 }
 #longphoto-description a{
