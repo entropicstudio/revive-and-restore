@@ -171,7 +171,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
             <?php  if ( is_page(167) || is_ancestor(167) ) { // Show TEDx Header Image for all TEDx Pages ?>
            
-                <div id="tedxdeextinctionlongphoto_hype_container" class="span-22 center" style="width:870px;height:312px;">
+                <div id="tedxdeextinctionlongphoto_hype_container" class="span-22 center" style="width:870px;height:311px;">
                     <div class="species-caption right middle white" style="top: 68%;"><strong>Cuban Red Macaw</strong><br /><em>Extinct: late 19th century</em></div>
                     <script type="text/javascript" charset="utf-8" src="http://static.longnow.org/widgets/TEDxDeExtinction-longphoto/tedxdeextinctionlongphoto_hype_generated_script.js"></script>
                     <noscript>
