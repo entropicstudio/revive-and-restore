@@ -23,7 +23,8 @@
                 <p class="float_left">
                 <strong>Revive & Restore</strong><br />
                 The Long Now Foundation<br />
-                Fort Mason Center, Building A<br />
+                Fort Mason Center<br />
+                2 Marina Boulevard Building A<br />
                 San Francisco, CA 94123<br />
                 </p>
                 
