@@ -34,7 +34,27 @@ img.aligncenter{
     display: block;
     margin: 20px auto;
 }
-
+/* captions */
+div.wp-caption{
+    border: 1px solid lightgray;
+    background-color: #deddd3;
+    text-align: center;
+    padding-top: 4px;
+    margin-bottom: 10px;
+}
+div.wp-caption .wp-caption-text{
+    font-size: 11px;
+    padding: 4px 4px 10px;
+    margin: 0;
+}
+div.wp-caption.alignleft{
+    float: left;
+    margin: 5px 20px 15px 0;
+}
+div.wp-caption.alignright{
+    float: right;
+    margin: 5px 0 15px 20px;
+}
 
 
 /* sidebar */
@@ -166,14 +186,26 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     color: #fff;
 }
 
+
+
+
 /* front-page longphoto mission and premise */
 #longphoto-mission-premise{
     position: absolute;
-    left: 40px;
-    top: 170px;
-    width: 350px;
+    left: 35px;
+    top: 120px;
+    width: 360px;
     color: #fff;
     font: 500 16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#longphoto-mission-premise p{
+    margin: 0 0 1em;
+}
+#longphoto-tagline{
+    margin-bottom: 20px;
+    color: #789d9b;
+    font: normal 1.2em 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
+    text-transform: lowercase; 
 }
 #longphoto-mission ul{
     margin: 10px 0 0 10px;
@@ -185,8 +217,13 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     margin: 5px 20px 0 30px;
     padding: 0 0 6px 0;
     line-height: 18px;
+    list-style: none;
     border-bottom: 1px solid #2b2b2b;
-    list-style: circle url(ui/list-bullet-circle.png);
+}
+#longphoto-mission ul li:before{ 
+    content:'\00b7'; font-size: 15px;
+    margin-left: -10px;
+    padding-right: 5px;
 }
 #longphoto-mission ul li:last-child{
     padding-bottom: 0;
@@ -195,12 +232,15 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 #longphoto #longphoto-mission{
     line-height: 23px;
     margin-top: 30px;
+    padding-right: 40px;
 }
 #longphoto #longphoto-premise{
-    font-size: 15px;
-    width: 100%;
-    line-height: 23px;
-    color: #ccc;
+    font-size: 12px;
+    text-align: left;
+    line-height: 21px;
+    color: #ede3bc;
+    padding: 0;
+    margin: 0;
 }
 #longphoto-description{
     position: absolute;
@@ -213,9 +253,18 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     font: 600 12px "Open Sans", Helvetica, Arial, sans-serif;
 }
 #longphoto-description a{
-    color: #ecff07;
+    color: #789d9b;
+} 
+#longphoto-description a:hover{
     text-decoration: underline;
 }
+
+
+
+
+
+
+
 
 /* homepage painting key */
 
@@ -718,7 +767,7 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 
 /* homepage longphoto links */
 
-.lp-facebook, .lp-twitter, .lp-googleplus, .lp-isabella_link, .lp-isabella_painting {
+.lp-facebook, .lp-twitter, .lp-googleplus, .lp-isabella_painting {
     position: absolute;
     display: block;
     /* background: red;
@@ -738,13 +787,6 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 }
 .lp-googleplus {
     left: 260px;
-}
-.lp-isabella_link {
-    top: 595px;
-    width: 100px;
-    height: 15px;
-    left: 175px;
-    cursor: pointer;
 }
 .lp-isabella_painting {
     top: 0;
@@ -839,14 +881,13 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     overflow: hidden;
     width: 0;
     opacity: 0;
-    border-top: 1px solid #605c4e;
     list-style-type: none;
     position: absolute;
     z-index: 9999;
-    margin: -1px 0 0 0;
+    margin: 0;
     padding: 0;
-    background: #e8e6dc;
-    background: rgba(232, 230, 220, 0.93);
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 0px 0px 10px 10px;
     -moz-border-radius: 0px 0px 8px 8px;
     -webkit-border-radius: 0px 0px 8px 8px;
@@ -872,8 +913,8 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
   float: none;
 }
 #rare-nav-main .sub-menu li a{
-    color: #1F1E1B;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #e8e6dc;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 #rare-nav-main .sub-menu li:hover > a {
   background: #3078AD;
@@ -951,7 +992,9 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     margin-bottom: 4px;
 }
 .body_block h1 {
-    color: #94907e;
+    color: #41413f;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    margin-bottom: .2em;
 }
 .body_block h2 {
     font:normal 2.6em 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
@@ -959,6 +1002,10 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     letter-spacing: -1px;
     color: #41413f;
     margin-bottom: .3em;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+.body_block h3{
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 .body_block ul {
     margin-left: 30px;
@@ -1157,70 +1204,26 @@ body.page-id-44 .body_block{
     font-size: 11px;
 }
 /* candidate species page layout, page id 40 */
-body.page-id-40 .body_block{
-    background: #e8e7e0 url(ui/candidate-species_bg.jpg) bottom no-repeat;
-    padding-bottom: 80px;
-}
+ 
 body.page-id-40 h2{
     margin-bottom: 15px;
 }
-#candidate-species-box{
-    width: 470px;
-    float: left;
-    margin-left: 40px;
-}
+
 body.page-id-40 .cs-column{
-    width: 225px;
-    padding-right: 10px;
+    width: 256px;
+    padding-right: 11px;
     float: left;
-    position: relative;
-    z-index: 1000;
+}
+body.page-id-40 .cs-column.last{
+    padding-right: 0;
 }
 
-#candidate-edge-box{
-    position: relative;
-    text-align: right;
-    margin-left: 60px;
-    margin-top: 20px;
-}
-#candidate-edge-box p{
-    margin: 0;
-    font-size: 11px;
-}
-#cuban-macaw{
-    background: url(ui/species-cuban-macaw.png) no-repeat;
-    width: 393px;
-    height: 477px;
-    position: absolute;
-    right: -70px;
-    top: -220px;
-    z-index: 100;
-}
-#candidate-criteria-box{
-    width: 300px;
-    margin-right: 40px;
-    padding-left: 20px;
-    float: right;
-}
-.criteria-last{
-    margin-top: 100px;
-}
-#candidate-criteria-box ul{
-    margin-bottom: 40px;
-}
-#candidate-criteria-box ul li{
-    list-style: url(ui/list-orange-circle.png) circle;
-    margin-bottom: 15px;
-    font-size: 13px;
-    margin: 0 0 10px 0;
-}
-#candidate-criteria-box h3, #candidate-species-box h3{
-    font: 700 15px "Open Sans", Helvetica, Arial, sans-serif;
-    margin-bottom: 10px;
-}
 #candidate-species-box h3{
+    font: 700 15px "Open Sans", Helvetica, Arial, sans-serif;
     margin-bottom: 0;
 }
+
+
 
 
 /* FAQ & Reading Layout, page id 55 */
@@ -1228,6 +1231,11 @@ body.page-id-40 .cs-column{
 body.page-id-55 .body_block h3{
     font: normal 23px Helvetica, Arial, sans-serif;
     margin-bottom: 10px;
+}
+body.page-id-55 #faq-column,
+body.page-id-55 #reading-column{
+    width: 375px;
+    float: left;
 }
 #faq-column p{
     padding-left: 15px;
