@@ -17,7 +17,6 @@ get_header();
 
 
         <?php /* Start the Loop */ 
-        global $x;
         $x = 1;
         ?>
         <?php while (have_posts()) : the_post(); ?>
