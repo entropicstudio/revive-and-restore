@@ -41,11 +41,19 @@ get_header(); ?>
                         
                         <?
 
-                        if ( is_page(11) ) { // ethics page
+                        if ( is_page(11) ) { // ethics pageleft_column
                             
                             get_template_part('content', 'ethics');
                             
-                        } elseif ( is_page(44) ) { // events page
+                        } elseif ( is_page(1535) ) { // kids & teachers page
+                            
+                            get_template_part('content', 'kidsteachers');
+                            
+                        } elseif ( is_page(33) ) { // passenger pigeon page
+                            
+                            get_template_part('content', 'pp');
+                            
+                        } elseif ( is_page(44) || is_page(1533) ) { // events & meetings page
                             
                             get_template_part('content', 'events');
                             

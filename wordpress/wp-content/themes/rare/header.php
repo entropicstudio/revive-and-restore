@@ -171,7 +171,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
             <?php  if ( is_page(167) || is_ancestor(167) ) { // Show TEDx Header Image for all TEDx Pages ?>
            
-                <div id="tedxdeextinctionlongphoto_hype_container" class="span-22 center" style="width:870px;height:321px;">
+                <div id="tedxdeextinctionlongphoto_hype_container" class="span-22 center" style="width:870px;height:311px;">
                     <div class="species-caption right middle white" style="top: 68%;"><strong>Cuban Red Macaw</strong><br /><em>Extinct: late 19th century</em></div>
                     <script type="text/javascript" charset="utf-8" src="http://static.longnow.org/widgets/TEDxDeExtinction-longphoto/tedxdeextinctionlongphoto_hype_generated_script.js"></script>
                     <noscript>
@@ -190,6 +190,26 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 <a class="lp-isabella_link" href="<?php echo site_url('/tedxdeextinction/speakers/#isabella-kirkland-bio'); ?>"></a>
                 
                 <div class="span-22 center">
+                    
+                    <div id="longphoto-mission-premise">
+                        
+                        <div id="longphoto-tagline">
+                            <?php get_bloginfo ( 'description' );  ?>
+                        </div>
+                        
+                        <div id="longphoto-premise">
+                            <?php echo wpautop( $rare_theme_options['premise'] ); ?>
+                        </div>
+                        
+                        <div id="longphoto-mission">
+                            <?php  $rare_theme_options['mission_statement']; ?>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="longphoto-description">
+                        <?php echo $rare_theme_options['painting_text']; ?>
+                    </div>
                     
                     <img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" />
                     
@@ -290,7 +310,6 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         </div>
                     </div>
                     
-                    <img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg.jpg" alt="" />
                 </div>
                 
             <?php } else { // show short isbella painting on inside pages ?>
@@ -317,12 +336,53 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
 
         <div class="container body_block rel">
+            
+            <?php if( is_page() ){ ?>
+            
+                
+
+                <?php 
+
+                if( $post->post_parent != 0 AND $post->post_parent != 167 ){
+                    
+                    echo '<ul id="child-navigation">';
+                    $parent_post = get_post($post->post_parent);
+                    $parent_post_title = $parent_post->post_title;
+                    
+                    echo '<a class="parent-link" href="' . get_permalink( $post->post_parent ) . '">' . $parent_post_title . '</a>:';
+
+                    wp_list_pages(array(
+                        'child_of' => $post->post_parent,
+                        'depth' => 1,
+                        'title_li' => ''
+                    )); 
+                    echo '</ul>';
+                    
+                } elseif( !is_page(167) ) {
+                    
+                    $submenu = wp_list_pages(array(
+                        'child_of' => $post->ID,
+                        'depth' => 1,
+                        'title_li' => '',
+                        'echo'  => 0
+                    ));
+                    
+                    if($submenu){
+                        echo '<ul id="child-navigation">';
+                        echo '<a class="parent-link" href="' . get_permalink() . '">' . $post->post_title . '</a>:';
+                        echo $submenu;
+                        echo '</ul>';
+                    }
+                    
+                } ?>
+                    
+                
+                
+            <?php } ?>
+            
             <a name="content"></a>
             
-            <?php if( is_front_page() || is_page(167) || is_ancestor(167) || is_single() || is_home() ){ ?> 
-            
-          
-            <?php } elseif( is_category() ){ ?>
+            <?php if( is_category() ){ ?>
                 
                 <h3 class="prepend-1 append-1"><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h3>
 
@@ -342,8 +402,4 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                     <?php endif; ?>
                 </h3>
   
-            <?php } else { ?>
-            
-                <h1 class="prepend-1 append-1"><?php wp_title(''); ?></h1>
-                
             <?php } ?>

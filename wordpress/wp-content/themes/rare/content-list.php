@@ -2,6 +2,7 @@
 /**
  * content template for post lists
  */
+global $x;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -25,7 +26,14 @@
 
         
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
+		<?php 
+        if( $x == 1 ){
+            the_content();
+        } else {
+            the_excerpt();
+        } 
+        $x++;
+        ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' .'Pages:' . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
         

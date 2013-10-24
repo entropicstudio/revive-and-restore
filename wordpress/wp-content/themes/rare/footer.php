@@ -23,7 +23,8 @@
                 <p class="float_left">
                 <strong>Revive & Restore</strong><br />
                 The Long Now Foundation<br />
-                Fort Mason Center, Building A<br />
+                Fort Mason Center<br />
+                2 Marina Boulevard Building A<br />
                 San Francisco, CA 94123<br />
                 </p>
                 
@@ -64,7 +65,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.qtip2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.qtip.min.js"></script>
     
     <!-- load global javascript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/global.js"></script>

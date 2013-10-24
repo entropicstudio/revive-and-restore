@@ -126,8 +126,8 @@ $(document).ready(function () {
            function() {
            
             $(this).css({ width: '245px' }); // expand search box. transition is css based
-            $('#rare-nav-main li:nth-last-child(2)').animate({ opacity: 0 }, function() { $(this).css('visibility', 'hidden'); }); // fade out and hide link so not clickable
-            $('#rare-nav-main li:last-child').animate({ opacity: 0 }, function() { $(this).css('visibility', 'hidden'); });
+            $('#rare-nav-main > li:nth-last-child(2)').animate({ opacity: 0 }, function() { $(this).css('visibility', 'hidden'); }); // fade out and hide link so not clickable
+            $('#rare-nav-main > li:last-child').animate({ opacity: 0 }, function() { $(this).css('visibility', 'hidden'); });
             
            },
            
@@ -135,9 +135,9 @@ $(document).ready(function () {
             
            function() {
            
-             $(this).css({ width: '15px' }); // contract search box
-             $('#rare-nav-main li:nth-last-child(2)').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
-             $('#rare-nav-main li:last-child').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
+             $(this).css({ width: '45px' }); // contract search box
+             $('#rare-nav-main > li:nth-last-child(2)').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
+             $('#rare-nav-main > li:last-child').animate({ opacity: 1 }, function() { $(this).css('visibility', 'visible'); });
              
            }
            
