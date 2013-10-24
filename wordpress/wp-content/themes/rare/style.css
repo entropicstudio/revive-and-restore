@@ -12,6 +12,32 @@ Version: 1.0
 
 */
 
+input[type=submit]{
+    color: #41413f;
+}
+
+blockquote{
+    margin: 0;
+    font-size: 20px;
+    text-shadow: 1px 1px 0 #f3f3f3;
+    font-style: normal;
+    color: #58564e;
+    text-indent: 10px;
+}
+blockquote :before{
+    left: -10px;
+}
+blockquote cite:before,
+blockquote em:before{
+    content: "";
+}
+blockquote cite{
+    display: block;
+    text-align: right;
+    overflow: hidden;
+    font: bold 14px sans-serif;
+}
+
 .page-top-link{
     position: absolute;
     bottom: 0px;
@@ -44,8 +70,9 @@ div.wp-caption{
 }
 div.wp-caption .wp-caption-text{
     font-size: 11px;
-    padding: 4px 4px 10px;
+    padding: 5px 5px 10px;
     margin: 0;
+    text-align: left;
 }
 div.wp-caption.alignleft{
     float: left;
@@ -55,7 +82,9 @@ div.wp-caption.alignright{
     float: right;
     margin: 5px 0 15px 20px;
 }
-
+div.wp-caption a{
+    display: block;
+}
 
 /* sidebar */
 .section_box{
@@ -943,7 +972,20 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
 
 
 
-
+/* child page sub-nav */
+#child-navigation{
+    margin-bottom: 30px;
+    margin-top: -20px;
+    border-bottom: 1px solid #cecece;
+}
+#child-navigation li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 0 0 10px;
+}
+#child-navigation .parent-link{
+    color: #58564e;
+}
 
 
 
@@ -988,27 +1030,30 @@ body.tedxdeextinction #longphoto, .page-id-167 #longphoto, .parent-pageid-167 #l
     padding-bottom: 80px;
     background-color: #e8e7e0;
 }
-.body_block ul li {
+.body_block ul li,
+.body_block ol li {
     margin-bottom: 4px;
 }
 .body_block h1 {
     color: #41413f;
     text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-    margin-bottom: .2em;
+    margin-bottom: 4px;
 }
 .body_block h2 {
-    font:normal 2.6em 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
+    font:normal 32px 'EB Garamond', 'Goudy Old Style', 'Palatino', 'Book Antiqua', Georgia, serif;
     line-height: 1.2em;
-    letter-spacing: -1px;
     color: #41413f;
-    margin-bottom: .3em;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    margin-bottom: 4px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 .body_block h3{
-    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 .body_block ul {
     margin-left: 30px;
+}
+.body_block .blog-sidebar ul{
+    margin-left: 17px;
 }
 .header_block form {
     display: none;
@@ -1046,8 +1091,8 @@ ul.footer-featured-links li{
 /* rare blog */
 .blog-sidebar h3{
     font-size: 2em;
-    text-shadow: -1px 1px 1px #fff;
-}
+    text-shadow: -1px 1px 1px #f3f3f3;
+} 
 
 .blog-sidebar ul li{
     margin: 0;
@@ -1081,8 +1126,79 @@ body.page-id-11 .page-top-link a, body.page-id-40 .page-top-link a{
 h2.section-heading{
     font: bold 16px Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    color: #acaba3;
+    color: #58564e;
 }
+
+
+/* passenger pigeon, page id = 33 */
+
+body.page-id-33 .body_block div.first{
+    background: url(ui/box-vert-border.gif) top right repeat-y;
+    padding-right: 22px;
+    margin-right: 18px;
+}
+
+
+
+
+/* kids & teachers, page id = 1535 */
+body.page-id-1535 .wpcf7{
+    border: 1px solid #ccc;
+    padding: 40px;
+    background-color: #deddd3;
+}
+body.page-id-1535 .wpcf7 input[type=text],
+body.page-id-1535 .wpcf7 input[type=email],
+body.page-id-1535 .wpcf7 select{
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    background: #f7f6f2;
+    border: 1px solid #c1bfb4;
+    padding: 5px;
+}
+body.page-id-1535 .wpcf7 span.label{
+    display: inline-block;
+    width: 150px;
+    padding-right: 10px;
+    text-align: right;
+}
+body.page-id-1535 .wpcf7 textarea{
+    width: 475px;
+}
+body.page-id-1535 .wpcf7 input[type=submit] {
+    margin: 4px 0 0 0;
+    padding: 8px 0;
+    background: #4f98c5;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #4f98c5 0, #204b6e 57%, #204b6e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4f98c5), color-stop(57%, #204b6e), color-stop(100%, #204b6e));
+    background: -webkit-linear-gradient(top, #4f98c5 0, #204b6e 57%, #204b6e 100%);
+    background: -o-linear-gradient(top, #4f98c5 0, #204b6e 57%, #204b6e 100%);
+    background: -ms-linear-gradient(top, #4f98c5 0, #204b6e 57%, #204b6e 100%);
+    background: linear-gradient(top, #4f98c5 0, #204b6e 57%, #204b6e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f98c5', endColorstr='#204b6e', GradientType=0);
+    border: 1px solid #2b6595;
+    color: #fffef3;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1em;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px;
+    width: 230px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(20,20,20,0.7);
+    -webkit-box-shadow: 0 2px 65px #fffceb;
+    -moz-box-shadow: 0 2px 65px #fffceb;
+    font-family: "EB Garamond",'EB Garamond','Goudy Old Style','Palatino','Book Antiqua',Georgia,serif;
+    float: right;
+}
+body.page-id-1535 .wpcf7 .wpcf7-response-output{
+    width: 400px;
+    margin-top: -35px;
+}
+
 
 
 /* ethics page layout, wordpress page id = 11 */
@@ -1156,10 +1272,8 @@ body.page-id-11 .body_block{
 
 
 /* events page layout, page id 44 */
-body.page-id-44 .body_block{
-}
-
 #event-boxes{
+    clear: both;
    border-top: 1px solid #ccc;
 }
 #event-boxes .box{
@@ -1185,42 +1299,48 @@ body.page-id-44 .body_block{
     padding: 20px 40px;
 }
 
+
+
 /* resources layout, page id 1340 */
+#recommended-reading-box{
+    font-size: 15px;
+}
 #recommended-reading-box h4{
     background: #f1f1ec;
     color: #605d52;
     font: bold 18px Helvetica, Arial, sans-serif;
     padding: 2px 5px;
-    clear: right;
+    clear: both;
+}
+#recommended-reading-box a{
+    font-size: 16px;
+    display: block;
+    padding-bottom: 5px;
 }
 #recommended-reading-box ul li{
-    list-style: url(ui/list-orange-circle.png) circle;
-    margin-bottom: 15px;
-    font-size: 12px;
-    margin: 0 0 7px -5px;
-    clear: right;
+    list-style: none;
+    clear: both;
 }
-#relevant-links-box{
-    font-size: 11px;
-}
+
+
+
+
 /* candidate species page layout, page id 40 */
  
 body.page-id-40 h2{
     margin-bottom: 15px;
 }
-
-body.page-id-40 .cs-column{
-    width: 256px;
-    padding-right: 11px;
-    float: left;
+body.page-id-40 .wp-caption .wp-caption-text{
+    color: #1264A2;
+    text-align: center;
 }
-body.page-id-40 .cs-column.last{
-    padding-right: 0;
+#candidate-species-box h2{
+    font-size: 23px;
 }
-
 #candidate-species-box h3{
     font: 700 15px "Open Sans", Helvetica, Arial, sans-serif;
     margin-bottom: 0;
+    clear: both;
 }
 
 
@@ -1232,21 +1352,26 @@ body.page-id-55 .body_block h3{
     font: normal 23px Helvetica, Arial, sans-serif;
     margin-bottom: 10px;
 }
-body.page-id-55 #faq-column,
-body.page-id-55 #reading-column{
+body.page-id-55 .faq-column{
     width: 375px;
     float: left;
+    margin-top: 30px;
 }
-#faq-column p{
+body.page-id-55 .faq-column.last{
+    background: url(ui/box-vert-border.gif) top left repeat-y;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.faq-column p{
     padding-left: 15px;
 }
-#reading-column h4{
+.faq-column h4{
     background: #f1f1ec;
     color: #605d52;
     font: bold 18px Helvetica, Arial, sans-serif;
     padding: 2px 5px;
 }
-#reading-column ul li{
+.faq-column ul li{
     list-style: url(ui/list-orange-circle.png) circle;
     margin-bottom: 15px;
     font-size: 12px;
@@ -1275,9 +1400,10 @@ body.page-id-55 #reading-column{
     vertical-align: top;
     width: 234px;
     padding: 20px;
+    position: relative;
 }
 .homepage-box-section .box-grid.first{
-    padding-left: 0;
+    padding-left: 0; 
 }
 .homepage-box-section .box-grid.last{
     padding-right: 0;
@@ -1310,13 +1436,9 @@ body.page-id-55 #reading-column{
 }
 
 /* staff & advisors page layout, page id 52 */
-body.page-id-52 .body_block{
-    font-size: 14px;
-}
 body.page-id-52 #advisors_column ul li{
     list-style: url(ui/list-orange-circle.png) circle;
     margin-bottom: 15px;
-    font-size: 14px;
     margin: 0 0 7px -5px;
 }
 body.page-id-52 #staff_column img{
@@ -1359,7 +1481,7 @@ hr.post-list{
     font: normal 12px Helvetica, Arial, sans-serif;
 }
 body.page-id-167 h2, body.tedxdeextinction .entry-header h2, body.parent-pageid-167 h1, body.tedxdeextinction h1{
-    margin: 0;
+    margin: 0 0 4px;
     font: 700 25px "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     border-bottom: 1px solid #cecece;
@@ -1554,7 +1676,7 @@ a.purple-button:active{
 .social-media-box{
     float: left;
     width: 300px;
-    margin-top: 10px;
+    text-shadow: 1px 1px 0 #f3f3f3;
 }
 .social-media-box a.ss-icon{
     display: inline-block;
@@ -1574,13 +1696,14 @@ a.purple-button:active{
 }
 .entry-info-box{
     float: right;
-    width: 190px;
+    width: 210px;
 }
 .entry-date, .entry-comments{
     display: block;
     border-bottom: 1px solid #cecece;
     text-align: right;
-    padding: 1px;
+    padding: 0 2px 2px;
+    text-shadow: 1px 1px 0 #f3f3f3;
 }
 .social-media-box .social-media-share{
     float: left;
@@ -1607,6 +1730,17 @@ ul.really_simple_twitter_widget li{
     list-style: none;
     margin-bottom: 20px;
     font-size: 11px;
+}
+
+
+
+/* collapse styles */
+.collapseomatic{
+    color: #1264A2;
+    display: block;
+}
+.collapseomatic_content{
+    margin-left: 0!important;
 }
 
 
@@ -2232,4 +2366,44 @@ ul.really_simple_twitter_widget li{
 /* IE6 Modal plugin fix */
 .qtipmodal-ie6fix{
 	position: absolute !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media print {
+    
+    
+    
+    div.header_block,
+    div#longnow-menu,
+    div#longphoto,
+    div.footer_block,
+    p.page-top-link a,
+    ul#child-navigation,
+    div.sub_footer a{
+        display: none;
+    }
+    
+    div.body_block{
+        background: none;
+        border: none;
+        color: #000;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        color: #000 !important;
+    }
+    
 }
