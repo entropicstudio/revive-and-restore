@@ -193,12 +193,16 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                     
                     <div id="longphoto-mission-premise">
                         
+                        <div id="longphoto-tagline">
+                            <?php get_bloginfo ( 'description' );  ?>
+                        </div>
+                        
                         <div id="longphoto-premise">
-                            <?php echo $rare_theme_options['premise']; ?>
+                            <?php echo wpautop( $rare_theme_options['premise'] ); ?>
                         </div>
                         
                         <div id="longphoto-mission">
-                            <?php echo $rare_theme_options['mission_statement']; ?>
+                            <?php  $rare_theme_options['mission_statement']; ?>
                         </div>
                         
                     </div>
@@ -332,12 +336,53 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
 
         <div class="container body_block rel">
+            
+            <?php if( is_page() ){ ?>
+            
+                
+
+                <?php 
+
+                if( $post->post_parent != 0 AND $post->post_parent != 167 ){
+                    
+                    echo '<ul id="child-navigation">';
+                    $parent_post = get_post($post->post_parent);
+                    $parent_post_title = $parent_post->post_title;
+                    
+                    echo '<a class="parent-link" href="' . get_permalink( $post->post_parent ) . '">' . $parent_post_title . '</a>:';
+
+                    wp_list_pages(array(
+                        'child_of' => $post->post_parent,
+                        'depth' => 1,
+                        'title_li' => ''
+                    )); 
+                    echo '</ul>';
+                    
+                } elseif( !is_page(167) ) {
+                    
+                    $submenu = wp_list_pages(array(
+                        'child_of' => $post->ID,
+                        'depth' => 1,
+                        'title_li' => '',
+                        'echo'  => 0
+                    ));
+                    
+                    if($submenu){
+                        echo '<ul id="child-navigation">';
+                        echo '<a class="parent-link" href="' . get_permalink() . '">' . $post->post_title . '</a>:';
+                        echo $submenu;
+                        echo '</ul>';
+                    }
+                    
+                } ?>
+                    
+                
+                
+            <?php } ?>
+            
             <a name="content"></a>
             
-            <?php if( is_front_page() || is_page(167) || is_ancestor(167) || is_single() || is_home() ){ ?> 
-            
-          
-            <?php } elseif( is_category() ){ ?>
+            <?php if( is_category() ){ ?>
                 
                 <h3 class="prepend-1 append-1"><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h3>
 
@@ -357,8 +402,4 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                     <?php endif; ?>
                 </h3>
   
-            <?php } else { ?>
-            
-                <h1 class="prepend-1 append-1"><?php wp_title(''); ?></h1>
-                
             <?php } ?>
