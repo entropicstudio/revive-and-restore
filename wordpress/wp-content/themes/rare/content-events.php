@@ -4,11 +4,11 @@
  */
 ?>
 
-<?php if (the_content()) { ?>
-    <div class="event-content-box">
+
+    <div class="span-20 prepend-1 append-1 padbottom-25 last">
         <?php the_content(); ?>
     </div>
-<?php } ?>
+
 
 <div id="event-boxes">
     
