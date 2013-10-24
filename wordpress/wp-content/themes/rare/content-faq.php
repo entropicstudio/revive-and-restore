@@ -4,19 +4,19 @@
  */
 ?>
 
+        <div class="span-20 prepend-1 append-1">
+            <?php the_content(); ?>
+        </div>
 
-        <div class="span-11 prepend-1 append-1 padtop-20" id="faq-column">
-            <h2 class="section-heading">FREQUENTLY ASKED QUESTIONS</h2>
-            <hr />
+
+        <div class="faq-column first-col prepend-1">
             
-            <?php the_field('faq_section'); ?>
+            <?php the_field('faq_left'); ?>
 
         </div>
 
-        <div class="span-8 last append-1 padtop-20" id="reading-column">
-            <h2 class="section-heading">ETHICAL QUESTIONS</h2>
-            <hr />
+        <div class="faq-column last append-1">
             
-            <?php the_field('ethical_questions'); ?>
+            <?php the_field('faq_right'); ?>
 
         </div>
