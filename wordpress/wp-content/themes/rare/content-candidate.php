@@ -11,18 +11,14 @@
 
 
 
-<div id="candidate-species-box" class="span-20 prepend-1 append-1">
+<div id="candidate-species-box">
     
-    <div class="cs-column">
+    <div class="prepend-1 span-10">
         <?php the_field('cs_column_1'); ?>
     </div>
     
-    <div class="cs-column">
+    <div class="span-10 appent-1 last">
         <?php the_field('cs_column_2'); ?>
-    </div>
-    
-    <div class="cs-column last">
-        <?php the_field('cs_column_3'); ?>
     </div>
     
     
