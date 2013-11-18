@@ -397,7 +397,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         <?php printf( __( 'Yearly Archives: <span>%s</span>' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) ); ?>
                     <?php elseif ( is_tag() ) : ?>
                        <?php printf( __( 'Tag Archives: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?>
-                    <?php else : ?>
+                    <?php elseif( !is_post_type_archive('species') ) : ?>
                         <?php _e( 'Blog Archives' ); ?>
                     <?php endif; ?>
                 </h3>
