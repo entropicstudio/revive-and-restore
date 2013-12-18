@@ -45,6 +45,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
         <!-- theme stylesheets -->  
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bristle_classic.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.thumbnailScroller.css">
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" />
@@ -386,7 +387,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 
                 <h3 class="prepend-1 append-1"><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h3>
 
-            <?php } elseif( is_archive() ){ ?>
+            <?php } elseif( is_archive() AND !is_post_type_archive('species') ){ ?>
                 
                 <h3 class="prepend-1 append-1">
                     <?php if ( is_day() ) : ?>
