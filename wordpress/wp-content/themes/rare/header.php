@@ -45,6 +45,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
         <!-- theme stylesheets -->  
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bristle_classic.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.thumbnailScroller.css">
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" />
@@ -386,7 +387,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 
                 <h3 class="prepend-1 append-1"><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h3>
 
-            <?php } elseif( is_archive() ){ ?>
+            <?php } elseif( is_archive() AND !is_post_type_archive('species') ){ ?>
                 
                 <h3 class="prepend-1 append-1">
                     <?php if ( is_day() ) : ?>
@@ -397,7 +398,7 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         <?php printf( __( 'Yearly Archives: <span>%s</span>' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) ); ?>
                     <?php elseif ( is_tag() ) : ?>
                        <?php printf( __( 'Tag Archives: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?>
-                    <?php else : ?>
+                    <?php elseif( !is_post_type_archive('species') ) : ?>
                         <?php _e( 'Blog Archives' ); ?>
                     <?php endif; ?>
                 </h3>
