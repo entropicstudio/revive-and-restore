@@ -64,8 +64,10 @@
     <!-- load jQuery and UI from Google CDN -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-    
+    <script type="text/javascript" charset="utf8" src="<?php echo get_template_directory_uri(); ?>/js/jquery.dataTables.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/FixedColumns.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.qtip.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.thumbnailScroller.js"></script>
     
     <!-- load global javascript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/global.js"></script>
@@ -86,6 +88,23 @@
                     at: 'top middle'
                 }
             })
+            
+            $('jTscroller a').click(function(){return false;});
+            $("#tS2").thumbnailScroller({
+                scrollerType:"clickButtons",
+                scrollerOrientation:"horizontal",
+                scrollSpeed:2,
+                scrollEasing:"easeOutCirc",
+                scrollEasingAmount:600,
+                acceleration:4,
+                scrollSpeed:800,
+                noScrollCenterSpace:10,
+                autoScrolling:0,
+                autoScrollingSpeed:2000,
+                autoScrollingEasing:"easeInOutQuad",
+                autoScrollingDelay:500
+            });
+            
         });
         
    </script>
