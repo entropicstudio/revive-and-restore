@@ -1859,24 +1859,94 @@ table.species-table td.actions{
     height: auto !important;
     padding: 25px 35px 25px 25px;
 }
-#species-poll-popup p{
-    margin: 3px;
+#species-poll-popup h2{
+    margin-bottom: 0;
 }
+#species-poll-popup h3{
+    margin-bottom: 5px;
+}
+#species-poll-popup p{
+    margin-bottom: 8px;
+}
+#species-poll-popup hr{
+    margin: 15px 0;
+}
+#species-poll-popup .wpcf7-form-control-wrap{
+    float: right;
+}
+#species-poll-popup input[type=submit]{
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 8px 18px;
+}
+#species-poll-popup .result-question{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+#species-poll-popup .result-pie-chart{
+    display: inline-block;
+    width: 40%;
+}
+#species-poll-popup .pie-legend{
+    display: inline-block;
+    width: 200px;
+    margin-top: 30px;
+}
+#species-poll-popup .pie-legend > span{
+    display: block;
+    line-height: 12px;
+    margin-bottom: 5px;
+}
+#species-poll-popup .pie-legend > span > span{
+    display: block;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+}
+#species-poll-popup .pie-legend-yes span{
+    background: #73bf3e;
+}
+#species-poll-popup .pie-legend-maybe span{
+    background: #faca00;
+}
+#species-poll-popup .pie-legend-no span{
+    background: #cd0d09;
+}
+
 #species-poll-popup .post-content{
     margin-top: 30px;
+}
+#species-poll-popup #show_poll_results{
+    display: none;
+    float: right;
+    font-size: 18px;
+}
+#species-poll-popup #response_box{
+    height: 30px;
+}
+#species-poll-popup .wpcf7-response-output{
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+    margin-top: -31px;
+}
+#species-poll-popup .ajax-loader{
+
+}
+#poll-results .ajax-loader{
+    margin: 100px auto;
+    display: block;
+}
+#species-poll-popup input[type=submit]{
+    margin: 0 0 0 15px;
 }
 #fancybox-content{
     max-height: 600px;
 }
-#fancybox-content .wpsqt-question-review{
-    text-align: center;
-}
-#fancybox-content .wpsqt-question-info{
-    margin: 0 auto;
-}
-#fancybox-content .wpsqt-question-review h3{
-    text-align: left;
-}
+
 #fancybox-content > div{
     overflow-y: scroll !important;
     height: 600px !important;

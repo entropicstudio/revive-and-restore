@@ -362,15 +362,66 @@ $rare_species_options = get_option ( 'rare_species_options' );
                             <?php if(!$blank) : ?>
                             
                                 <div class="poll-button">
-                                    <a id="<?php echo $_POST['wpsqt_nonce'] ? 'fancybox-auto' : ''; ?>"href="#species-poll-popup" class="fancybox-inline">
+                                    <a href="#species-poll-popup" class="fancybox-inline">
                                         <img src="<?php echo get_template_directory_uri(); ?>/ui/poll-button.png" alt="take our poll" />
                                     </a>
                                 </div>
 
                                 <div style="display:none" class="fancybox-hidden">
                                     <div id="species-poll-popup" class="hentry">
-                                        <?php the_title(); ?>
-                                            <?php echo do_shortcode('[wpsqt name="Passenger Pigeon" type="survey"]'); ?>
+                                        
+                                        <?php 
+                                        
+                                            $post_object = get_field('survey');
+
+                                            $survey_id = $post_object->ID; 
+                                            
+                                        ?>
+                                        
+                                        <div id="species-poll-results" style="display: none;">
+                                            
+                                            <h2><?php the_title(); ?> Poll Results</h2>
+                                            <hr />
+                                            
+                                            <div id="poll-results">
+                                                
+                                            </div>
+                                                
+                                        </div>
+                                            
+                                        
+                                        <script>
+                                        
+                                            $(document).ready(function(){
+                                                                
+                                                $.ajaxSetup({cache:false});
+
+                                                $('#show_poll_results').click(function(){
+                                                    $('#species-poll-survey').hide();
+                                                    $('#species-poll-results').show();
+                                                    $("#poll-results").html('<img class="ajax-loader" src="<?php echo site_url(); ?>/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Loading Poll Results..." />');
+                                                    $("#poll-results").load('<?php echo get_template_directory_uri(); ?>/ajax_poll-results.php?survey=<?php echo $survey_id; ?>&species=<?php echo $species_id; ?>');
+                                                    return false;
+                                                }) ;
+                                               
+                                            });
+                                    
+                                        </script>
+                                        
+                                        <div id="species-poll-survey">
+                                            <h2><?php the_title(); ?> Survey</h2>
+                                            <p>Take our species survey below and let us know what you think.</p>
+
+                                            <hr />
+                                            <?php
+
+                                            echo do_shortcode("[contact-form-7 id='$survey_id']");
+
+                                            ?>
+                                            
+                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             
