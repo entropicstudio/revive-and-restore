@@ -67,6 +67,7 @@
     <script type="text/javascript" charset="utf8" src="<?php echo get_template_directory_uri(); ?>/js/jquery.dataTables.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/FixedColumns.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.qtip.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/chart.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.thumbnailScroller.js"></script>
     
     <!-- load global javascript -->
