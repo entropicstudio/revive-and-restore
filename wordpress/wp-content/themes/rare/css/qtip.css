@@ -129,9 +129,9 @@
 
 /*! Light tooltip style */
 .qtip-light{
-	background-color: white;
-	border-color: #E2E2E2;
-	color: #454545;
+	background-color: #c4c4c4;
+	border-color: #888;
+	color: #000;
 }
 
 	.qtip-light .qtip-titlebar{
@@ -141,9 +141,16 @@
 
 /*! Dark tooltip style */
 .qtip-dark{
-	background-color: #505050;
-	border-color: #303030;
-	color: #f3f3f3;
+	background-color: #F3EFE0;
+	border-color: #b4ac8c;
+	color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        width: auto;
+        white-space: nowrap;
+        max-width: none;
+        padding: 6px;
+        font-family: "Architects Daughter", cursive, Helvetica, sans-serif;
 }
 
 	.qtip-dark .qtip-titlebar{
@@ -201,9 +208,15 @@
 
 /*! Green tooltip style */
 .qtip-green{
-	background-color: #CAED9E;
-	border-color: #90D93F;
-	color: #3F6219;
+	background-color: #e1ede1;
+	border-color: #136735;
+	color: #222;
+        font-size: 15px;
+        width: auto;
+        white-space: nowrap;
+        max-width: none;
+        padding: 10px;
+        font-family: "Rock Salt", cursive, Helvetica, sans-serif;
 }
 
 	.qtip-green .qtip-titlebar{
@@ -219,7 +232,7 @@
 .qtip-blue{
 	background-color: #E5F6FE;
 	border-color: #ADD9ED;
-	color: #5E99BD;
+	color: #17618e;
 }
 
 	.qtip-blue .qtip-titlebar{
