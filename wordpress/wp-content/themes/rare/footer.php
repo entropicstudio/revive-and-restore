@@ -5,6 +5,9 @@
  * Contains footer content and copyright lines
  *
  */
+
+$continuum_options = get_option ( 'rare_continuum_options' );
+
 ?>
         <br class="clear" />
         <p class="larger center quiet page-top-link"><a href="#top"><i class="ss-icon" style="font-size: 1.3em; position: relative; top: 6px;">&#xF500;</i> Top of Page</a></p>
@@ -66,7 +69,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
     <script type="text/javascript" charset="utf8" src="<?php echo get_template_directory_uri(); ?>/js/jquery.dataTables.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/FixedColumns.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.qtip.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/chart.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.thumbnailScroller.js"></script>
     
@@ -87,6 +90,13 @@
                 position: {
                     my: 'bottom middle',
                     at: 'top middle'
+                },
+                hide: {
+                    fixed: true,
+                    delay: 300
+                },
+                show: {
+                    solo: true
                 }
             })
             
@@ -109,7 +119,10 @@
         });
         
    </script>
-
+   
+   
+   
+   
     <?php wp_footer(); ?>
 
 
