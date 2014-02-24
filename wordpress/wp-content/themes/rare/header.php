@@ -42,12 +42,17 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
 
         <!-- load web fonts from google -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic|EB+Garamond' rel='stylesheet' type='text/css'>        
-
+        <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
         <!-- theme stylesheets -->  
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bristle_classic.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.thumbnailScroller.css">
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/qtip.css">
+        
+        <?php if( is_page_template('continuum-template.php') ){ ?>
+            <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/continuum.css">
+        <?php } ?>
+        
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-social.css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/webfonts/ss-standard.css" />
         

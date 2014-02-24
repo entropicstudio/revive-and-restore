@@ -46,19 +46,7 @@ if ( function_exists('register_sidebar') ) {
 
 
 
-// add theme options
-function rare_theme_menu() {
 
-	add_theme_page(
-		'Revive and Restore Theme', 	// Browser Page Title
-		'RARE Theme Options',			// Menu Label
-		'administrator',                // Which users to allow
-		'rare_theme_options',           // Menu id
-		'rare_theme_display'            // function callback
-	);
-
-}
-add_action('admin_menu', 'rare_theme_menu');
 
 // custom image size for candidate species
 if ( function_exists( 'add_image_size' ) ) { 
@@ -110,6 +98,20 @@ function species_post_type() {
 add_action( 'init', 'species_post_type', 0 );
 
 
+
+// add theme options
+function rare_theme_menu() {
+
+	add_theme_page(
+		'Revive and Restore Theme', 	// Browser Page Title
+		'RARE Theme Options',			// Menu Label
+		'administrator',                // Which users to allow
+		'rare_theme_options',           // Menu id
+		'rare_theme_display'            // function callback
+	);
+
+}
+add_action('admin_menu', 'rare_theme_menu');
 
 // options page
 function rare_theme_display() { ?>
