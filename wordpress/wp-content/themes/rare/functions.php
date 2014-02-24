@@ -6,6 +6,7 @@
  */
 
 require_once('includes/theme-options.php'); // custom theme options
+require_once('includes/continuum-options.php'); // extinction continuum options/settings
 require_once('includes/theme-login.php'); // custom login page
 
 // add wordpress editor stylesheet
