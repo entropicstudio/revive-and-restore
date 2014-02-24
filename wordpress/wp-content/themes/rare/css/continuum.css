@@ -1,9 +1,12 @@
-            body{
-            }
+/*
+Stylesheet for the extinction continuum
+*/
             #continuum-container{
                 width: 790px;
                 margin: 0 auto;
                 position: relative;
+                background: #fff;
+                border: 1px solid #ccc;
             }
             #continuum-container h1{
                 color: #fff;
@@ -24,6 +27,18 @@
                 text-shadow: none;
                 margin-top: 10px;
             }
+            .qtip-title em{
+                display: inline-block;
+                margin-left: 4px;
+            }
+            .qtip-content h3{
+                margin: 10px 0 3px;
+                font: normal 14px Helvetica, Arial, sans-serif;
+            }
+            #continuum-container ul#biotech-list{
+                overflow: hidden;
+                margin-bottom: 0;
+            }
             #continuum-container ul#biotech-list li{
                 width: 40%;
                 margin-left: 10%;
@@ -31,7 +46,7 @@
                 font: normal 16px Helvetica, Arial, sans-serif;
                 padding: 4px 0;
             }
-            #species-map{
+            #continuum-container #species-map{
                 position: absolute;
                 z-index: 1000;
                 left: 0;
@@ -39,150 +54,150 @@
                 width: 100%;
                 height: 171px;
             }
-            #species-container{
+            #continuum-container #species-container{
                 height: 171px;
-                margin-top: -50px;
+                margin-top: -70px;
                 position: relative;
             }
-            .species-hover{
+            #continuum-container .species-hover{
                 position: absolute;
                 z-index: 100;
-                opacity: 1;
+                opacity: .8;
             }
-            #species-bat{
+            #continuum-container #species-bat{
                 background: url(../ui/continuum/species-bat.png) no-repeat;
                 width: 21px;
                 height: 20px;
                 left: 174px;
                 bottom: 83px
             }
-            #species-bucardo{
+            #continuum-container #species-bucardo{
                 background: url(../ui/continuum/species-bucardo.png) no-repeat;
                 width: 45px;
                 height: 63px;
                 left: 358px;
-                bottom: 6px;
+                bottom: 4px;
             }
-            #species-dinosaur{
+            #continuum-container #species-dinosaur{
                 background: url(../ui/continuum/species-dinosaur.png) no-repeat;
                 width: 129px;
                 height: 47px;
                 left: 662px;
                 bottom: 4px;
             }
-            #species-dodo{
+            #continuum-container #species-dodo{
                 background: url(../ui/continuum/species-dodo.png) no-repeat;
                 width: 42px;
                 height: 45px;
                 left: 394px;
-                bottom: 2px;
+                bottom: 0px;
             }
-            #species-ferret{
+            #continuum-container #species-ferret{
                 background: url(../ui/continuum/species-ferret.png) no-repeat;
                 width: 35px;
                 height: 13px;
                 left: 103px;
                 bottom: 4px;
             }
-            #species-frog{
+            #continuum-container #species-frog{
                 background: url(../ui/continuum/species-frog.png) no-repeat;
                 width: 13px;
                 height: 8px;
                 left: 251px;
                 bottom: 4px;
             }
-            #species-frog2{
+            #continuum-container #species-frog2{
                 background: url(../ui/continuum/species-frog2.png) no-repeat;
                 width: 12px;
                 height: 17px;
                 left: 266px;
                 bottom: 9px;
             }
-            #species-giraffe{
+            #continuum-container #species-giraffe{
                 background: url(../ui/continuum/species-giraffe.png) no-repeat;
                 width: 147px;
                 height: 135px;
-                bottom: 4px;
+                bottom: 1px;
                 left: 1px;
             }
-            #species-honeycreeper{
+            #continuum-container #species-honeycreeper{
                 background: url(../ui/continuum/species-honeycreeper.png) no-repeat;
                 width: 22px;
                 height: 15px;
                 left: 240px;
                 bottom: 83px;
             }
-            #species-honeycreeper2{
+            #continuum-container #species-honeycreeper2{
                 background: url(../ui/continuum/species-honeycreeper2.png) no-repeat;
                 width: 20px;
                 height: 21px;
                 left: 228px;
                 bottom: 97px;
             }
-            #species-houbara{
+            #continuum-container #species-houbara{
                 background: url(../ui/continuum/species-houbara.png) no-repeat;
                 width: 26px;
                 height: 23px;
                 left: 30px;
                 bottom: 4px;
             }
-            #species-macrauchenia{
+            #continuum-container #species-macrauchenia{
                 background: url(../ui/continuum/species-macrauchenia.png) no-repeat;
                 width: 97px;
                 height: 65px;
                 left: 595px;
                 bottom: 3px;
             }
-            #species-mammoth{
+            #continuum-container #species-mammoth{
                 background: url(../ui/continuum/species-mammoth.png) no-repeat;
                 width: 229px;
                 height: 146px;
                 left: 380px;
-                bottom: 3px;
+                bottom: -2px;
             }
-            #species-pigeon{
+            #continuum-container #species-pigeon{
                 background: url(../ui/continuum/species-pigeon.png) no-repeat;
                 width: 30px;
                 height: 28px;
                 left: 400px;
                 bottom: 138px;
             }
-            #species-pigeon2{
+            #continuum-container #species-pigeon2{
                 background: url(../ui/continuum/species-pigeon2.png) no-repeat;
                 width: 35px;
                 height: 23px;
                 left: 370px;
                 bottom: 120px;
             }
-            #species-przewalski{
+            #continuum-container #species-przewalski{
                 background: url(../ui/continuum/species-przewalski.png) no-repeat;
                 width: 103px;
                 height: 76px;
                 bottom: 2px;
                 left: 110px;
             }
-            #species-rhino{
+            #continuum-container #species-rhino{
                 background: url(../ui/continuum/species-rhino.png) no-repeat;
                 width: 147px;
                 height: 80px;
                 left: 210px;
-                bottom: 3px;
+                bottom: 0px;
             }
-            #species-sloth{
+            #continuum-container #species-sloth{
                 background: url(../ui/continuum/species-sloth.png) no-repeat;
                 width: 93px;
                 height: 133px;
                 left: 538px;
-                bottom: 2px;
+                bottom: -5px;
             }
-            #species-wallaby{
+            #continuum-container #species-wallaby{
                 background: url(../ui/continuum/species-wallaby.png) no-repeat;
                 width: 34px;
                 height: 19px;
                 left: 320px;
                 bottom: 3px;
             }
-            #species-wildcat{
+            #continuum-container #species-wildcat{
                 background: url(../ui/continuum/species-wildcat.png) no-repeat;
                 width: 33px;
                 height: 17px;
@@ -190,19 +205,19 @@
                 bottom: 3px;
             }
             
-            #heading-container{
+            #continuum-container #heading-container{
                 overflow: hidden;
             }
-            #heading-container div{
-                height: 150px;
+            #continuum-container #heading-container div{
+                height: 180px;
                 background: #1e5799; /* Old browsers */
-                background: -moz-linear-gradient(top,  #1e5799 0%, #e8e7e0 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#e8e7e0)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top,  #1e5799 0%,#e8e7e0 100%); /* Chrome10+,Safari5.1+ */
-                background: -o-linear-gradient(top,  #1e5799 0%,#e8e7e0 100%); /* Opera 11.10+ */
-                background: -ms-linear-gradient(top,  #1e5799 0%,#e8e7e0 100%); /* IE10+ */
-                background: linear-gradient(to bottom,  #1e5799 0%,#e8e7e0 100%); /* W3C */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e8e7e0',GradientType=0 ); /* IE6-9 */
+                background: -moz-linear-gradient(top,  #1e5799 0%, #ffffff 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #1e5799 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #1e5799 0%,#ffffff 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #1e5799 0%,#ffffff 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #1e5799 0%,#ffffff 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
                 border-right: 2px solid #fff;
                 float: left;
                 color: #fff;
@@ -211,25 +226,28 @@
                 font-family: Helvetica, Arial, sans-serif;
                 padding-top: 10px;
             }
-            #heading-container #endangered-col{
+            #continuum-container #heading-container #endangered-col{
                 width: 120px;
             }
-            #heading-container #critically-col{
+            #continuum-container #heading-container #critically-col{
                 width: 240px;
             }
-            #heading-container #extinct-col{
+            #continuum-container #heading-container #extinct-col{
                 border-right: none;
                 width: 426px;
             }
             
-            #status-container{
+            #continuum-container #status-container{
                 overflow: hidden;
+                margin-top: -4px;
+                z-index: 1000;
+                position: relative;
             }
-            #status-container > div{
+           #continuum-container #status-container > div{
                 height: 40px;
                 position: relative;
             }
-            #status-container > div > span{
+            #continuum-container #status-container > div > span{
                 font: normal 12px sans-serif;
                 line-height: 40px;
                 display: inline-block;
@@ -237,7 +255,7 @@
                 float: left;
             }
             
-            .arrow-right {
+            #continuum-container .arrow-right {
                 width: 0; 
                 height: 0; 
                 border-top: 20px solid transparent;
@@ -248,7 +266,7 @@
                 top: 0;
                 z-index: 9999;
             }
-            .arrow-left {
+            #continuum-container .arrow-left {
                 width: 0; 
                 height: 0; 
                 border-top: 20px solid transparent;
@@ -260,23 +278,23 @@
                 z-index: 9999;
             }
             
-            #declining-box{
+            #continuum-container #declining-box{
                 height: 40px;
                 width: 45%;
                 float: left;
                 background: #c02126;
             }
-            #declining-box span{
+            #continuum-container #declining-box span{
                 width: 33%;
                 color: #fff;
             }
-            #declining-box .arrow-start{
-                border-left-color: #e8e7e0;
+            #continuum-container #declining-box .arrow-start{
+                border-left-color: #fff;
                 left: 0;
             }
             
             
-            #degrading-box{
+            #continuum-container #degrading-box{
                 height: 40px;
                 width: 37%;
                 float: left;
@@ -290,12 +308,12 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e28888', endColorstr='#c02126',GradientType=1 ); /* IE6-9 */
                 color: #fff;
             }
-            #degrading-box span{
+            #continuum-container #degrading-box span{
                 width: 100%;
             }
-            #nodna-box{
+            #continuum-container #nodna-box{
                 height: 40px;
-                width: 15%;
+                width: 123px;
                 float: left;
                 background: #afafaf; /* Old browsers */
                 background: -moz-linear-gradient(left,  #afafaf 0%, #000000 27%); /* FF3.6+ */
@@ -307,13 +325,13 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#afafaf', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
                 color: #fff;
             }
-            #nodna-box span{
+            #continuum-container #nodna-box span{
                 width: 100%
             }
-            #nodna-box .arrow{
+            #continuum-container #nodna-box .arrow{
                 border-left-color: #000;
             }
-            #recovering-box{
+            #continuum-container #recovering-box{
                 height: 40px;
                 width: 25%;
                 float: left;
@@ -328,10 +346,10 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#136735', endColorstr='#82c17e',GradientType=1 ); /* IE6-9 */
                 color: #fff;
             }
-            #recovering-box span{
+            #continuum-container #recovering-box span{
                 width: 80%;
             }
-            #reintroduction-box{
+            #continuum-container #reintroduction-box{
                 height: 40px;
                 width: 20%;
                 float: left;
@@ -345,10 +363,10 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#136735', endColorstr='#82c17e',GradientType=1 ); /* IE6-9 */
                 color: #fff;
             }
-            #reintroduction-box span{
+            #continuum-container #reintroduction-box span{
                 width: 80%;
             }
-             #revivable-box{
+            #continuum-container #revivable-box{
                 height: 40px;
                 width: 30%;
                 float: left;
@@ -363,6 +381,6 @@
 
                 color: #fff;
             }
-            #revivable-box span{
+            #continuum-container #revivable-box span{
                 width: 80%;
             }
