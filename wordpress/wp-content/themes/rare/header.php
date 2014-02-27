@@ -193,9 +193,12 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                    // <span class="lp-googleplus"></span>
                 ?>
                 
-                <a class="lp-isabella_link" href="<?php echo site_url('/tedxdeextinction/speakers/#isabella-kirkland-bio'); ?>"></a>
                 
                 <div class="span-22 center">
+                    
+                    <div id="photo_copyright">
+                        <a href="http://isabellakirkland.com/paintings/taxa.html" target="_blank">© Isabella Kirkland</a>
+                    </div>
                     
                     <div id="longphoto-mission-premise">
                         
@@ -320,7 +323,15 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                 
             <?php } else { // show short isbella painting on inside pages ?>
 
-                <div class="span-22 center"><img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg_short.jpg" alt="" /></div>
+                <div class="span-22 center">
+                    
+                    <div id="photo_copyright">
+                        <a href="http://isabellakirkland.com/paintings/taxa.html" target="_blank">© Isabella Kirkland</a>
+                    </div>
+                    
+                    <img src="<?php echo get_template_directory_uri(); ?>/ui/longphoto_bg_short.jpg" alt="" />
+                
+                </div>
 
             <?php } ?>
             
@@ -362,21 +373,30 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                         'depth' => 1,
                         'title_li' => ''
                     )); 
+                    
+                    echo is_page(1533) ? '<li><a href="' . get_permalink( 167 ) . '">' . get_the_title( 167 ) . '</a></li>' : '';
+                    echo is_page(1569) ? '<li><a href="' . site_url() . '/species/">Criteria Checklist</a></li>' : '';
                     echo '</ul>';
                     
                 } elseif( !is_page(167) ) {
                     
-                    $submenu = wp_list_pages(array(
-                        'child_of' => $post->ID,
-                        'depth' => 1,
-                        'title_li' => '',
-                        'echo'  => 0
-                    ));
+                    $submenu_args = array(
+                        'child_of'  => $post->ID,
+                        'depth'     => 1,
+                        'title_li'  => '',
+                        'echo'      => 0
+                    );
+                    
+                    
+                    
+                    $submenu = wp_list_pages($submenu_args);
                     
                     if($submenu){
                         echo '<ul id="child-navigation">';
                         echo '<a class="parent-link" href="' . get_permalink() . '">' . $post->post_title . '</a>:';
                         echo $submenu;
+                        echo is_page(44) ? '<li><a href="' . get_permalink( 167 ) . '">' . get_the_title( 167 ) . '</a></li>' : '';
+                        echo is_page(40) ? '<li><a href="' . site_url() . '/species/">Criteria Checklist</a></li>' : '';
                         echo '</ul>';
                     }
                     
@@ -384,7 +404,25 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                     
                 
                 
-            <?php } ?>
+            <?php } elseif( get_post_type() == 'species' && is_archive() ) {
+                    
+                    $submenu_args = array(
+                        'depth'     => -1,
+                        'title_li'  => '',
+                        'echo'      => 0,
+                        'include'   => array(1569, 40)
+                    );
+                    
+                    $submenu = wp_list_pages($submenu_args);
+                    
+                    if($submenu){
+                        echo '<ul id="child-navigation">';
+                        echo '<a class="parent-link" href="' . site_url() . '/species/">Criteria Checklist</a>:';
+                        echo $submenu;
+                        echo '</ul>';
+                    }
+                    
+                } ?>
             
             <a name="content"></a>
             
