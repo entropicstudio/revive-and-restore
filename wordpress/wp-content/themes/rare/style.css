@@ -188,7 +188,17 @@ div.wp-caption a{
 body.home #longphoto{
     height: 686px!important;
 }
-
+#longphoto #photo_copyright{
+    position: absolute;
+    right: 5px;
+    bottom: 50px;
+    text-align: right;
+    z-index: 10000;
+    font-size: 10px;
+}
+#longphoto #photo_copyright a{
+    color: #fff;
+}
 #tedxdeextinctionlongphoto_hype_container{
     width: 870px;
     height: 321px;
