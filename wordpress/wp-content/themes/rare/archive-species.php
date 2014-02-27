@@ -211,7 +211,7 @@ $rare_species_options = get_option ( 'rare_species_options' );
             <?php
             
                 $blank = true;
-                $species_id = 3043;
+                $species_id = null;
                 
                 if( $_POST['species-select'] || $_POST['species-text-select'] ) {
                     $_POST['species-select'] ? $species_id = $_POST['species-select'] : $species_id = $_POST['species-text-select'];
@@ -220,7 +220,8 @@ $rare_species_options = get_option ( 'rare_species_options' );
 
                 $args = array(
                     'post_type' => 'species',
-                    'p'         => $species_id
+                    'p'         => $species_id,
+                    'post_count'    => 1
                 );
 
                 $species = null;
