@@ -148,7 +148,9 @@ $continuum_options = get_option ( 'rare_continuum_options' );
                 </ul>
                 <br class="clear" />
             </div>
-        
+            
+            <?php the_field('below_chart'); ?>
+            
         </div>
 
         <script>
