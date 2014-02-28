@@ -193,12 +193,11 @@ $rare_theme_options = get_option ( 'rare_theme_options' );
                    // <span class="lp-googleplus"></span>
                 ?>
                 
+                <div id="photo_copyright">
+                    <a href="http://isabellakirkland.com/paintings/taxa.html" target="_blank">© Isabella Kirkland</a>
+                </div>
                 
                 <div class="span-22 center">
-                    
-                    <div id="photo_copyright">
-                        <a href="http://isabellakirkland.com/paintings/taxa.html" target="_blank">© Isabella Kirkland</a>
-                    </div>
                     
                     <div id="longphoto-mission-premise">
                         
