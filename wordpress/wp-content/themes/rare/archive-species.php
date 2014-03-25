@@ -462,7 +462,14 @@ $rare_species_options = get_option ( 'rare_species_options' );
                     'post_type'         => 'species',
                      'posts_per_page'   => -1,
                      'orderby'          => 'menu_order',
-                     'order'            => 'ASC'
+                     'order'            => 'ASC',
+                     'meta_query' => array(
+                                array(
+                                    'key' => 'in_criteria',
+                                    'value' => 'yes',
+                                    'compare' => 'LIKE'
+                                )
+                            )
                 );
 
                 $species = null;
