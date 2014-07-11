@@ -34,12 +34,12 @@ Version: 1.0
   width: 50%;
 }
 
-.stackmenu ul li:nth-last-of-type {
+/*.stackmenu ul li:nth-last-of-type {
   border-bottom: none;
 	}
 .stackmenu ul li:nth-last-of-type(2) {
   border-bottom: none;
-	}
+	}*/
 	
 	
 .stackmenu ul li a {
