@@ -15,6 +15,42 @@ Version: 1.0
   background-color: #fff;
 }
 
+
+
+/* SUBMENU page nav Styles */
+.stackmenu ul {
+	width:100%;
+	margin:0;
+	padding-bottom:20px;
+	display:table;
+	}
+
+.stackmenu ul li {
+  border-bottom: 1px solid #ccc;
+  float: left;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.stackmenu ul li:nth-last-of-type {
+  border-bottom: none;
+	}
+.stackmenu ul li:nth-last-of-type(2) {
+  border-bottom: none;
+	}
+	
+	
+.stackmenu ul li a {
+	width:100%;
+	padding:1px 2px;
+	width:100%;
+	display:table;
+	}
+
+
+
 /* Black Footed Ferret Page Styles */
 	.stackmenu .menu-black-footed-ferret-menu-container li a {
 	  color: #fff;
