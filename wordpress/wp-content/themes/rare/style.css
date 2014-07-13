@@ -63,6 +63,15 @@ Version: 1.0
 	  border-width: 1px !important;
 	}
 
+	.teaser_grid_container ul {
+	  margin: 0 !important;
+	}
+	
+	.teaser_grid_container ul li {
+	  padding: 0 !important;
+	}
+	
+
 
 
 /* READ MORE expanding Styles */
@@ -70,6 +79,16 @@ Version: 1.0
 		background-position: 0 4px;
 		width: auto;
 	}
+
+
+
+
+
+
+
+
+
+
 
 
 
