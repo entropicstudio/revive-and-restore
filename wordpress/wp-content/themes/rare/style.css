@@ -82,7 +82,10 @@ Version: 1.0
 
 
 
-
+/* PDF (CAPTION) Styles -- Makes PDFs with Captions align better */
+.pdflist br {
+  display: none;
+}
 
 
 
