@@ -80,6 +80,12 @@ Version: 1.0
 		width: auto;
 	}
 
+/* TEASER Styles */
+
+.teaser_grid_container ul {
+  margin: 0;
+}
+
 
 
 /* PDF (CAPTION) Styles -- Makes PDFs with Captions align better */
